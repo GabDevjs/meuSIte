@@ -1,0 +1,40 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.HomeBg {
+    @apply w-full h-full;
+    background-image: url('../assets/img/Degradê.png');
+    background-size: 200%;
+
+    animation: aurora 35s infinite;
+}
+
+
+/* Animate */
+@keyframes aurora {
+    0% {
+        background-position: left top;
+    }
+
+    25% {
+        background-position: right top;
+    }
+
+    50% {
+        background-position: right bottom;
+    }
+
+    75% {
+        background-position: left bottom;
+    }
+
+    100% {
+        background-position: left top;
+    }
+}
