@@ -1,0 +1,75 @@
+import Image from "next/image";
+import { BsWhatsapp } from "react-icons/bs";
+import { Section } from "../atoms";
+import ImageWhatsAppPixel from "../../assets/whatsapp-iconBit.png";
+
+export const ContactSection = () => {
+  return (
+    <div className="bg-backGround bg-opacity-90">
+      <Section>
+        <div className=" border-b border-gray-100 border-opacity-20 text-gray-100 pt-10 flex flex-col justify-center items-center max-w-7xl  mx-auto sm:px-6 lg:px-8 ">
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="600"
+            className="mx-auto max-w-7xl px-4  sm:px-6 lg:px-8"
+          >
+            <div className="text-center">
+              <h2 className="text-lg font-semibold text-primary-orange">
+                Contato e redes
+              </h2>
+              <p className="mt-1 text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
+                Entre em contato
+              </p>
+            </div>
+          </div>
+          <div className="mx-3 flex justify-center flex-wrap items-center">
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1100"
+              className="flex justify-center items-center  text-lg max-w-xl "
+            >
+              <div className="flex justify-center items-center p-10 md:p-24 xl:p-32
+               ">
+                <Image
+                  src={ImageWhatsAppPixel}
+                  className="w-full h-full animate-fluid"
+                  priority
+                />
+              </div>
+            </div>
+            <div
+              data-aos="fade-left"
+              data-aos-duration="900"
+              className="flex justify-center text-base max-w-xl flex-col"
+            >
+              <div className="flex justify-center text-2xl font-semibold">
+                <h1> Whatsapp</h1>
+              </div>
+              <p className="text-center ">
+                Estou interessado em oportunidades freelance – especialmente
+                projetos ambiciosos ou grandes. No entanto, se você tiver outra
+                solicitação ou pergunta, não hesite em me chamar.
+              </p>
+              <div className="flex justify-center items-center py-10">
+                <button className="  custom-btn  btn-11 px-5 rounded-lg py-2 lg:py-3 bg-[#25d366] shadow-xl  hover:bg-secondy-green hover:scale-110 ease-in-out transition-all duration-300">
+                  <span>
+                    <BsWhatsapp className="inline lg:mr-2 text-lg" />
+                  </span>
+                  <span className="text-sm lg:text-base">Whatsapp</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Section>
+    </div>
+  );
+};
+
+/* 
+
+ <Image src={ImageWhatsAppPixel}
+
+            priority
+            />
+*/

@@ -1,15 +1,21 @@
+import Head from "next/head";
 import { Section } from "../atoms";
-import { Home } from "../molecules";
+import { About, ContactSection, Home, ProjetoSection} from "../molecules";
 
 export const HomePageTemplate = () => {
   return (
     <>
-      <Home />
-      <Section>
-        <div>
-          <h1 className="bg-red-500">Home Page</h1>
-        </div>
-      </Section>
+      <Head>
+        <title>Boreal</title>
+        <link rel="shortcut icon" sizes="32/32" href="/favicon/favicon.ico" />
+      </Head>
+      <main className="bg-gray-50">
+        <Home />
+        
+        <About />
+        <ProjetoSection />
+        <ContactSection />
+      </main>
     </>
   );
 };

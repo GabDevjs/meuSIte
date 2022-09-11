@@ -5,7 +5,7 @@ interface SectionProps {
 export const Section = (props: SectionProps) => {
     const {children, ...rest} = props;
     return (
-        <section className="flex flex-col justify-center items-center my-3">
+        <section className="flex flex-col justify-center items-center  ">
             {children}
         </section>
     );

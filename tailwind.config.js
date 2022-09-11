@@ -15,7 +15,7 @@ module.exports = {
       },
       colors: {
         'primary-dark': '#273746',
-        backGround: '#BFDEEA',
+        backGround: '#111111',
         'backGround-dark': '#8FA6AF',
         'primary-blue': '#007aaa',
         'secondy-blue': '#006B95',
@@ -25,7 +25,7 @@ module.exports = {
         'secondy-green': '#1EAC52',
         'primary-yellow': '#EAB308',
         'secondy-yellow': '#CD9D07',
-        'primary-orange': '#D35400',
+        'primary-orange': '#e67e22',
         'secondy-orange': '#B94E08',
       },
       keyframes: {

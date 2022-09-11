@@ -5,36 +5,173 @@
 @tailwind utilities;
 
 
-
-
-.HomeBg {
-    @apply w-full h-full;
-    background-image: url('../assets/img/Degradê.png');
-    background-size: 200%;
-
-    animation: aurora 35s infinite;
+.animate-fluid {
+    animation: fluid 6s infinite;
 }
+
+.innerShadow {
+    box-shadow: inset 0 0 4rem #000;
+}
+
+/* config */
+body::-webkit-scrollbar {
+    @apply w-2 px-1;
+}
+
+body::-webkit-scrollbar-track {
+    @apply bg-transparent w-1;
+}
+
+body::-webkit-scrollbar-thumb {
+    @apply bg-primary-orange rounded-xl w-1;
+}
+
 
 
 /* Animate */
 @keyframes aurora {
     0% {
-        background-position: left top;
+        background-position: left center;
     }
 
     25% {
-        background-position: right top;
+        background-position: right center;
     }
 
     50% {
-        background-position: right bottom;
+        background-position: center top;
     }
 
     75% {
-        background-position: left bottom;
+        background-position: center bottom;
     }
 
     100% {
-        background-position: left top;
+        background-position: left center;
+    }
+}
+
+
+@keyframes fluid {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.custom-btn {
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+}
+
+.vidro {
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  }
+
+.btn-11 {
+    color: #fff;
+    overflow: hidden;
+}
+
+.btn-11:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-11:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+  
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: #fff;
+    animation: shiny-btn1 5s ease-in-out infinite;
+}
+
+.btn-11:hover {
+    opacity: .7;
+}
+
+.btn-11:active {
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .3),
+        -4px -4px 6px 0 rgba(116, 125, 136, .2),
+        inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
+        inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+
+
+
+.btn-12 {
+    color: #fff;
+    overflow: hidden;
+}
+
+.btn-12:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-12:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+  
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: #fff;
+    animation: shiny-btn1 3s ease-in-out infinite;
+}
+
+.btn-12:hover {
+    opacity: .7;
+}
+
+.btn-12:active {
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .3),
+        -4px -4px 6px 0 rgba(116, 125, 136, .2),
+        inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
+        inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+
+
+@-webkit-keyframes shiny-btn1 {
+    0% {
+        -webkit-transform: scale(0) rotate(45deg);
+        opacity: 0;
+    }
+
+    80% {
+        -webkit-transform: scale(0) rotate(45deg);
+        opacity: 0.5;
+    }
+
+    81% {
+        -webkit-transform: scale(4) rotate(45deg);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scale(50) rotate(45deg);
+        opacity: 0;
     }
 }

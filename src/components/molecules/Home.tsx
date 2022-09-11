@@ -1,44 +1,69 @@
+import { LogoLogin } from "../atoms/LogoWhite";
+import UseAnimations from "react-useanimations";
+import arrowDown from "react-useanimations/lib/arrowDown";
+import { useEffect, useState } from "react";
+
 export const Home = () => {
+  const [arrow, setArrow] = useState("opacity-100");
+  const listenScrollEvent = () => {
+    window.scrollY > 300 ? setArrow("opacity-0") : setArrow("opacity-100");
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", listenScrollEvent);
+    return () => {
+      window.removeEventListener("scroll", listenScrollEvent);
+    };
+  }, []);
+
   return (
-    <header className="sm:p-3 mt-20">
-      <div className="relative">
-        <div className="absolute inset-x-0 bottom-0 h-1/2" />
-        <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
-          <div className="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
-            <div className="absolute inset-0">
-              <img
-                className="h-full w-full object-cover"
-                src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
-                alt="People working on laptops"
-              />
-              <div className="absolute inset-0 bg-gradient-to-r from-purple-800 to-indigo-700 mix-blend-multiply" />
-            </div>
-            <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
-              <h1 className="text-center text-4xl font-bold tracking-tight sm:text-5xl sm:tracking-tight lg:text-6xl lg:tracking-tight">
-                <span className="block text-white">Take control of your</span>
-                <span className="block text-indigo-200">customer support</span>
-              </h1>
-              <p className="mt-6 max-w-lg mx-auto text-center text-xl text-indigo-200 sm:max-w-3xl">
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-                lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-                fugiat aliqua.
-              </p>
-              <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
-                <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
-                  <a
-                    href="#"
-                    className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8"
-                  >
-                    Get started
-                  </a>
-                  <a
-                    href="#"
-                    className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 bg-opacity-60 hover:bg-opacity-70 sm:px-8"
-                  >
-                    Live demo
-                  </a>
+    <header className="bg-backGround h-screen">
+      <div className=" w-full h-full flex justify-center items-center ">
+        <div className="max-w-7xl mx-auto sm:px-4 lg:px-6">
+          <div className="relative px-4 sm:px-8  mb-10  md:px-10">
+            <div className="hidden md:grid grid-cols-1 col  gap-x-4  sm:grid-cols-2 sm:gap-x-6 xl:gap-x-">
+              <div className="flex w-full justify-center items-center">
+                <div className="w-60 lg:w-96 xl:w-full text-center">
+                  <h1 className="text-xl xl:text-2xl  font-bold text-white leading-snug">
+                    Uma solução simples e moderna para seus{" "}
+                    <span className="text-[#05eacc]">Enriquecimentos</span> e
+                    suas <span className="text-[#0df9a1]">Consultas</span>
+                  </h1>
                 </div>
               </div>
+              <div className="flex justify-center items-center w-full">
+                <div className="flex w-72 lg:w-96 xl:w-full justify-center items-center">
+                  <LogoLogin />
+                </div>
+              </div>
+            </div>
+
+            <div className="grid md:hidden grid-cols-1 col  gap-x-4  md:grid-cols-2 md:gap-x-6 xl:gap-x-">
+              <div className="flex justify-center items-center w-full">
+                <div className="flex w-80 lg:w-96 xl:w-full justify-center items-center">
+                  <LogoLogin />
+                </div>
+              </div>
+              <div className="flex w-full justify-center items-center">
+                <div className="w-72 lg:w-96 xl:w-full text-center">
+                  <h1 className="text-xl  sm:text-2xl  font-bold text-white leading-snug">
+                    Uma solução simples e moderna para seus{" "}
+                    <span className="text-[#05eacc]">Enriquecimentos</span> e
+                    suas <span className="text-[#0df9a1]">Consultas</span>
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className={`absolute  w-full left-0 mt-20 ${arrow} flex justify-center items-center transition-all `}
+          >
+            <div className="">
+              <UseAnimations
+                animation={arrowDown}
+                size={56}
+                style={{ padding: 100 }}
+                strokeColor="#fff"
+              />
             </div>
           </div>
         </div>

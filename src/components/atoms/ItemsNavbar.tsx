@@ -1,6 +1,3 @@
-import { AiOutlineHome } from "react-icons/ai";
-import { BsFillJournalBookmarkFill } from "react-icons/bs";
-
 interface ItemsNavbarProps {
   mobile?: boolean;
   items?: any;
@@ -15,11 +12,11 @@ export const ItemsNavbar = (props: ItemsNavbarProps) => {
         return (
           <span
             key={index}
-            className="flex justify-center items-center h-full w-full py-2 px-2"
+            className="flex justify-center items-center h-full w-full py-2 px-3"
           >
-            <a href={item.to} className="text-base font-medium hover:text-primary-blue hover:scale-105 transition-all flex justify-between items-center cursor-pointer" >
+            <a href={item.to} className="text-base xl:text-base  font-medium hover:text-primary-orange hover:scale-110 transition-all flex justify-between items-center cursor-pointer" >
               <span className="mr-1">
-              {item.icon}
+              < item.icon  />
               </span>
               {item.name}
             </a>
