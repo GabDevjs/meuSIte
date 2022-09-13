@@ -5,7 +5,9 @@ import ImageWhatsAppPixel from "../../assets/whatsapp-iconBit.png";
 
 export const ContactSection = () => {
   return (
-    <div className="bg-backGround bg-opacity-90">
+    <div className="bg-zinc-900 z-50">
+           
+
       <Section>
         <div className=" border-b border-gray-100 border-opacity-20 text-gray-100 pt-10 flex flex-col justify-center items-center max-w-7xl  mx-auto sm:px-6 lg:px-8 ">
           <div

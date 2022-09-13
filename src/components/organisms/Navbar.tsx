@@ -1,10 +1,8 @@
 import { Disclosure, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { Button, ItemsNavbar, LogoNavabar } from "../atoms";
-import { MdComputer } from "react-icons/md";
+import { ItemsNavbar, LogoNavabar } from "../atoms";
 import {
   BsFillBasket3Fill,
-  BsFillHouseFill,
   BsFillTelephoneFill,
   BsInfoCircleFill,
   BsWhatsapp,
@@ -49,7 +47,7 @@ export const Navbar = () => {
         {({ open }) => (
           <>
             <div className="mx-auto vidro max-w-7xl px-4 sm:px-6 lg:px-28">
-              <div className="flex h-14 md:h-20 items-center justify-between py-3">
+              <div className="flex h-14 items-center justify-between py-3">
                 {/* items Navbar */}
 
                 <div className="w-44">

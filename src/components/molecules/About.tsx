@@ -8,9 +8,9 @@ const urlDonload = '../../assests/CurrículoFlavioGabrielDEV.pdf'
 
 export const About = () => {
   return (
-    <div className="bg-backGround bg-opacity-90">
+    <div className="bg-zinc-900  ">
       <Section>
-        <div className="text-white border-t border-b border-gray-100 border-opacity-20 flex flex-col justify-center items-center max-w-7xl pb-16  mx-auto sm:px-6 lg:px-8">
+        <div className="text-white  flex flex-col justify-center items-center max-w-7xl pb-16  mx-auto sm:px-6 lg:px-8">
           <div
             data-aos="zoom-in"
             data-aos-duration="600"

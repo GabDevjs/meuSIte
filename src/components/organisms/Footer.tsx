@@ -22,7 +22,7 @@ const navigation = {
 
 export const Footer = () => {
   return (
-    <footer className="bg-backGround bg-opacity-90" aria-labelledby="footer-heading">
+    <footer className="bg-zinc-900" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
@@ -33,13 +33,14 @@ export const Footer = () => {
               {navigation.social.map((item) => (
                 <div
                 key={item.name}
-                data-aos="fade-up "
                 
-                className='bg-gray-100 bg-opacity-20 p-3 rounded-full group hover:scale-125 transition-all duration-300'
+                
+                className='bg-gray-100 bg-opacity-20 p-3 rounded-full group  transition-all duration-300'
                 >
                   <a
                     href={item.href}
-                    className="text-gray-400  group-hover:text-primary-orange"
+                    className="text-gray-400
+                    hover:scale-110  group-hover:text-primary-orange"
                     target="_blank"
                   >
                     <span className="sr-only">{item.name}</span>
