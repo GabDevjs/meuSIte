@@ -94,6 +94,7 @@ export const ProjetoSection = () => {
                   {ArrayPortifolio1a3.map((item, index) => (
                     <div
                       key={index}
+                      data-aos="zoom-in"
                       className="flex flex-col justify-between min-w-[22rem]  items-center max-w-xs p-3 m-2 rounded-lg shadow-lg vidro bg-opacity-30 hover:scale-105 transition-all duration-300  "
                     >
                       <div className="flex flex-col justify-center items-center ">

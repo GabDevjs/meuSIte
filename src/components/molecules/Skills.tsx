@@ -32,13 +32,13 @@ const Conpedencias = [
 
 export const SkillsSection = () => {
   return (
-    <div className="bg-zinc-600 py-5 border-zinc-600 border-opacity-10 border-b border-t">
+    <div className="bg-zinc-500 py-5 border-zinc-300 border-opacity-10 border-b-2 border-t-2">
       <div className="flex flex-col justify-center items-center max-w-7xl mx-auto sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl py-8 px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 gap-32 md:grid-cols-6 lg:grid-cols-6">
             {Conpedencias.map((item, index) => (
               <div key={index} data-aos="fade-up" data-aos-offset="200"
-              data-aos-delay="50" className="col-span-1 flex flex-col justify-center md:col-span-2 lg:col-span-1 text-zinc-400 hover:text-zinc-700">
+              data-aos-delay="50" className="col-span-1 flex flex-col justify-center md:col-span-2 lg:col-span-1 text-zinc-600 hover:text-zinc-300 transition-all duration-500">
                 <span className="h-12 flex justify-center">
                     <item.icon  className="text-4xl "/>
                 </span>
