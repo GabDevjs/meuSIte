@@ -5,11 +5,11 @@ import ImageWhatsAppPixel from "../../assets/whatsapp-iconBit.png";
 
 export const ContactSection = () => {
   return (
-    <div className="bg-zinc-900 z-50">
+    <div id="contato" className="bg-zinc-300 dark:bg-zinc-900 z-50">
            
 
       <Section>
-        <div className=" border-b border-gray-100 border-opacity-20 text-gray-100 pt-10 flex flex-col justify-center items-center max-w-7xl  mx-auto sm:px-6 lg:px-8 ">
+        <div className=" border-b border-gray-900 dark:border-zinc-700 border-opacity-20 text-gray-800 dark:text-gray-100 pt-10 flex flex-col justify-center items-center max-w-7xl  mx-auto sm:px-6 lg:px-8 ">
           <div
             data-aos="zoom-in"
             data-aos-duration="600"
@@ -30,7 +30,7 @@ export const ContactSection = () => {
               data-aos-duration="1100"
               className="flex justify-center items-center  text-lg max-w-xl "
             >
-              <div className="flex justify-center items-center p-10 md:p-24 xl:p-32
+              <div className="flex justify-center items-center p-24 xl:p-32
                ">
                 <Image
                   src={ImageWhatsAppPixel}

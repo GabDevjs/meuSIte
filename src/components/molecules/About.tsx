@@ -8,13 +8,13 @@ const urlDonload = '../../assests/CurrículoFlavioGabrielDEV.pdf'
 
 export const About = () => {
   return (
-    <div className="bg-zinc-900  ">
+    <div id="sobre" className="bg-zinc-300 dark:bg-zinc-900  ">
       <Section>
-        <div className="text-white  flex flex-col justify-center items-center max-w-7xl pb-16  mx-auto sm:px-6 lg:px-8">
+        <div className="text-gray-800 dark:text-gray-100 flex flex-wrap justify-between items-center max-w-6xl pb-16  mx-auto sm:px-4 lg:px-6">
           <div
             data-aos="zoom-in"
             data-aos-duration="600"
-            className="mx-auto max-w-7xl py-16 px-4  sm:px-6 lg:px-8"
+            className="mx-auto max-w-6xl py-16 px-2  sm:px-4 lg:px-6"
           >
             <div className="text-center">
               <h2 className="text-lg font-semibold text-primary-orange">
@@ -29,7 +29,7 @@ export const About = () => {
             <div
               data-aos="fade-right"
               data-aos-duration="900"
-              className="flex justify-center text-base max-w-xl flex-col space-y-8"
+              className="flex justify-center text-sm max-w-lg flex-col space-y-8"
             >
               <p className="text-center max-w-lg">
                 Sou um dedicado estudante de desenvolvimento, no início do que
@@ -60,7 +60,7 @@ export const About = () => {
             <div
               data-aos="fade-left"
               data-aos-duration="1100"
-              className="flex justify-center items-center my-10 md:my-0 text-lg max-w-xl "
+              className="flex justify-center items-center my-10 md:my-0 text-lg max-w-lg "
             >
               <div className="flex justify-center items-center px-24">
                 <Image

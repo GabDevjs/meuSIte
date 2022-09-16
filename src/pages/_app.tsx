@@ -3,6 +3,7 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 import type { AppProps } from 'next/app'
 import { Layout } from '../services/layout'
 import AppContext from '../services/context'
+import { ThemeProvider } from 'next-themes'
 import { useEffect } from 'react';
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -18,7 +19,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     })
   }, [])
   return (
-
+    <ThemeProvider attribute='class'>
     <AppContext.Provider value={{
     }} >
           <ParallaxProvider>
@@ -27,6 +28,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     </Layout>
     </ParallaxProvider>
     </AppContext.Provider>
+    </ThemeProvider>
   )
 }
 

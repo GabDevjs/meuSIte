@@ -22,7 +22,7 @@ const navigation = {
 
 export const Footer = () => {
   return (
-    <footer className="bg-zinc-900" aria-labelledby="footer-heading">
+    <footer className="bg-zinc-300 dark:bg-zinc-900" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
@@ -35,12 +35,12 @@ export const Footer = () => {
                 key={item.name}
                 
                 
-                className='bg-gray-100 bg-opacity-20 p-3 rounded-full group  transition-all duration-300'
+                className='bg-gray-900 dark:bg-gray-400 bg-opacity-20 p-3  hover:scale-125 rounded-full group  transition-all duration-300 cursor-pointer'
                 >
                   <a
                     href={item.href}
-                    className="text-gray-400
-                    hover:scale-110  group-hover:text-primary-orange"
+                    className="text-gray-500 dark:text-gray-600
+                    group-hover:text-primary-orange"
                     target="_blank"
                   >
                     <span className="sr-only">{item.name}</span>
@@ -54,7 +54,7 @@ export const Footer = () => {
         <div className="mt-12  pt-8 flex justify-center items-center">
           <p 
             data-aos="fade-up "
-          className="text-base text-gray-300 xl:text-center">
+          className="text-base text-gray-800 dark:text-gray-100 xl:text-center">
             &copy; 2022 GabDevJs , Inc. All rights reserved.
           </p>
         </div>
