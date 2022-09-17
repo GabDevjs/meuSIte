@@ -6,7 +6,7 @@ export const HomePageTemplate = () => {
   return (
     <>
       <Head>
-        <title>Boreal</title>
+        <title>Portifolio </title>
         <link rel="shortcut icon" sizes="32/32" href="/favicon/favicon.ico" />
       </Head>
       <div className="fixed  bg-zinc-400 dark:bg-backGround w-screen h-full bottom-0 top-0 left-0 right-0 -z-10 ">
@@ -21,7 +21,7 @@ export const HomePageTemplate = () => {
         <Home />
 
         <About />
-        <SkillsSection />
+        
         <ProjetoSection />
         <ContactSection />
       </main>

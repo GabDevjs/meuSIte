@@ -1,3 +1,8 @@
+import  Image  from 'next/image';
+import LogoWhite from '../../assets/LogoWhite.png';
+import Logo from '../../assets/Logo.png';
+
+
 interface buttonProps {
   iconsSolo?: boolean
 }
@@ -7,10 +12,23 @@ export const LogoNavabar = (props: buttonProps) => {
 
   return (
     <>
-      <div className='flex items-center justify-between w-full '>
-       <h2 className='text-xl uppercase font-semibold'>
-        Logo
-       </h2>
+      <div className='hidden dark:flex items-center justify-between w-full '>
+        <Image 
+          src={LogoWhite}
+          alt='Logo'
+          width={50}
+          height={50}
+          priority
+        />        
+      </div>
+      <div className='flex dark:hidden items-center justify-between w-full '>
+        <Image 
+          src={Logo}
+          alt='Logo'
+          width={50}
+          height={50}
+          priority
+        />        
       </div>
     </>
   )

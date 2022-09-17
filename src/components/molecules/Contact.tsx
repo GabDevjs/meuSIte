@@ -26,7 +26,7 @@ export const ContactSection = () => {
           </div>
           <div className="mx-3 flex justify-center flex-wrap items-center">
             <div
-              data-aos="fade-right"
+              data-aos="zoom-in"
               data-aos-duration="1100"
               className="flex justify-center items-center  text-lg max-w-xl "
             >
@@ -40,7 +40,7 @@ export const ContactSection = () => {
               </div>
             </div>
             <div
-              data-aos="fade-left"
+              data-aos="zoom-in"
               data-aos-duration="900"
               className="flex justify-center text-base max-w-xl flex-col"
             >

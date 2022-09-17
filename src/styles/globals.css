@@ -197,6 +197,7 @@ body {
 
 .animete-ball {
     animation: animete 20s linear infinite;
+    padding: 0.5rem;
 }
 
 .animete-ball2 {

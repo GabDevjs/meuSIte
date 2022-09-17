@@ -30,16 +30,19 @@ export const Footer = () => {
         <div className="flex justify-evenly items-center space-x-14 flex-wrap">
           <div className="space-y-8 xl:col-span-1 ">
             <div className="flex justify-center items-center space-x-10">
-              {navigation.social.map((item) => (
+              {navigation.social.map((item, index) => (
                 <div
-                key={item.name}
+                key={index}
+                >
+                  <div
                 
+                data-aos="zoom-in"
                 
-                className='bg-gray-900 dark:bg-gray-400 bg-opacity-20 p-3  hover:scale-125 rounded-full group  transition-all duration-300 cursor-pointer'
+                className='bg-gray-900 dark:bg-zinc-600 bg-opacity-20 p-3  hover:scale-125 rounded-full group  transition-all duration-300 cursor-pointer'
                 >
                   <a
                     href={item.href}
-                    className="text-gray-500 dark:text-gray-600
+                    className="text-gray-500 dark:text-gray-800
                     group-hover:text-primary-orange"
                     target="_blank"
                   >
@@ -47,6 +50,7 @@ export const Footer = () => {
                     <item.icon className="h-8 w-8" aria-hidden="true" />
                   </a>
                 </div>
+                  </div>
               ))}
             </div>
           </div>

@@ -6,7 +6,7 @@ import Banner4 from "../../assets/imgPortifolio/banner4.jpg";
 import Banner5 from "../../assets/imgPortifolio/banner5.jpg";
 import Banner6 from "../../assets/imgPortifolio/banner6.jpg";
 import Banner7 from "../../assets/imgPortifolio/banner7.jpg";
-import { BsBehance, BsGithub } from "react-icons/bs";
+import { BsBehance, BsEyeFill, BsGithub } from "react-icons/bs";
 import Image from "next/image";
 
 const ArrayPortifolio4a6 = [];
@@ -37,31 +37,6 @@ const ArrayPortifolio1a3 = [
     link: "https://www.behance.net/gallery/134362077/Landing-Page-TravelWebsite",
     git: "https://github.com/GabDevjs/LandingPage-TravelWebsite",
   },
-  {
-    title: "React - Landing Page Real Estate",
-    description:
-      "this project is a react js landing page made to promote a fictional real estate company. built with a modern design and a simple interface.",
-    img: Banner6,
-    link: "https://www.behance.net/gallery/136798995/React-Landing-Page-Real-Estate",
-    git: "https://www.behance.net/gallery/136798995/React-Landing-Page-Real-Estate",
-  },
-
-  {
-    title: "Landing Page - WebSite App",
-    description:
-      "This is a basic landing page, made for the promotion of a fictitious app. Only html, css and javascript were used. Built with the focus of being responsive and having a modern design.",
-    img: Banner1,
-    link: "https://www.behance.net/gallery/133851709/Landing-Page-WebSite-App",
-    git: "https://github.com/GabDevjs/LandingPage-WebSiteApp",
-  },
-  {
-    title: "React.js - App Landing Page",
-    description:
-      "this is a React.js project made to be able to promote a landing page of a fictional app, built with styled-components and react-dom made with a modern and intuitive design.",
-    img: Banner2,
-    link: "https://www.behance.net/gallery/136105455/Reactjs-App-Landing-Page",
-    git: "https://github.com/GabDevjs/React.js-Landing-Page-App",
-  },
 ];
 
 export const ProjetoSection = () => {
@@ -73,7 +48,7 @@ export const ProjetoSection = () => {
             <div
               data-aos="zoom-in"
               data-aos-duration="600"
-              className="mx-auto max-w-7xl py-16 px-4  sm:px-6 lg:px-8"
+              className="mx-auto max-w-7xl py-8 pb-10 px-4  sm:px-6 lg:px-8"
             >
               <div className="text-center">
                 <h2 className="text-lg font-semibold text-primary-orange">
@@ -86,13 +61,13 @@ export const ProjetoSection = () => {
             </div>
 
             <div className="flex justify-center items-center flex-col">
-              <div className="w-full p-10 ">
+              <div className="w-full px-2 md:px-10 ">
                 <div className="flex w-full justify-center sm:justify-evenly flex-wrap ">
                   {ArrayPortifolio1a3.map((item, index) => (
                     <div
                     key={index}
                       data-aos="zoom-in"
-                      className="p-1 flex-initial"
+                      className="p-3 flex-initial "
                     >
                       <div
                       
@@ -114,6 +89,13 @@ export const ProjetoSection = () => {
                             target="_blank"
                           >
                             <BsBehance size={25} />
+                          </a>
+                          <a
+                            className="text-2xl bg-gray-100 hover:bg-transparent p-2 rounded-full hover:scale-125  hover:text-gray-100 text-primary-orange transition-all duration-200"
+                            href={item.link}
+                            target="_blank"
+                          >
+                            <BsEyeFill size={30} />
                           </a>
                           <a
                             className="text-2xl hover:bg-gray-100 p-2 rounded-full hover:scale-110  text-gray-100 hover:text-primary-orange transition-all duration-200"

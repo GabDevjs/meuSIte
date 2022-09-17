@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Typed from "react-typed";
 import Image from "next/image";
-import ImageABout from "../../assets/PerfilRedesJobbs.jpeg";
+import ImageABout from "../../assets/perfil.png";
 import {IoLogoJavascript } from 'react-icons/io'
 import { SiJavascript, SiNextdotjs, SiNodedotjs, SiTypescript } from "react-icons/si";
 
@@ -51,17 +51,17 @@ export const Home = () => {
                 </div>
               </div>
               <div
-                  data-aos="fade-left"
+                  data-aos="zoom-in"
               data-aos-duration="1100"
                               className="flex justify-center flex-col  items-cente text-lg max-w-lg px-10 "
               >
                 <div className="flex relative z-20  rounded-full ring-2 border-4 border-transparent ring-primary-orange text-gray-50 justify-center items-center ">
                   <Image
                     src={ImageABout}
-                    className="w-full rounded-full h-full "
+                    className="w-full rounded-full object-cover "
                     priority
                   />
-                   <div className="absolute left-0 top-0 flex justify-center items-center rounded-full   bg-primary-green bg-opacity-80 p-1 border-2 border-secondy-green animete-ball backdrop-blur-xl">
+                   <div className="absolute left-0 top-0 flex justify-center items-center rounded-full   bg-primary-green bg-opacity-80 border-2 border-secondy-green animete-ball backdrop-blur-xl">
                    <SiNodedotjs className="inline"/>
                   </div>
 
