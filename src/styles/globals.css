@@ -26,7 +26,9 @@ body::-webkit-scrollbar-thumb {
     @apply bg-primary-orange rounded-xl w-1;
 }
 
-
+body{
+    overflow-x: hidden;
+}
 
 /* Animate */
 @keyframes aurora {
@@ -193,6 +195,18 @@ body::-webkit-scrollbar-thumb {
     animation: anime 30s linear infinite;
 }
 
+.animete-ball{
+    animation: animete 20s linear infinite;
+}
+
+.animete-ball2{
+    animation: animete2 20s linear infinite;
+}
+
+.animete-ball3{
+    animation: animete2 15s linear infinite;
+}
+
 .ball2{
     position:absolute;
  
@@ -244,6 +258,30 @@ body::-webkit-scrollbar-thumb {
 }
 
 
+@keyframes animete {
+   0% {
+      transform: translate(0, 0);
+   }
+    50% {
+        transform: translate(60%, 50%);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+
+@keyframes animete2 {
+    0% {
+       transform: translate(0, 0);
+    }
+     50% {
+         transform: translate(10%, -50%);
+     }
+     100% {
+         transform: translate(0, 0);
+     }
+ }
 
 /* 
 Test Space Invader 

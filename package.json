@@ -23,7 +23,8 @@
     "react-tilt": "^0.1.4",
     "react-typed": "^1.2.0",
     "react-useanimations": "^2.0.8",
-    "styled-components": "^5.3.5"
+    "styled-components": "^5.3.5",
+    "three": "^0.144.0"
   },
   "devDependencies": {
     "@types/aos": "^3.0.4",

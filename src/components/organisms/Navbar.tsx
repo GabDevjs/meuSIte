@@ -34,7 +34,7 @@ export const Navbar = () => {
   const listenScrollEvent = () => {
     window.scrollY > 20
       ? setNavPosition("translateY-y-0")
-      : setNavPosition("-translate-y-96 md:-translate-y-28");
+      : setNavPosition("-translate-y-[28rem] md:-translate-y-28");
   };
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
@@ -52,7 +52,7 @@ export const Navbar = () => {
         {({ open }) => (
           <>
             <div className="mx-auto vidro rounded-3xl md:rounded-full max-w-6xl px-4 sm:px-6 lg:px-28">
-              <div className="flex h-14 items-center justify-around py-3">
+              <div className="flex h-12 md:h-14 items-center justify-around py-3">
                 {/* items Navbar */}
 
                 <div className="">
@@ -61,16 +61,14 @@ export const Navbar = () => {
 
                 <div className="hidden  md:flex justify-between ">
                   <ItemsNavbar items={ItemsNavbarOptions} />
-                </div>
-                <div className="hidden md:flex justify-center items-center ">
-                  <div className=" flex justify-center items-center w-full">
-                    <ThemeToggle />
-                  </div>
+             
+                      <ThemeToggle />
+                  
                 </div>
 
                 {/* Mobile menu button */}
                 <div className=" flex md:hidden">
-                  <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-500">
+                  <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 ">
                     <span className="sr-only">Open main menu</span>
                     {open ? (
                       <XMarkIcon className="block h-8 w-8" aria-hidden="true" />

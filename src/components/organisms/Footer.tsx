@@ -54,7 +54,7 @@ export const Footer = () => {
         <div className="mt-12  pt-8 flex justify-center items-center">
           <p 
             data-aos="fade-up "
-          className="text-base text-gray-800 dark:text-gray-100 xl:text-center">
+          className="text-base text-center text-gray-800 dark:text-gray-100 xl:text-center">
             &copy; 2022 GabDevJs , Inc. All rights reserved.
           </p>
         </div>

@@ -10,7 +10,7 @@ export const About = () => {
   return (
     <div id="sobre" className="bg-zinc-300 dark:bg-zinc-900  ">
       <Section>
-        <div className="text-gray-800 dark:text-gray-100 flex flex-wrap justify-between items-center max-w-6xl pb-16  mx-auto sm:px-4 lg:px-6">
+        <div className="text-gray-800 dark:text-gray-100 flex flex-col justify-between items-center max-w-6xl pb-16  mx-auto sm:px-4 lg:px-6">
           <div
             data-aos="zoom-in"
             data-aos-duration="600"
@@ -55,19 +55,6 @@ export const About = () => {
                 >
                   <BsFileEarmarkPdf className="inline text-white  "/>
                 </Button>
-              </div>
-            </div>
-            <div
-              data-aos="fade-left"
-              data-aos-duration="1100"
-              className="flex justify-center items-center my-10 md:my-0 text-lg max-w-lg "
-            >
-              <div className="flex justify-center items-center px-24">
-                <Image
-                  src={ImageABout}
-                  className="w-full h-full rounded-xl rounded-tl-3xl rounded-br-3xl "
-                  priority
-                />
               </div>
             </div>
           </div>
