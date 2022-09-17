@@ -70,8 +70,9 @@ export const ProjetoSection = () => {
                       className="p-3 flex-initial "
                     >
                       <div
-                      
-                        className="flex h-full flex-col justify-between  items-center max-w-xs p-1 rounded-lg shadow-lg vidro bg-opacity-30 hover:scale-105 transition-all duration-300  "
+                        className={`flex h-full flex-col justify-between  items-center max-w-xs p-1 rounded-lg shadow-lg vidro bg-opacity-30 hover:scale-105 transition-all duration-300  ${
+                          index  === 1 ? "scale-105 hover:scale-110" : ""
+                        }`}
                       >
                         <div className="flex flex-col justify-center items-center ">
                           <Image src={item.img} alt="" className="rounded-lg" />

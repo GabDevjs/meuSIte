@@ -19,7 +19,9 @@ export const LogoNavabar = (props: buttonProps) => {
           width={50}
           height={50}
           priority
-        />        
+        />      
+        <h1 className='ml-2 font-bold text-lg'>Flavio Gabriel</h1>
+
       </div>
       <div className='flex dark:hidden items-center justify-between w-full '>
         <Image 
@@ -28,7 +30,9 @@ export const LogoNavabar = (props: buttonProps) => {
           width={50}
           height={50}
           priority
-        />        
+        />   
+
+          <h1 className='ml-2 font-bold text-lg'>Flavio Gabriel</h1>     
       </div>
     </>
   )

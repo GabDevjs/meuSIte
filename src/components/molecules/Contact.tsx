@@ -53,12 +53,16 @@ export const ContactSection = () => {
                 solicitação ou pergunta, não hesite em me chamar.
               </p>
               <div className="flex justify-center items-center py-10">
-                <button className="  custom-btn  btn-11 px-5 rounded-lg py-2 lg:py-3 bg-[#25d366] shadow-xl  hover:bg-secondy-green hover:scale-110 ease-in-out transition-all duration-300">
+                <a 
+                aria-label="Whatsapp"
+                href='https://wa.me/5511981154749?text=Olá,%20Flavio!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços.'
+                target="_blank"
+                className="  custom-btn  btn-11 px-5 rounded-lg py-2 lg:py-3 bg-[#25d366] shadow-xl  hover:bg-secondy-green hover:scale-110 ease-in-out transition-all duration-300">
                   <span>
                     <BsWhatsapp className="inline lg:mr-2 text-lg" />
                   </span>
                   <span className="text-sm lg:text-base">Whatsapp</span>
-                </button>
+                </a>
               </div>
             </div>
           </div>
