@@ -26,7 +26,7 @@ body::-webkit-scrollbar-thumb {
     @apply bg-primary-orange rounded-xl w-1;
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
@@ -79,13 +79,13 @@ body{
 }
 
 .vidro {
-    background: rgba( 255, 255, 255, 0.28 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 13px );
-    -webkit-backdrop-filter: blur( 13px );
-  
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-  }
+    background: rgba(255, 255, 255, 0.28);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(13px);
+    -webkit-backdrop-filter: blur(13px);
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
 
 .btn-11 {
     color: #fff;
@@ -101,7 +101,7 @@ body{
     position: absolute;
     content: '';
     display: inline-block;
-  
+
     left: 0;
     width: 30px;
     height: 100%;
@@ -136,7 +136,7 @@ body{
     position: absolute;
     content: '';
     display: inline-block;
-  
+
     left: 0;
     width: 30px;
     height: 100%;
@@ -178,92 +178,52 @@ body{
     }
 }
 
-.ball-container{
+.ball-container {
     resize: both;
-    
+
 }
 
-.ball1{
-    position:absolute;
+.ball1 {
+    position: absolute;
 
-    box-shadow: inset 10px 10px 10px 10px rgba(0,0,0,0.5);
-    left:0;
-    width:100%;
-    height:100%;
-    background: linear-gradient(#E74C3C,#4A235A);
+    box-shadow: inset 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#E74C3C, #4A235A);
     clip-path: circle(22% at 20% 20%);
     animation: anime 30s linear infinite;
 }
 
-.animete-ball{
+.animete-ball {
     animation: animete 20s linear infinite;
 }
 
-.animete-ball2{
+.animete-ball2 {
     animation: animete2 20s linear infinite;
+    padding: 0.5rem;
 }
 
-.animete-ball3{
+.animete-ball3 {
     animation: animete2 15s linear infinite;
-}
-
-.ball2{
-    position:absolute;
- 
-    right:0;
-    width:100%;
-    height:100%;
-    background: linear-gradient(#2ECC71,#2980B9);
-    
-    animation: anime2 35s linear infinite;
-}
-
-.ball3{
-    position:absolute;
- 
-    right:0;
-    width:100%;
-    height:100%;
-    background: linear-gradient(#2ECC71,#4dbf18);
-    
-    animation: anime3 30s linear infinite;
-}
-
-
-@keyframes anime3 {
-    0%,100%{
-        clip-path: circle(20% at 10% 90%);
-    }
-    50%{
-        clip-path: circle(25% at 5% 100%);
-    }
-}
-
-@keyframes anime2 {
-    0%,100%{
-        clip-path: circle(20% at 90% 60%);
-    }
-    50%{
-        clip-path: circle(20% at 80% 90%);
-    }
-}
-
-@keyframes anime {
-    0%,100%{
-        clip-path: circle(22% at 20% 30%);
-    }
-    50%{
-        clip-path: circle(22% at 40% 20%);
-    }
+    padding: 0.5rem;
 }
 
 
 @keyframes animete {
-   0% {
-      transform: translate(0, 0);
-   }
+    0% {
+        transform: translate(0, 0);
+     
+    }
+   
+    25% {
+        transform: translate(0, 25%);
+    }
     50% {
         transform: translate(60%, 50%);
+    }
+    75% {
+        transform: translate(0, 75%);
     }
     100% {
         transform: translate(0, 0);
@@ -273,17 +233,73 @@ body{
 
 @keyframes animete2 {
     0% {
-       transform: translate(0, 0);
+        transform: translate(0, 0);
     }
-     50% {
-         transform: translate(10%, -50%);
-     }
-     100% {
-         transform: translate(0, 0);
-     }
- }
+
+    50% {
+        transform: translate(10%, -50%);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+
+.ball2 {
+    position: absolute;
+
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#2ECC71, #2980B9);
+
+    animation: anime2 35s linear infinite;
+}
+
+.ball3 {
+    position: absolute;
+
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#2ECC71, #4dbf18);
+
+    animation: anime3 30s linear infinite;
+}
+
+
+@keyframes anime3 {
+    0%, 100% {
+        clip-path: circle(20% at 10% 90%);
+    }
+
+    50% {
+        clip-path: circle(25% at 5% 100%);
+    }
+}
+
+@keyframes anime2 {
+    0%, 100% {
+        clip-path: circle(20% at 90% 60%);
+    }
+
+    50% {
+        clip-path: circle(20% at 80% 90%);
+    }
+}
+
+@keyframes anime {
+    0%, 100% {
+        clip-path: circle(22% at 20% 30%);
+    }
+
+    50% {
+        clip-path: circle(22% at 40% 20%);
+    }
+}
+
 
 /* 
 Test Space Invader 
 */
-

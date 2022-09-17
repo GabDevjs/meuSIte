@@ -8,7 +8,7 @@ export const LogoNavabar = (props: buttonProps) => {
   return (
     <>
       <div className='flex items-center justify-between w-full '>
-       <h2 className='text-2xl uppercase font-semibold'>
+       <h2 className='text-xl uppercase font-semibold'>
         Logo
        </h2>
       </div>

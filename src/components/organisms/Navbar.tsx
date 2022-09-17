@@ -52,18 +52,16 @@ export const Navbar = () => {
         {({ open }) => (
           <>
             <div className="mx-auto vidro rounded-3xl md:rounded-full max-w-6xl px-4 sm:px-6 lg:px-28">
-              <div className="flex h-12 md:h-14 items-center justify-around py-3">
+              <div className="flex h-12 xl:h-14 items-center justify-between py-3">
                 {/* items Navbar */}
 
                 <div className="">
                   <LogoNavabar />
                 </div>
 
-                <div className="hidden  md:flex justify-between ">
+                <div className="hidden  md:flex justify-between  items-center">
                   <ItemsNavbar items={ItemsNavbarOptions} />
-             
-                      <ThemeToggle />
-                  
+                  <ThemeToggle />
                 </div>
 
                 {/* Mobile menu button */}

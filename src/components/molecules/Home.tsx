@@ -18,7 +18,7 @@ export const Home = () => {
   }, []);
 
   return (
-    <header className="bg-backGround bg-opacity-50 backdrop-blur-md h-screen z-10">
+    <header className="bg-backGround bg-opacity-25 backdrop-blur-xl h-screen z-10">
       <div className=" w-full h-full flex justify-center items-center ">
         <div className="max-w-7xl mx-auto sm:px-4 lg:px-6">
           <div className="relative px-4 sm:px-8  mb-10  md:px-10">
@@ -55,21 +55,21 @@ export const Home = () => {
               data-aos-duration="1100"
                               className="flex justify-center flex-col  items-cente text-lg max-w-lg px-10 "
               >
-                <div className="flex relative z-20  rounded-full ring-2 border-4 border-transparent ring-primary-orange justify-center items-center ">
+                <div className="flex relative z-20  rounded-full ring-2 border-4 border-transparent ring-primary-orange text-gray-50 justify-center items-center ">
                   <Image
                     src={ImageABout}
                     className="w-full rounded-full h-full "
                     priority
                   />
-                   <div className="absolute left-0 top-0 flex justify-center items-center rounded-full  p-2 bg-primary-green bg-opacity-80 shadow-2xl border-2 border-secondy-green animete-ball backdrop-blur-xl">
+                   <div className="absolute left-0 top-0 flex justify-center items-center rounded-full   bg-primary-green bg-opacity-80 p-1 border-2 border-secondy-green animete-ball backdrop-blur-xl">
                    <SiNodedotjs className="inline"/>
                   </div>
 
-                  <div className="absolute right-0 bottom-20 flex justify-center items-center rounded-full p-2 bg-primary-blue bg-opacity-80 shadow-2xl border-2 border-secondy-blue animete-ball2 backdrop-blur-xl">
+                  <div className="absolute right-0 bottom-20 flex justify-center items-center rounded-full  bg-primary-blue bg-opacity-80 shadow-2xl border-2 border-secondy-blue animete-ball2 backdrop-blur-xl">
                     <SiTypescript className="inline" />
                   </div>
 
-                  <div className="absolute left-0 bottom-0 flex justify-center items-center rounded-full p-2 bg-gray-500 bg-opacity-80 shadow-2xl border-2 border-gray-600 animete-ball3 backdrop-blur-xl">
+                  <div className="absolute left-0 bottom-0 flex justify-center items-center rounded-full  bg-gray-500 bg-opacity-80 shadow-2xl border-2 border-gray-600 animete-ball3 backdrop-blur-xl">
                     <SiNextdotjs className="inline" />
                   </div>
                 </div>
