@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { BsBehance, BsGithub, BsLinkedin } from "react-icons/bs";
 
 const navigation = {
@@ -40,15 +41,17 @@ export const Footer = () => {
                 
                 className='bg-gray-900 dark:bg-zinc-600 bg-opacity-20 p-3  hover:scale-125 rounded-full group  transition-all duration-300 cursor-pointer'
                 >
+                  <Link href={item.href} target="_blank">
                   <a
                     href={item.href}
-                    className="text-gray-500 dark:text-gray-800
+                    className="text-gray-700 dark:text-gray-300
                     group-hover:text-primary-orange"
-                    target="_blank"
+                    
                   >
                     <span className="sr-only">{item.name}</span>
                     <item.icon className="h-8 w-8" aria-hidden="true" />
                   </a>
+                  </Link>
                 </div>
                   </div>
               ))}

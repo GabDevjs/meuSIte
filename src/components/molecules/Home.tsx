@@ -58,6 +58,7 @@ export const Home = () => {
                 <div className="flex relative z-20  rounded-full ring-2 border-4 border-transparent ring-primary-orange text-gray-50 justify-center items-center ">
                   <Image
                     src={ImageABout}
+                    alt="Flavio Gabriel foto do inicio da pagina"
                     className="w-full rounded-full object-cover "
                     priority
                   />

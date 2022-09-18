@@ -8,8 +8,7 @@ import Banner6 from "../../assets/imgPortifolio/banner6.jpg";
 import Banner7 from "../../assets/imgPortifolio/banner7.jpg";
 import { BsBehance, BsEyeFill, BsGithub } from "react-icons/bs";
 import Image from "next/image";
-
-const ArrayPortifolio4a6 = [];
+import Link from "next/link";
 
 const ArrayPortifolio1a3 = [
   {
@@ -65,13 +64,13 @@ export const ProjetoSection = () => {
                 <div className="flex w-full justify-center sm:justify-evenly flex-wrap ">
                   {ArrayPortifolio1a3.map((item, index) => (
                     <div
-                    key={index}
+                      key={index}
                       data-aos="zoom-in"
                       className="p-3 flex-initial "
                     >
                       <div
                         className={`flex h-full flex-col justify-between  items-center max-w-xs p-1 rounded-lg shadow-lg vidro bg-opacity-30 hover:scale-105 transition-all duration-300  ${
-                          index  === 1 ? "scale-105 hover:scale-110" : ""
+                          index === 1 ? "scale-105 hover:scale-110" : ""
                         }`}
                       >
                         <div className="flex flex-col justify-center items-center ">
@@ -84,27 +83,25 @@ export const ProjetoSection = () => {
                           {item.description}
                         </p>
                         <div className="flex justify-around py-4 items-center w-full">
-                          <a
-                            className="text-2xl hover:bg-gray-100 p-2 rounded-full hover:scale-110  text-gray-100 hover:text-primary-orange transition-all duration-200"
-                            href={item.link}
-                            target="_blank"
-                          >
-                            <BsBehance size={25} />
-                          </a>
-                          <a
-                            className="text-2xl bg-gray-100 hover:bg-transparent p-2 rounded-full hover:scale-125  hover:text-gray-100 text-primary-orange transition-all duration-200"
-                            href={item.link}
-                            target="_blank"
-                          >
+                          <Link href={item.link} target="_blank">
+                            <a className="text-2xl hover:bg-gray-100 p-2 rounded-full hover:scale-110  text-gray-100 hover:text-primary-orange transition-all duration-200">
+                              <BsBehance size={25} />
+                            </a>
+                          </Link>
+                          <div className="text-2xl bg-gray-100 hover:bg-transparent p-2 rounded-full hover:scale-125  hover:text-gray-100 text-primary-orange transition-all duration-200">
                             <BsEyeFill size={30} />
-                          </a>
-                          <a
-                            className="text-2xl hover:bg-gray-100 p-2 rounded-full hover:scale-110  text-gray-100 hover:text-primary-orange transition-all duration-200"
-                            href={item.git}
-                            target="_black"
+                          </div>
+                          <Link
+                          href={item.git}
+                          target="_black"
                           >
-                            <BsGithub size={25} />
-                          </a>
+                            <a
+                              className="text-2xl hover:bg-gray-100 p-2 rounded-full hover:scale-110  text-gray-100 hover:text-primary-orange transition-all duration-200"
+                              
+                            >
+                              <BsGithub size={25} />
+                            </a>
+                          </Link>
                         </div>
                       </div>
                     </div>

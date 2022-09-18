@@ -3,6 +3,7 @@ import ImageABout from "../../assets/PerfilRedesJobbs.jpeg";
 import { Button, Section } from "../atoms";
 import {
   BsBack,
+  BsCalendar,
   BsFileEarmarkPdf,
   BsFillBriefcaseFill,
   BsGraphUp,
@@ -13,6 +14,10 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 import { FaUserAlt } from "react-icons/fa";
 import { MdOutlineDeveloperMode } from "react-icons/md";
+
+import logoMaisVoip from "../../assets/mainvoip.jpg";
+import logoWorkana from "../../assets/workana.jpg";
+import Link from "next/link";
 
 const cv = "/CurrículoFlavioGabrielDEV.pdf";
 
@@ -199,16 +204,18 @@ export const About = () => {
                   </p>
 
                   <div className="flex justify-center  items-center ">
-                    <a
-                      href={cv}
-                      className="bg-primary-orange rounded-lg px-10 py-3 flex justify-between items-center custom-btn btn-12"
-                      target="_blank"
-                    >
-                      <BsFileEarmarkPdf className="inline text-white  " />
-                      <span className="text-white text-sm font-bold">
-                        Baixar CV
-                      </span>
-                    </a>
+                    <Link href={cv}>
+                      <a
+                        
+                        className="bg-primary-orange rounded-lg px-10 py-3 flex justify-between items-center custom-btn btn-12"
+                        target="_blank"
+                      >
+                        <BsFileEarmarkPdf className="inline text-white  " />
+                        <span className="text-white text-sm font-bold">
+                          Baixar CV
+                        </span>
+                      </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -234,7 +241,7 @@ export const About = () => {
                 <div
                   data-aos="zoom-in"
                   data-aos-duration="900"
-                  className="flex justify-center text-sm max-w-lg flex-col space-y-4"
+                  className="flex justify-center text-sm max-w-lg flex-col space-y-2"
                 >
                   <p className="text-center max-w-lg">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -248,63 +255,107 @@ export const About = () => {
                       style={{ width: "1px" }}
                     ></div>
                   </div>
-                  <div className="flex vidro p-4 rounded-lg justify-center flex-col h-full px-6">
-                    <div className="flex py-2 text-sm justify-between items-center">
-                      <div className="flex justify-center items-center">
-                        <a
-                          href="#"
-                          target="_blank"
-                          className="flex justify-center items-center space-x-2 border-b-2 border-transparent hover:border-primary-orange transition-colors duration-300"
-                        >
-                          <BsGraphUp />
-                          <h2>Mais Voip </h2>
-                        </a>
+                  <div className="flex  bg p-4 hover:scale-105 transition-all duration-300 justify-center flex-col h-full ">
+                    <div className="shadow-2xl">
+                      <div className="  bg-zinc-500 text-gray-100 dark:bg-zinc-600 rounded-t-lg py-2  justify-center items-center ">
+                        <div className="flex justify-center items-center space-x-2 text-base  ">
+                          <Image
+                            className="rounded-md"
+                            src={logoMaisVoip}
+                            alt={"logo mais voip"}
+                            width={30}
+                            height={30}
+                            priority
+                          />
+                          <h2>| MaisVoip Serviços de Telecomunicações</h2>
+                        </div>
                       </div>
-                      <div className="flex justify-center items-center ">
-                        00/00/0000 ~ atualamente
-                      </div>
+                      <p className="text-center   bg-zinc-400 dark:bg-zinc-500 rounded-b-lg  px-5 py-5 text-sm">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ullam temporibus dolorem, omnis iusto mollitia impedit
+                        obcaecati vel reprehenderit corporis.
+                        <div className="flex py-4 px-10 justify-around items-center">
+                          <span className="flex justify-center items-center">
+                            <h3 className="font-semibold">De:</h3>
+                            <BsCalendar className="inline mx-2" />
+                            20/06/2022
+                          </span>
+
+                          <span className="flex justify-center items-center">
+                            <h3 className="font-semibold">Ate:</h3>
+                            <BsCalendar className="inline mx-2" />
+                            <h3 className="font-semibold text-primary-orange">
+                              Atualmente!
+                            </h3>
+                          </span>
+                        </div>
+                        <div>
+                          <Link
+                            href="https://www.linkedin.com/company/maisvoip/mycompany/"
+                            target="_blank"
+                            className="bg-[#6dbd06]  rounded-lg px-10 py-3 flex justify-between items-center custom-btn btn-12 hover:scale-105"
+                          >
+                            <span className="text-gray-100 text-sm font-bold">
+                              MaisVoip
+                            </span>
+                          </Link>
+                        </div>
+                      </p>
                     </div>
-                    <p className="text-center    text-xs">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Ullam temporibus dolorem, omnis iusto mollitia impedit
-                      obcaecati vel reprehenderit corporis. Optio. Ullam
-                      temporibus dolorem, omnis iusto mollitia impedit obcaecati
-                      vel reprehenderit corporis. Optio. Ullam temporibus
-                      dolorem, omnis iusto mollitia impedit obcaecati vel
-                      reprehenderit corporis. Optio.
-                    </p>
                   </div>
+
                   <div className="flex justify-center  h-full ">
                     <div
                       className="h-10 dark:bg-zinc-300 bg-opacity-90 bg-zinc-800"
                       style={{ width: "1px" }}
                     ></div>
                   </div>
-                  <div className="flex vidro p-4 rounded-lg justify-center flex-col h-full px-6">
-                    <div className="flex py-2 text-sm justify-between items-center">
-                      <div className="flex justify-center items-center">
-                        <a
-                          href="#"
-                          target="_blank"
-                          className="flex justify-center items-center space-x-2 border-b-2 border-transparent hover:border-primary-orange transition-colors duration-300"
-                        >
-                          <BsGraphUp />
-                          <h2>Mais Voip </h2>
-                        </a>
+
+                  <div className="flex  bg p-4 hover:scale-105 transition-all duration-300 justify-center flex-col h-full ">
+                    <div className="shadow-2xl">
+                      <div className="  bg-zinc-500 text-gray-100 dark:bg-zinc-600 rounded-t-lg py-2  justify-center items-center ">
+                        <div className="flex justify-center items-center space-x-2 text-base  ">
+                          <Image
+                            className="rounded-md"
+                            src={logoWorkana}
+                            alt={"logo workana"}
+                            width={30}
+                            height={30}
+                            priority
+                          />
+                          <h2>Workana | </h2>
+                        </div>
                       </div>
-                      <div className="flex justify-center items-center ">
-                        00/00/0000 ~ atualamente
-                      </div>
+                      <p className="text-center   bg-zinc-400 dark:bg-zinc-500 rounded-b-lg  px-5 py-5 text-sm">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ullam temporibus dolorem, omnis iusto mollitia impedit
+                        obcaecati vel reprehenderit corporis.
+                        <div className="flex py-4 px-10 justify-around items-center">
+                          <span className="flex justify-center items-center">
+                            <h3 className="font-semibold">De:</h3>
+                            <BsCalendar className="inline mx-2" />
+                            00/00/0000
+                          </span>
+
+                          <span className="flex justify-center items-center">
+                            <h3 className="font-semibold">Ate:</h3>
+                            <BsCalendar className="inline mx-2" />
+                            00/00/0000
+                          </span>
+                        </div>
+                        <div>
+                          <Link
+                            href="https://www.linkedin.com/company/maisvoip/mycompany/"
+                            target="_blank"
+                            className="bg-[#4d2d9f] rounded-lg px-10 py-3 flex justify-between items-center custom-btn btn-12"
+                          >
+                            <span className="text-white text-sm font-bold">
+                              MaisVoip
+                            </span>
+                          </Link>
+                        </div>
+                      </p>
                     </div>
-                    <p className="text-center    text-xs">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Ullam temporibus dolorem, omnis iusto mollitia impedit
-                      obcaecati vel reprehenderit corporis. Optio. Ullam
-                      temporibus dolorem, omnis iusto mollitia impedit obcaecati
-                      vel reprehenderit corporis. Optio. Ullam temporibus
-                      dolorem, omnis iusto mollitia impedit obcaecati vel
-                      reprehenderit corporis. Optio.
-                    </p>
                   </div>
                 </div>
               </div>
@@ -344,9 +395,9 @@ export const About = () => {
                               className="group  hover:scale-110
                               transition ease-in-out duration-500  px-4 block w-full overflow-hidden rounded-lg bg-transparent"
                             >
-                              <img
+                              <Image
                                 src={file.source}
-                                alt=""
+                                alt={file.title}
                                 className="pointer-events-none object-cover rounded-lg  w-full"
                               />
                             </div>
@@ -371,9 +422,7 @@ export const About = () => {
               key={index}
               className="flex justify-center flex-col max-w-xs text-gray-800  dark:text-gray-300 dark:bg-zinc-800 bg-zinc-300 rounded-lg shadow-xl items-center space-y-2 mx-4  mb-5 hover:scale-105 transition ease-in-out duration-300"
             >
-              <div
-              data-aos="zoom-in"
-              >
+              <div data-aos="zoom-in">
                 <div className="flex flex-col px-2 justify-around bg-primary-orange rounded-t-lg py-5 w-full  items-center text-base md:text-lg  text-gray-200">
                   <span>
                     <service.icon />

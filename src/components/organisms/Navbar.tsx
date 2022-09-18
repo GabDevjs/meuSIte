@@ -8,6 +8,7 @@ import {
   BsWhatsapp,
 } from "react-icons/bs";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 const ItemsNavbarOptions = [
   {
@@ -95,7 +96,7 @@ export const Navbar = () => {
                             className="flex justify-center items-center h-full w-full py-2 px-3"
                           >
                             <Disclosure.Button>
-                              <a
+                              <Link
                                 href={item.href}
                                 className="text-base xl:text-base  font-medium hover:text-primary-orange hover:scale-110 transition-all flex justify-between items-center cursor-pointer"
                                 onClick={() => {
@@ -106,7 +107,7 @@ export const Navbar = () => {
                                   <item.icon />
                                 </span>
                                 {item.name}
-                              </a>
+                              </Link>
                             </Disclosure.Button>
                           </span>
                         );
@@ -116,12 +117,17 @@ export const Navbar = () => {
                       <ThemeToggle />
                     </div>
                     <div className="flex justify-center items-center pb-3">
-                      <button className="  custom-btn  btn-11 px-16 rounded-lg mt-3 py-4 bg-[#25d366] shadow-xl  hover:bg-secondy-green hover:scale-110 ease-in-out transition-all duration-300">
+                      <Link
+                        aria-label="Whatsapp"
+                        href="https://wa.me/5511981154749?text=Olá,%20Flavio!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços."
+                        target="_blank"
+                        className="  custom-btn  btn-11 px-5 rounded-lg py-2 lg:py-3 bg-[#25d366] shadow-xl  hover:bg-secondy-green hover:scale-110 ease-in-out transition-all duration-300"
+                      >
                         <span>
-                          <BsWhatsapp className="inline mr-2 lg:mr-2 text-lg" />
+                          <BsWhatsapp className="inline lg:mr-2 text-lg" />
                         </span>
-                        <span>Entre em Contato</span>
-                      </button>
+                        <span className="text-sm lg:text-base">Whatsapp</span>
+                      </Link>
                     </div>
                   </div>
                 </Disclosure.Panel>
