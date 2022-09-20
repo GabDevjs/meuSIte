@@ -31,7 +31,7 @@ export const ContactSection = () => {
               data-aos-duration="1100"
               className="flex justify-center items-center  text-lg max-w-xl "
             >
-              <div className="flex justify-center drop-shadow-2xl shadow-zinc-900 items-center py-16 px-14 sm:px-28 xl:px-32
+              <div className="flex justify-center drop-shadow-2xl shadow-zinc-900 dark:shadow-zinc-100 items-center py-16 px-14 sm:px-28 xl:px-32
                ">
                 <Image
                   src={ImageWhatsAppPixel}

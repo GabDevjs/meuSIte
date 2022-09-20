@@ -154,7 +154,7 @@ export const About = () => {
     >
       <section className="flex  justify-center h-full w-full py-5 flex-col md:flex-row ">
        <div className=" shadow-2xl shadow-zinc-400 dark:shadow-zinc-600 rounded-xl flex justify-center ">
-       <div className="lg:text-center flex justify-center md:justify-start dark:bg-zinc-600 border-l border-b border-t border-gray-500 border-opacity-30 dark:border-zinc-400  bg-zinc-400 rounded-tl-xl md:flex-col md:space-y-4  rounded-bl-none rounded-tr-xl md:rounded-tr-none md:rounded-bl-xl py-1 md:py-14 md:pl-5 px-2  ">
+       <div className="lg:text-center flex justify-center md:justify-start dark:bg-zinc-600 border-l border-b border-t border-gray-500 border-opacity-30 dark:border-zinc-500  bg-zinc-400 rounded-tl-xl md:flex-col md:space-y-4  rounded-bl-none rounded-tr-xl md:rounded-tr-none md:rounded-bl-xl py-1 md:py-14 md:pl-5 px-2  ">
           {itemsABoutBar.map((item, index) => {
             return (
               <div
@@ -190,7 +190,7 @@ export const About = () => {
           })}
         </div>
 
-        <div className="text-gray-800  shadow-white border-r border-b border-t border-gray-500 border-opacity-30 dark:border-zinc-400  z-10 bg-zinc-300 bg-opacity-90 dark:bg-zinc-800 dark:text-gray-100 flex flex-col justify-between items-center py-10 md:px-32 md:rounded-tr-xl rounded-bl-xl md:rounded-bl-none rounded-br-xl  ">
+        <div className="text-gray-800  shadow-white border-r border-b border-t border-gray-500 border-opacity-30 dark:border-zinc-500  z-10 bg-zinc-300 bg-opacity-90 dark:bg-zinc-800 dark:text-gray-100 flex flex-col justify-between items-center py-10 md:px-32 md:rounded-tr-xl rounded-bl-xl md:rounded-bl-none rounded-br-xl  ">
           {itemAbout == "0" && (
             <>
               <div

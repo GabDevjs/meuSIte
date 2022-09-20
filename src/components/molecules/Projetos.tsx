@@ -66,7 +66,7 @@ export const ProjetoSection = () => {
                     <div
                       key={index}
                       data-aos="zoom-in"
-                      className="p-3 flex-initial "
+                      className="p-3 flex-initial cursor-default "
                     >
                       <div
                         className={`flex h-full flex-col justify-between  items-center max-w-xs p-1 rounded-lg shadow-lg vidro bg-opacity-30 hover:scale-105 transition-all duration-300  ${
