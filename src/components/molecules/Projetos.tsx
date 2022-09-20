@@ -70,7 +70,7 @@ export const ProjetoSection = () => {
                     >
                       <div
                         className={`flex h-full flex-col justify-between  items-center max-w-xs p-1 rounded-lg shadow-lg vidro bg-opacity-30 hover:scale-105 transition-all duration-300  ${
-                          index === 1 ? "scale-105 hover:scale-110" : ""
+                          index === 1 ? "lg:scale-105 lg:hover:scale-110" : ""
                         }`}
                       >
                         <div className="flex flex-col justify-center items-center ">
@@ -83,20 +83,24 @@ export const ProjetoSection = () => {
                           {item.description}
                         </p>
                         <div className="flex justify-around py-4 items-center w-full">
-                          <Link href={item.link} target="_blank">
-                            <a className="text-2xl hover:bg-gray-100 p-2 rounded-full hover:scale-110  text-gray-100 hover:text-primary-orange transition-all duration-200">
+                          <Link href={item.link} >
+                            <a className="text-2xl hover:bg-gray-100 p-2 rounded-full hover:scale-110  text-gray-100 hover:text-primary-orange transition-all duration-200"
+                            target="_blank"
+                            >
                               <BsBehance size={25} />
                             </a>
                           </Link>
-                          <div className="text-2xl bg-gray-100 hover:bg-transparent p-2 rounded-full hover:scale-125  hover:text-gray-100 text-primary-orange transition-all duration-200">
+                          <div className="text-2xl bg-gray-100 hover:bg-transparent p-2 rounded-full hover:scale-125  hover:text-gray-100 text-primary-orange transition-all duration-200"
+                          
+                          >
                             <BsEyeFill size={30} />
                           </div>
                           <Link
                           href={item.git}
-                          target="_black"
                           >
                             <a
                               className="text-2xl hover:bg-gray-100 p-2 rounded-full hover:scale-110  text-gray-100 hover:text-primary-orange transition-all duration-200"
+                              target="_black"
                               
                             >
                               <BsGithub size={25} />

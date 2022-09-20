@@ -2,6 +2,7 @@ import Image from "next/image";
 import ImageABout from "../../assets/PerfilRedesJobbs.jpeg";
 import { Button, Section } from "../atoms";
 import {
+  BsArrowsFullscreen,
   BsBack,
   BsCalendar,
   BsFileEarmarkPdf,
@@ -44,62 +45,76 @@ const files = [
     title: "Javascript",
     source:
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg",
+    porcentagem: "w-[90%]",
   },
+
   {
     title: "Html",
     source:
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg",
+    porcentagem: "w-[99%]",
   },
   {
     title: "Css",
     source:
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg",
+    porcentagem: "w-[98%]",
   },
 
   {
     title: "Next",
     source:
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg",
+    porcentagem: "w-[93%]",
   },
   {
     title: "React",
     source:
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
+    porcentagem: "w-[95%]",
   },
   {
     title: "vue",
     source:
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg",
+    porcentagem: "w-[45%]",
   },
   {
     title: "Git",
     source:
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-plain-wordmark.svg",
+
+    porcentagem: "w-[78%]",
   },
   {
     title: "Npm",
     source:
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/npm/npm-original-wordmark.svg",
+    porcentagem: "w-[96%]",
   },
   {
     title: "Yarn",
     source:
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/yarn/yarn-original-wordmark.svg",
+    porcentagem: "w-[97%]",
   },
   {
     title: "Adonis",
     source:
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/adonisjs/adonisjs-original.svg",
+    porcentagem: "w-[78%]",
   },
   {
     title: "Node",
     source:
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
+    porcentagem: "w-[88%]",
   },
   {
     title: "Mysql",
     source:
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-plain-wordmark.svg",
+    porcentagem: "w-[86%]",
   },
 ];
 
@@ -139,7 +154,7 @@ export const About = () => {
               <div
                 key={index}
                 data-aos="zoom-in"
-                className="h-10 group flex justify-center  cursor-pointer text-zinc-800 dark:text-gray-100 text-sm font-bold pl-2 pr-4"
+                className="h-10 group flex justify-center cursor-pointer text-zinc-800 dark:text-gray-100 text-sm font-bold pl-2 pr-4"
                 onClick={() => setItemAbout(item.type)}
               >
                 <a className="flex z-20 justify-start items-center">
@@ -149,8 +164,8 @@ export const About = () => {
                   </h3>
                 </a>
                 <div
-                  className={` hidden md:inline pl-2 pr-4 rounded-l-lg  absolute w-32  group-hover:translate-x-0 transition-transform text-gray-800 bg-zinc-300 duration-500 dark:bg-zinc-800  h-10 ${
-                    itemAbout == item.type ? "translate-x-0" : "translate-x-44"
+                  className={` hidden md:inline pl-2 pr-4 rounded-l-lg  absolute w-36  group-hover:translate-x-5 transition-transform text-gray-800 bg-zinc-300 duration-500 dark:bg-zinc-800  h-10 ${
+                    itemAbout == item.type ? "translate-x-5" : "translate-x-36"
                   }`}
                 ></div>
                 <div
@@ -163,7 +178,7 @@ export const About = () => {
           })}
         </div>
 
-        <div className="text-gray-800 bg-zinc-300 bg-opacity-90 dark:bg-zinc-800 dark:text-gray-100 flex flex-col justify-between items-center py-10 md:px-32 md:rounded-tr-xl rounded-bl-xl md:rounded-bl-none rounded-br-xl  ">
+        <div className="text-gray-800 z-10 bg-zinc-300 bg-opacity-90 dark:bg-zinc-800 dark:text-gray-100 flex flex-col justify-between items-center py-10 md:px-32 md:rounded-tr-xl rounded-bl-xl md:rounded-bl-none rounded-br-xl  ">
           {itemAbout == "0" && (
             <>
               <div
@@ -186,7 +201,7 @@ export const About = () => {
                   data-aos-duration="900"
                   className="flex justify-center text-sm max-w-lg flex-col space-y-8"
                 >
-                  <p className="text-center max-w-lg">
+                  <p className="text-center md:text-justify max-w-lg leading-relaxed">
                     Sou um dedicado estudante de desenvolvimento, no início do
                     que pretendo ser uma longa e bem-sucedida carreira, pela
                     qual sou apaixonado, possuo 1 ano de experiência em
@@ -206,12 +221,11 @@ export const About = () => {
                   <div className="flex justify-center  items-center ">
                     <Link href={cv}>
                       <a
-                        
-                        className="bg-primary-orange rounded-lg px-10 py-3 flex justify-between items-center custom-btn btn-12"
+                        className="bg-primary-orange rounded-lg px-14 py-3 flex justify-between items-center custom-btn btn-12"
                         target="_blank"
                       >
-                        <BsFileEarmarkPdf className="inline text-white  " />
-                        <span className="text-white text-sm font-bold">
+                        <BsFileEarmarkPdf className="inline mr-1 text-white  " />
+                        <span className="text-white inline text-sm font-bold">
                           Baixar CV
                         </span>
                       </a>
@@ -224,140 +238,157 @@ export const About = () => {
           {itemAbout == "1" && (
             <>
               <div
-                data-aos="zoom-in"
-                data-aos-duration="600"
-                className="mx-auto max-w-xl pb-8 px-2  sm:px-4 lg:px-6"
+                className="mx-auto  pb-8   sm:px-4 lg:px-6"
               >
-                <div className="text-center">
+                <div className="text-center w-full">
                   <h2 className="text-lg font-semibold text-primary-orange">
                     Sobre
                   </h2>
-                  <p className=" text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
+                  <p className=" text-2xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
                     Historia
                   </p>
                 </div>
-              </div>
-              <div className="mx-3 flex justify-center flex-wrap items-center space-y-10">
-                <div
-                  data-aos="zoom-in"
-                  data-aos-duration="900"
-                  className="flex justify-center text-sm max-w-lg flex-col space-y-2"
-                >
-                  <p className="text-center max-w-lg">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Ullam temporibus dolorem, omnis iusto mollitia impedit
-                    obcaecati vel reprehenderit corporis. Optio.
-                  </p>
+                
+                  <div
+                    className="flex justify-center text-sm w-full flex-col space-y-2 "
+                  >
+                    <p 
+                      data-aos="zoom-in"
+                      data-aos-duration="900"
+                    className="text-center md:text-justify leading-relaxed px-2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ullam temporibus dolorem, omnis iusto mollitia impedit
+                      obcaecati vel reprehenderit corporis. Optio.
+                    </p>
 
-                  <div className="flex justify-center  h-full ">
                     <div
-                      className="h-10 dark:bg-zinc-300 bg-opacity-90 bg-zinc-800"
-                      style={{ width: "1px" }}
-                    ></div>
-                  </div>
-                  <div className="flex  bg p-4 hover:scale-105 transition-all duration-300 justify-center flex-col h-full ">
-                    <div className="shadow-2xl">
-                      <div className="  bg-zinc-500 text-gray-100 dark:bg-zinc-600 rounded-t-lg py-2  justify-center items-center ">
-                        <div className="flex justify-center items-center space-x-2 text-base  ">
-                          <Image
-                            className="rounded-md"
-                            src={logoMaisVoip}
-                            alt={"logo mais voip"}
-                            width={30}
-                            height={30}
-                            priority
-                          />
-                          <h2>| MaisVoip Serviços de Telecomunicações</h2>
-                        </div>
-                      </div>
-                      <p className="text-center   bg-zinc-400 dark:bg-zinc-500 rounded-b-lg  px-5 py-5 text-sm">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ullam temporibus dolorem, omnis iusto mollitia impedit
-                        obcaecati vel reprehenderit corporis.
-                        <div className="flex py-4 px-10 justify-around items-center">
-                          <span className="flex justify-center items-center">
-                            <h3 className="font-semibold">De:</h3>
-                            <BsCalendar className="inline mx-2" />
-                            20/06/2022
-                          </span>
+                      data-aos="zoom-in"
+                      data-aos-duration="900"
+                    className="flex justify-center h-full ">
+                      <div
+                        className="h-10 dark:bg-zinc-300 bg-opacity-90 bg-zinc-800"
+                        style={{ width: "1px" }}
+                      ></div>
+                    </div>
 
-                          <span className="flex justify-center items-center">
-                            <h3 className="font-semibold">Ate:</h3>
-                            <BsCalendar className="inline mx-2" />
-                            <h3 className="font-semibold text-primary-orange">
-                              Atualmente!
-                            </h3>
-                          </span>
+                    <div
+                      data-aos="zoom-in"
+                      data-aos-duration="900"
+                    className="flex w-full sm:w-auto hover:scale-105 transition-all duration-300 justify-center flex-col h-full ">
+                      <div className="shadow-2xl">
+                        <div className=" md:px-4  bg-zinc-500 text-gray-100 dark:bg-zinc-600 rounded-t-lg py-2  justify-center items-center ">
+                          <div className="flex justify-center flex-col md:flex-row items-center  text-base  ">
+                            <Image
+                              className="rounded-md"
+                              src={logoMaisVoip}
+                              alt={"logo mais voip"}
+                              width={40}
+                              height={40}
+                              priority
+                            />
+                            <h2 className="text-center md:text-clip md:ml-2">
+                              {" "}
+                              MaisVoip Serviços de Telecomunicações
+                            </h2>
+                          </div>
                         </div>
-                        <div>
-                          <Link
-                            href="https://www.linkedin.com/company/maisvoip/mycompany/"
-                            target="_blank"
-                            className="bg-[#6dbd06]  rounded-lg px-10 py-3 flex justify-between items-center custom-btn btn-12 hover:scale-105"
-                          >
-                            <span className="text-gray-100 text-sm font-bold">
-                              MaisVoip
+                        <p className="text-center flex items-center flex-col  bg-zinc-400 dark:bg-zinc-500 rounded-b-lg  leading-relaxed md:px-5 py-2 md:py-5 text-sm">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ullam temporibus dolorem, omnis iusto mollitia
+                          impedit obcaecati vel reprehenderit corporis.
+                          <div className="flex w-full py-4 md:px-10 justify-around items-center">
+                            <span className="flex justify-center items-center">
+                              <h3 className="font-semibold">De:</h3>
+                              <BsCalendar className="inline mx-2" />
+                              20/06/2022
                             </span>
-                          </Link>
+
+                            <span className="flex justify-center items-center">
+                              <h3 className="font-semibold">Ate:</h3>
+                              <BsCalendar className="inline mx-2" />
+                              <h3 className="font-semibold text-primary-orange">
+                                Atualmente!
+                              </h3>
+                            </span>
+                          </div>
+                          <div>
+                            <Link href="https://www.linkedin.com/company/maisvoip/mycompany/">
+                              <a
+                                target="_blank"
+                                className="bg-[#6dbd06]  rounded-lg px-16 md:w-auto md:px-10 py-3 flex justify-between items-center custom-btn btn-12 hover:scale-105"
+                              >
+                                <span className="text-gray-100 text-sm font-bold">
+                                  MaisVoip
+                                </span>
+                              </a>
+                            </Link>
+                          </div>
+                        </p>
+                      </div>
+                    </div>
+
+                    <div
+                      data-aos="zoom-in"
+                      data-aos-duration="900"
+                    className="flex justify-center mx-2 h-full ">
+                      <div
+                        className="h-10 dark:bg-zinc-300 bg-opacity-90 bg-zinc-800"
+                        style={{ width: "1px" }}
+                      ></div>
+                    </div>
+
+                    <div 
+                      data-aos="zoom-in"
+                      data-aos-duration="900"
+                    className="flex  bg hover:scale-105 transition-all duration-300 justify-center flex-col h-full ">
+                      <div className="shadow-2xl">
+                        <div className="flex  bg-zinc-500 text-gray-100 dark:bg-zinc-600 rounded-t-lg py-2  justify-center items-center ">
+                          <div className="flex flex-col md:flex-row justify-center items-center text-base  ">
+                            <Image
+                              className="rounded-md"
+                              src={logoWorkana}
+                              alt={"logo workana"}
+                              width={40}
+                              height={40}
+                              priority
+                            />
+                            <h2 className="md:ml-2">Workana </h2>
+                          </div>
                         </div>
-                      </p>
+                        <p className="text-center flex items-center flex-col   bg-zinc-400 dark:bg-zinc-500 rounded-b-lg  px-5 py-5 text-sm leading-relaxed">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ullam temporibus dolorem, omnis iusto mollitia
+                          impedit obcaecati vel reprehenderit corporis.
+                          <div className="flex w-full py-4 md:px-10 justify-around items-center">
+                            <span className="flex justify-center items-center">
+                              <h3 className="font-semibold">De:</h3>
+                              <BsCalendar className="inline mx-2" />
+                              00/00/0000
+                            </span>
+
+                            <span className="flex justify-center items-center">
+                              <h3 className="font-semibold">Ate:</h3>
+                              <BsCalendar className="inline mx-2" />
+                              00/00/0000
+                            </span>
+                          </div>
+                          <div>
+                            <Link href="https://www.linkedin.com/company/maisvoip/mycompany/">
+                              <a
+                                target="_blank"
+                                className="bg-[#4d2d9f] rounded-lg px-10 py-3 flex justify-between items-center custom-btn btn-12 hover:scale-105 transition-all duration-200"
+                              >
+                                <span className="text-white text-sm font-bold">
+                                  workana
+                                </span>
+                              </a>
+                            </Link>
+                          </div>
+                        </p>
+                      </div>
                     </div>
                   </div>
-
-                  <div className="flex justify-center  h-full ">
-                    <div
-                      className="h-10 dark:bg-zinc-300 bg-opacity-90 bg-zinc-800"
-                      style={{ width: "1px" }}
-                    ></div>
-                  </div>
-
-                  <div className="flex  bg p-4 hover:scale-105 transition-all duration-300 justify-center flex-col h-full ">
-                    <div className="shadow-2xl">
-                      <div className="  bg-zinc-500 text-gray-100 dark:bg-zinc-600 rounded-t-lg py-2  justify-center items-center ">
-                        <div className="flex justify-center items-center space-x-2 text-base  ">
-                          <Image
-                            className="rounded-md"
-                            src={logoWorkana}
-                            alt={"logo workana"}
-                            width={30}
-                            height={30}
-                            priority
-                          />
-                          <h2>Workana | </h2>
-                        </div>
-                      </div>
-                      <p className="text-center   bg-zinc-400 dark:bg-zinc-500 rounded-b-lg  px-5 py-5 text-sm">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ullam temporibus dolorem, omnis iusto mollitia impedit
-                        obcaecati vel reprehenderit corporis.
-                        <div className="flex py-4 px-10 justify-around items-center">
-                          <span className="flex justify-center items-center">
-                            <h3 className="font-semibold">De:</h3>
-                            <BsCalendar className="inline mx-2" />
-                            00/00/0000
-                          </span>
-
-                          <span className="flex justify-center items-center">
-                            <h3 className="font-semibold">Ate:</h3>
-                            <BsCalendar className="inline mx-2" />
-                            00/00/0000
-                          </span>
-                        </div>
-                        <div>
-                          <Link
-                            href="https://www.linkedin.com/company/maisvoip/mycompany/"
-                            target="_blank"
-                            className="bg-[#4d2d9f] rounded-lg px-10 py-3 flex justify-between items-center custom-btn btn-12"
-                          >
-                            <span className="text-white text-sm font-bold">
-                              MaisVoip
-                            </span>
-                          </Link>
-                        </div>
-                      </p>
-                    </div>
-                  </div>
-                </div>
+                
               </div>
             </>
           )}
@@ -366,7 +397,7 @@ export const About = () => {
               <div
                 data-aos="zoom-in"
                 data-aos-duration="600"
-                className="mx-auto max-w-xl pb-16 px-2  sm:px-4 lg:px-6"
+                className="mx-auto max-w-3xl pb-6 px-2  sm:px-4 lg:px-2"
               >
                 <div className="text-center">
                   <h2 className="text-lg font-semibold text-primary-orange">
@@ -377,37 +408,97 @@ export const About = () => {
                   </p>
                 </div>
               </div>
-              <div className="mx-3 flex justify-center flex-wrap items-center space-y-10">
+              <div className=" flex justify-center flex-wrap items-center space-y-10">
                 <div
-                  data-aos="zoom-in"
                   data-aos-duration="900"
-                  className="flex justify-center text-sm max-w-lg flex-col space-y-8"
+                  className="flex justify-center text-sm flex-col space-y-2"
                 >
                   <div className="text-center max-w-lg">
-                    <ul
-                      role="list"
-                      className="grid grid-cols-2 gap-x-4 gap-y-12 sm:grid-cols-3 sm:gap-x-6  xl:gap-x-8  "
-                    >
-                      {files.map((file) => (
-                        <li key={file.source}>
-                          <div data-aos="zoom-in" className="relative ">
-                            <div
-                              className="group  hover:scale-110
-                              transition ease-in-out duration-500  px-4 block w-full overflow-hidden rounded-lg bg-transparent"
-                            >
-                              <Image
-                                src={file.source}
-                                alt={file.title}
-                                className="pointer-events-none object-cover rounded-lg  w-full"
-                              />
-                            </div>
-                            <p className="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-800 dark:text-gray-200">
-                              {file.title}
-                            </p>
-                          </div>
-                        </li>
-                      ))}
-                    </ul>
+                    <div className="-mx-4   border border-gray-300  overflow-hidden shadow ring-1 ring-black ring-opacity-5 rounded-xl  ">
+                      <table className="min-w-full divide-y divide-gray-300 ">
+                        <thead className="bg-gray-50 dark:bg-zinc-600">
+                          <tr>
+                            <th
+                              scope="col"
+                              className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider"
+                            ></th>
+                            <th
+                              scope="col"
+                              colSpan={4}
+                              className="px-6 py-3 text-left text-xs font-medium  uppercase tracking-wider"
+                            ></th>
+                            <th
+                              scope="col"
+                              className="px-6 hidden py-3 text-left text-xs font-medium  uppercase tracking-wider lg:table-cell"
+                            ></th>
+                          </tr>
+                        </thead>
+
+                        <tbody className="divide-y w-full divide-gray-400 bg-gray-200 dark:bg-zinc-700 dark:bg-opacity-30">
+                          {files.map((file, index) => (
+                            <tr key={index}>
+                              <td
+                                data-aos="zoom-in"
+                                className="w-full flex  flex-col items-stretch justify-between py-5 pl-5 pr-4 text-xl font-medium text-gray-900  "
+                              >
+                                <div className="flex group justify-center items-center">
+                                  <div
+                                    style={{
+                                      backgroundImage: `url(${file.source})`,
+                                      backgroundSize: "contain",
+                                      backgroundOrigin: "border-box",
+                                      backgroundRepeat: "no-repeat",
+                                      backgroundPosition: "center",
+                                    }}
+                                    className="w-20 h-20 z-10  md:w-30 md:h-30 self-center rounded-lg flex justify-center items-center group-hover:scale-125 transition-all duration-300  "
+                                  >
+                                    <div className="flex justify-center items-center w-full h-full bg-gray "></div>
+                                  </div>
+                                  <div
+                                    style={{
+                                      backgroundSize: "contain",
+                                      backgroundOrigin: "border-box",
+                                      backgroundRepeat: "no-repeat",
+                                      backgroundPosition: "center",
+                                    }}
+                                    className={`w-24 h-24 bg-zinc-600 dark:bg-zinc-500  bg-opacity-40 absolute z-0  md:w-30 md:h-30 self-center rounded-lg flex justify-center items-center  transition-all duration-500 ${
+                                      index % 2 == 0
+                                        ? "group-hover:-rotate-12  "
+                                        : "group-hover:rotate-12 "
+                                    }`}
+                                  >
+                                    <div className="flex justify-center items-center w-full h-full bg-gray "></div>
+                                  </div>
+                                </div>
+                                <dl className="font-semibold  text-gray-600 dark:text-gray-200  md:hidden">
+                                  <dt className="sr-only">Title</dt>
+                                  <dd className="mt-1 truncate   ">
+                                    {file.title}
+                                  </dd>
+                                </dl>
+                              </td>
+                              <td
+                                colSpan={4}
+                                className="   px-3 py-4 text-base fon text-gray-600 dark:text-gray-200 table-cell"
+                              >
+                                <div className="min-w-[8rem] lg:min-w-[16rem] bg-gray-200 rounded-full dark:bg-zinc-900">
+                                  <div
+                                    data-aos="fade-right"
+                                    className={`   bg-primary-orange w-[%] h-2.5 rounded-full  ${file.porcentagem}`}
+                                    style={{
+                                      width: `${file.porcentagem}%`,
+                                    }}
+                                  ></div>
+                                </div>
+                              </td>
+                              <td className="hidden px-3 py-4 text-lg font-normal text-gray-600 dark:text-gray-200 lg:table-cell">
+                                {file.title}
+                              </td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -429,8 +520,8 @@ export const About = () => {
                   </span>
                   <h2 className=" font-semibold"> {service.title}</h2>
                 </div>
-                <div className="p-4 text-center ">
-                  <p className="text-sm">{service.description}</p>
+                <div className="p-6 text-justify ">
+                  <p className="text-sm md:text-base">{service.description}</p>
                 </div>
               </div>
             </div>

@@ -16,7 +16,7 @@ export const ItemsNavbar = (props: ItemsNavbarProps) => {
             key={index}
             className="flex justify-center items-center h-full w-full py-2 px-3"
           >
-            <Link  href={item.href}>
+            <Link  href={item.href}  >
             <a className="text-xs xl:text-base  font-medium hover:text-primary-orange hover:scale-110 transition-all flex justify-between items-center cursor-pointer" >
               <span className="mr-1">
               < item.icon  />

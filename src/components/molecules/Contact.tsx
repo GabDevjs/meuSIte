@@ -31,7 +31,7 @@ export const ContactSection = () => {
               data-aos-duration="1100"
               className="flex justify-center items-center  text-lg max-w-xl "
             >
-              <div className="flex justify-center items-center p-14 sm:p-28 xl:p-32
+              <div className="flex justify-center items-center py-16 px-14 sm:px-28 xl:px-32
                ">
                 <Image
                   src={ImageWhatsAppPixel}
@@ -49,20 +49,22 @@ export const ContactSection = () => {
               <div className="flex justify-center text-2xl font-semibold">
                 <h1> Whatsapp</h1>
               </div>
-              <p className="text-center ">
+              <p className="text-center leading-relaxed ">
                 Estou interessado em oportunidades freelance – especialmente
                 projetos ambiciosos ou grandes. No entanto, se você tiver outra
                 solicitação ou pergunta, não hesite em me chamar.
               </p>
               <div className="flex justify-center items-center py-10">
                 <Link
-                aria-label="Whatsapp"
+               
                 href='https://wa.me/5511981154749?text=Olá,%20Flavio!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços.'
-                target="_blank"
                 >
                 <a
+                 aria-label="Whatsapp"
+                className="  custom-btn  btn-11 px-5 rounded-lg py-2 lg:py-3 bg-[#25d366] shadow-xl  hover:bg-secondy-green hover:scale-110 ease-in-out transition-all duration-300"
+                target="_blank"
                 
-                className="  custom-btn  btn-11 px-5 rounded-lg py-2 lg:py-3 bg-[#25d366] shadow-xl  hover:bg-secondy-green hover:scale-110 ease-in-out transition-all duration-300">
+                >
                   <span>
                     <BsWhatsapp className="inline lg:mr-2 text-lg" />
                   </span>

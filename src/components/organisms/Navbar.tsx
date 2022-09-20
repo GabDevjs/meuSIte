@@ -10,9 +10,11 @@ import {
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
+
+
 const ItemsNavbarOptions = [
   {
-    name: "Sobre",
+    name: "Sobre",  
     icon: BsInfoCircleFill,
     href: "#sobre",
   },
@@ -30,12 +32,12 @@ const ItemsNavbarOptions = [
 
 export const Navbar = () => {
   const [navPosition, setNavPosition] = useState(
-    "-translate-y-80 md:-translate-y-28"
+    "-translate-y-80 md:-translate-y-20"
   );
   const listenScrollEvent = () => {
     window.scrollY > 20
       ? setNavPosition("translateY-y-0")
-      : setNavPosition("-translate-y-[28rem] md:-translate-y-28");
+      : setNavPosition("-translate-y-[28rem] md:-translate-y-20");
   };
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
@@ -48,7 +50,7 @@ export const Navbar = () => {
     <>
       <Disclosure
         as="nav"
-        className={` mx-2  mt-2  fixed top-0 right-0 left-0  z-50 transition-transform duration-500 ${navPosition}`}
+        className={` mx-2  mt-2  fixed top-0 right-0 left-0  z-50 transition-transform duration-500 md:duration-700 ${navPosition}`}
       >
         {({ open }) => (
           <>
@@ -96,8 +98,10 @@ export const Navbar = () => {
                             className="flex justify-center items-center h-full w-full py-2 px-3"
                           >
                             <Disclosure.Button>
-                              <Link
+                            <Link 
                                 href={item.href}
+                            >
+                            <a
                                 className="text-base xl:text-base  font-medium hover:text-primary-orange hover:scale-110 transition-all flex justify-between items-center cursor-pointer"
                                 onClick={() => {
                                   open = !open;
@@ -107,7 +111,8 @@ export const Navbar = () => {
                                   <item.icon />
                                 </span>
                                 {item.name}
-                              </Link>
+                              </a>
+                            </Link>
                             </Disclosure.Button>
                           </span>
                         );
@@ -118,15 +123,21 @@ export const Navbar = () => {
                     </div>
                     <div className="flex justify-center items-center pb-3">
                       <Link
-                        aria-label="Whatsapp"
                         href="https://wa.me/5511981154749?text=Olá,%20Flavio!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços."
                         target="_blank"
+                        aria-label="Whatsapp"
+                      
+                        
+                      >
+                      <a
+                      
                         className="  custom-btn  btn-11 px-5 rounded-lg py-2 lg:py-3 bg-[#25d366] shadow-xl  hover:bg-secondy-green hover:scale-110 ease-in-out transition-all duration-300"
                       >
                         <span>
                           <BsWhatsapp className="inline lg:mr-2 text-lg" />
                         </span>
                         <span className="text-sm lg:text-base">Whatsapp</span>
+                      </a>
                       </Link>
                     </div>
                   </div>
