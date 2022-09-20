@@ -40,13 +40,13 @@ export const Footer = () => {
                 key={index}>
                   <div
                     
-                    className="bg-gray-900 dark:bg-zinc-600 bg-opacity-20 p-3  hover:scale-125 rounded-full group  transition-all duration-300 cursor-pointer"
+                    className="bg-gray-900 dark:bg-zinc-600 bg-opacity-20 p-3  hover:scale-125 rounded-full group shadow-xl shadow-zinc-400 dark:shadow-zinc-700 flex justify-center flex-col max-w-xs text-gray-800 border border-gray-500 border-opacity-30 dark:hover:border-primary-orange hover:border-primary-orange hover:shadow-primary-orange dark:hover:shadow-primary-orange dark:border-zinc-400 transition-all duration-300 cursor-pointer"
                   >
                     <Link href={item.href}>
                       <a
                         href={item.href}
                         className="text-gray-700 dark:text-gray-300
-                    group-hover:text-primary-orange"
+                    group-hover:text-primary-orange  "
 
                     target="_blank">
                         <span className="sr-only">{item.name}</span>

@@ -36,7 +36,7 @@ export const Navbar = () => {
   );
   const listenScrollEvent = () => {
     window.scrollY > 20
-      ? setNavPosition("translateY-y-0")
+      ? setNavPosition("translate-y-0")
       : setNavPosition("-translate-y-[28rem] md:-translate-y-20");
   };
   useEffect(() => {
