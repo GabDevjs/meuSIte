@@ -20,7 +20,7 @@ export const LogoNavabar = (props: buttonProps) => {
           height={50}
           priority
         />      
-        <h1 className='ml-2 font-bold text-lg'>Flavio Gabriel</h1>
+        <h1 className='hidden md:inline-block ml-2 font-bold text-lg'>Flavio Gabriel</h1>
 
       </div>
       <div className='flex dark:hidden items-center justify-between w-full '>
@@ -32,7 +32,7 @@ export const LogoNavabar = (props: buttonProps) => {
           priority
         />   
 
-          <h1 className='ml-2 font-bold text-lg'>Flavio Gabriel</h1>     
+          <h1 className='hidden md:inline-block ml-2 font-bold text-lg'>Flavio Gabriel</h1>     
       </div>
     </>
   )
