@@ -49,7 +49,7 @@ export const ContactSection = () => {
               <div className="flex justify-center text-2xl font-semibold">
                 <h1> Whatsapp</h1>
               </div>
-              <p className="text-center leading-relaxed ">
+              <p className="text-center text-xs px-5 sm:px-0 sm:text-base leading-relaxed ">
                 Estou interessado em oportunidades freelance – especialmente
                 projetos ambiciosos ou grandes. No entanto, se você tiver outra
                 solicitação ou pergunta, não hesite em me chamar.
