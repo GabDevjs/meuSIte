@@ -8,7 +8,6 @@ export const Layout = (props: LayoutProps) => {
 
   return (
     <>
-      <Navbar />
       <main>{children}</main>
       <Footer />
     </>
