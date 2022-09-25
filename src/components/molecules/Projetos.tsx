@@ -12,29 +12,32 @@ import Link from "next/link";
 
 const ArrayPortifolio1a3 = [
   {
-    title: "Landing page - Pizzaria",
+    title: "Site institucional - Pizzaria",
     description:
       "this is a landing page project made to be the page of a fictitious pizzeria. this page is made with html, css and javascript made to be responsive and modern and intuitive for the user.",
     img: Banner5,
     link: "https://www.behance.net/gallery/134377753/Landing-page-Pizzaria",
     git: "https://github.com/GabDevjs/LandingPage-Pizzaria",
+    linkLocal: "/exemplos/pizzaria/index.html",
   },
 
   {
-    title: "Landing page - PetShop WebSite",
+    title: "Site institucional - PetShop",
     description:
       "this is an html, scss and javascript landing page. made to promote a petshop and pet products store with delivivery, a website made to be modern and responsive to give the best experience for the user.",
     img: Banner4,
     link: "https://www.behance.net/gallery/134314129/Landing-page-PetShop-WebSite",
     git: "https://github.com/GabDevjs/Landing-page---PetShop-WebSite",
+    linkLocal: "/exemplos/pet/index.html",
   },
   {
-    title: "LandingPage - TravelWebsite",
+    title: "Site institucional - Travel",
     description:
       "this project is a landing page to promote a travel site, made with scss/sass html and javascript made with a modern and responsive design that tries to be the best experience for the user.",
     img: Banner7,
     link: "https://www.behance.net/gallery/134362077/Landing-Page-TravelWebsite",
     git: "https://github.com/GabDevjs/LandingPage-TravelWebsite",
+    linkLocal: "/exemplos/travel/index.html",
   },
 ];
 
@@ -89,11 +92,13 @@ export const ProjetoSection = () => {
                               <BsBehance size={25} />
                             </a>
                           </Link>
-                          <div className="text-2xl bg-gray-100 hover:bg-transparent p-2 rounded-full hover:scale-125  hover:text-gray-100 text-primary-orange transition-all duration-200"
-                          
+                          <Link href={item.linkLocal}>
+                          <a className="text-2xl bg-gray-100 hover:bg-transparent p-2 rounded-full hover:scale-150  hover:text-gray-100 text-primary-orange transition-all duration-300"
+                          target="_blank"
                           >
                             <BsEyeFill size={30} />
-                          </div>
+                          </a>
+                          </Link>
                           <Link
                           href={item.git}
                           >
