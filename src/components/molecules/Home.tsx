@@ -32,9 +32,9 @@ export const Home = () => {
                 <div className=" w-full text-center">
                   <div 
                   data-aos="zoom-in"
-                  className="text-2xl lg:text-5xl text-gray-50 text-center  font-semibold leading-snug  ">
+                  className="text-2xl lg:text-4xl text-gray-50 text-center  font-semibold leading-snug  ">
                     <p>Olá, meu nome é</p>
-                    <h1 className=" text-4xl lg:text-6xl">
+                    <h1 className=" text-4xl lg:text-5xl">
                       <span className="text-primary-orange">
                         Flavio Gabriel
                       </span>
