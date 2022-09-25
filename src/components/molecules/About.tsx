@@ -65,6 +65,19 @@ const skills = {
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg",
     porcentagem: "w-[98%]",
   },
+  git: {
+    title: "Git",
+    source:
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-plain-wordmark.svg",
+
+    porcentagem: "w-[78%]",
+  },
+  npm: {
+    title: "Npm",
+    source:
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/npm/npm-original-wordmark.svg",
+    porcentagem: "w-[96%]",
+  },
   next: {
     title: "Next",
     source:
@@ -83,25 +96,7 @@ const skills = {
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg",
     porcentagem: "w-[45%]",
   },
-  git: {
-    title: "Git",
-    source:
-      "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-plain-wordmark.svg",
-
-    porcentagem: "w-[78%]",
-  },
-  npm: {
-    title: "Npm",
-    source:
-      "https://raw.githubusercontent.com/devicons/devicon/master/icons/npm/npm-original-wordmark.svg",
-    porcentagem: "w-[96%]",
-  },
-  yarn: {
-    title: "Yarn",
-    source:
-      "https://raw.githubusercontent.com/devicons/devicon/master/icons/yarn/yarn-original-wordmark.svg",
-    porcentagem: "w-[97%]",
-  },
+  
   adonis: {
     title: "Adonis",
     source:
@@ -231,7 +226,7 @@ export const About = () => {
                     >
                       <Link href={cv}>
                         <a
-                          className="bg-primary-orange rounded-lg px-14 py-3 flex justify-between items-center custom-btn btn-12"
+                          className="bg-primary-orange rounded-lg px-14 py-3 flex justify-between items-center custom-btn btn-12 hover:scale-110"
                           target="_blank"
                         >
                           <BsFileEarmarkPdf className="inline mr-1 text-white  " />
