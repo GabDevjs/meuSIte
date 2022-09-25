@@ -155,14 +155,11 @@ export const About = () => {
       <section className="flex  justify-center h-full w-full py-5  ">
         <div className=" shadow-2xl shadow-zinc-400 dark:shadow-zinc-600 rounded-xl flex justify-center flex-col md:flex-row">
           <div className="lg:text-center flex justify-center md:justify-start dark:bg-zinc-600 border-l border-r md:border-r-0 md:border-b border-t border-gray-500 border-opacity-30 dark:border-zinc-500  bg-zinc-400 rounded-tl-xl md:flex-col md:space-y-4  rounded-bl-none rounded-tr-xl md:rounded-tr-none md:rounded-bl-xl py-1 md:pl-5 px-2 md:pt-10 ">
-           
-
             {itemsABoutBar.map((item, index) => {
               return (
                 <div
                   key={index}
                   data-aos="zoom-in"
-                  data-aos-duration="1000"
                   className="h-10 group flex justify-center cursor-pointer text-zinc-800 dark:text-gray-100 text-sm font-bold pl-2 pr-4"
                   onClick={() => setItemAbout(item.type)}
                 >
@@ -196,7 +193,6 @@ export const About = () => {
               <>
                 <div
                   data-aos="zoom-in"
-                  data-aos-duration="1000"
                   className="mx-auto min-w-xl pb-16 px-2  sm:px-4 lg:px-6"
                 >
                   <div className="text-center">
@@ -211,7 +207,6 @@ export const About = () => {
                 <div className="mx-3 flex justify-center flex-wrap items-center space-y-10">
                   <div
                     data-aos="zoom-in"
-                    data-aos-duration="1200"
                     className="flex justify-center text-sm max-w-lg flex-col space-y-8"
                   >
                     <p className="text-center md:text-justify max-w-lg leading-relaxed">
@@ -233,7 +228,6 @@ export const About = () => {
 
                     <div
                       data-aos="zoom-in"
-                      data-aos-duration="1300"
                       className="flex justify-center  items-center "
                     >
                       <Link href={cv}>
@@ -277,7 +271,6 @@ export const About = () => {
 
                     <div
                       data-aos="zoom-in"
-                      data-aos-duration="1000"
                       className="flex justify-center h-full "
                     >
                       <div
@@ -288,11 +281,10 @@ export const About = () => {
 
                     <div
                       data-aos="zoom-in"
-                      data-aos-duration="1200"
                       className="flex  sm:w-auto hover:scale-105 transition-all duration-300 justify-center flex-col h-full "
                     >
-                      <div className="shadow-2xl">
-                        <div className=" md:px-4  bg-zinc-500 text-gray-100 dark:bg-zinc-600 rounded-t-lg py-2  justify-center items-center ">
+                      <div className="shadow-2xl rounded-lg hover:scale-105 transition-all duration-300 border border-zinc-400 ">
+                        <div className=" md:px-4  bg-zinc-400 text-gray-100 dark:bg-zinc-600 rounded-t-lg py-2  justify-center items-center ">
                           <div className="flex justify-center flex-col md:flex-row items-center  text-base  ">
                             <Image
                               className="rounded-md"
@@ -308,7 +300,7 @@ export const About = () => {
                             </h2>
                           </div>
                         </div>
-                        <p className="text-center flex items-center flex-col  bg-zinc-400 dark:bg-zinc-500 rounded-b-lg  leading-relaxed md:px-5 py-2 md:py-5 text-sm">
+                        <p className="text-center flex items-center flex-col  bg-zinc-200 dark:bg-zinc-500 rounded-b-lg  leading-relaxed md:px-5 py-2 md:py-5 text-sm">
                           Lorem ipsum dolor sit amet consectetur adipisicing
                           elit. Ullam temporibus dolorem, omnis iusto mollitia
                           impedit obcaecati vel reprehenderit corporis.
@@ -345,7 +337,6 @@ export const About = () => {
 
                     <div
                       data-aos="zoom-in"
-                      data-aos-duration="1000"
                       className="flex justify-center mx-2 h-full "
                     >
                       <div
@@ -356,11 +347,10 @@ export const About = () => {
 
                     <div
                       data-aos="zoom-in"
-                      data-aos-duration="1200"
                       className="flex  bg hover:scale-105 transition-all duration-300 justify-center flex-col h-full "
                     >
-                      <div className="shadow-2xl">
-                        <div className="flex  bg-zinc-500 text-gray-100 dark:bg-zinc-600 rounded-t-lg py-2  justify-center items-center ">
+                      <div className="shadow-2xl rounded-lg hover:scale-105 transition-all duration-300 border border-zinc-400">
+                        <div className="flex  bg-zinc-400 text-gray-100 dark:bg-zinc-600 rounded-t-lg py-2  justify-center items-center ">
                           <div className="flex flex-col md:flex-row justify-center items-center text-base  ">
                             <Image
                               className="rounded-md"
@@ -373,7 +363,7 @@ export const About = () => {
                             <h2 className="md:ml-2">Workana </h2>
                           </div>
                         </div>
-                        <p className="text-center flex items-center flex-col   bg-zinc-400 dark:bg-zinc-500 rounded-b-lg  px-5 py-5 text-sm leading-relaxed">
+                        <p className="text-center flex items-center flex-col   bg-zinc-200 dark:bg-zinc-500 rounded-b-lg  px-5 py-5 text-sm leading-relaxed">
                           Lorem ipsum dolor sit amet consectetur adipisicing
                           elit. Ullam temporibus dolorem, omnis iusto mollitia
                           impedit obcaecati vel reprehenderit corporis.
@@ -411,12 +401,8 @@ export const About = () => {
             )}
             {itemAbout == "2" && (
               <>
-                <div className="mx-auto max-w-xs md:max-w-xl lg:max-w-2xl pb-8   sm:px-4 lg:px-6">
-                  <div
-                    data-aos="zoom-in"
-                    data-aos-duration="1000"
-                    className="text-center"
-                  >
+                <div className="mx-auto  max-w-xs md:max-w-xl lg:max-w-2xl pb-8   sm:px-4 lg:px-6">
+                  <div data-aos="zoom-in" className="text-center">
                     <h2 className="text-lg font-semibold text-primary-orange">
                       Sobre
                     </h2>
@@ -425,100 +411,96 @@ export const About = () => {
                     </p>
                   </div>
                 </div>
-                <div className=" flex justify-center flex-wrap items-center ">
-                  <div
-                    data-aos="zoom-in"
-                    data-aos-duration="1200"
-                    className="flex text-sm flex-col space-y-2"
-                  >
-                    <div className="text-center ">
-                      <div className="-mx-4   border border-gray-300  overflow-hidden shadow ring-1 ring-black ring-opacity-5 rounded-xl  ">
-                        <table className="w-full divide-y divide-gray-300 ">
-                          <thead className="bg-gray-50 dark:bg-zinc-600">
-                            <tr className="text-left min-w-fulltext-xs font-medium text-gray-500 uppercase tracking-wider">
-                              <th
-                                scope="col"
-                                className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider"
-                              ></th>
-                              <th
-                                scope="col"
-                                colSpan={4}
-                                className="px-6 py-3 text-left text-xs font-medium  uppercase tracking-wider"
-                              ></th>
-                              <th
-                                scope="col"
-                                className="px-6 hidden py-3 text-left text-xs font-medium  uppercase tracking-wider lg:table-cell"
-                              ></th>
-                            </tr>
-                          </thead>
+                <div data-aos="zoom-in" className=" ">
+                  <div className="  max-h-[40rem] border border-gray-300 customTrack overflow-x-hidden shadow ring-1 ring-black ring-opacity-5 rounded-xl  ">
+                    <table className="w-full  divide-y divide-gray-300 ">
+                      <thead className="bg-gray-50 dark:bg-zinc-600">
+                        <tr className="text-left  min-w-fulltext-xs font-medium text-gray-500 uppercase tracking-wider">
+                          <th
+                            scope="col"
+                            className="px-6 hidden py-3 text-left text-xs font-medium  uppercase tracking-wider lg:table-cell"
+                          ></th>
+                          <th
+                            scope="col"
+                            colSpan={4}
+                            className="px-6 py-3 text-left text-xs font-medium  uppercase tracking-wider"
+                          ></th>
+                          <th
+                            scope="col"
+                            className="px-6 hidden py-3 text-left text-xs font-medium  uppercase tracking-wider lg:table-cell"
+                          ></th>
+                        </tr>
+                      </thead>
 
-                          <tbody className="divide-y w-full divide-gray-400 bg-gray-200 dark:bg-zinc-700 dark:bg-opacity-30">
-                            {files.map((file, index) => (
-                              <tr key={index}>
-                                <td
-                                  data-aos="zoom-in"
-                                  className="w-full flex  flex-col items-stretch justify-between py-5 pl-5 pr-4 text-xl font-medium text-gray-900  "
+                      <tbody className="   divide-y w-full divide-gray-400 bg-gray-200  dark:bg-zinc-700 dark:bg-opacity-30">
+                        {files.map((file, index) => (
+                          <tr
+                            key={index}
+                            className="hover:bg-zinc-400 group  transition-all duration-200 hover:text-gray-100 "
+                          >
+                            <td
+                              data-aos="zoom-in"
+                              className="w-full flex  flex-col items-stretch justify-between py-5 pl-5 pr-4 text-xl font-medium    "
+                            >
+                              <div className=" flex group justify-center items-center py-4 px-10">
+                                <div
+                                  style={{
+                                    backgroundImage: `url(${file.source})`,
+                                    backgroundSize: "contain",
+                                    backgroundOrigin: "border-box",
+                                    backgroundRepeat: "no-repeat",
+                                    backgroundPosition: "center",
+                                  }}
+                                  className="w-20 z-50  h-20  md:w-28 md:h-28 self-center rounded-lg flex justify-center items-center group-hover:scale-125 transition-all duration-300  "
                                 >
-                                  <div className=" flex group justify-center items-center">
-                                    <div
-                                      style={{
-                                        backgroundImage: `url(${file.source})`,
-                                        backgroundSize: "contain",
-                                        backgroundOrigin: "border-box",
-                                        backgroundRepeat: "no-repeat",
-                                        backgroundPosition: "center",
-                                      }}
-                                      className="w-20 z-50  h-20  md:w-30 md:h-30 self-center rounded-lg flex justify-center items-center group-hover:scale-125 transition-all duration-300  "
-                                    >
-                                      <div className="flex justify-center items-center w-full h-full bg-gray "></div>
-                                    </div>
-                                    <div
-                                      style={{
-                                        backgroundSize: "contain",
-                                        backgroundOrigin: "border-box",
-                                        backgroundRepeat: "no-repeat",
-                                        backgroundPosition: "center",
-                                      }}
-                                      className={`w-24 z-40 shadow-2xl  h-24 bg-zinc-900 dark:bg-zinc-500  bg-opacity-40 absolute   md:w-30 md:h-30 self-center rounded-lg flex justify-center items-center  transition-all duration-500 ${
-                                        index % 2 == 0
-                                          ? "group-hover:-rotate-12  "
-                                          : "group-hover:rotate-12 "
-                                      }`}
-                                    >
-                                      <div className="flex justify-center items-center w-full h-full bg-gray "></div>
-                                    </div>
-                                  </div>
-                                  <dl className="font-semibold  text-gray-600 dark:text-gray-200  md:hidden">
-                                    <dt className="sr-only">Title</dt>
-                                    <dd className="mt-1 truncate   ">
-                                      {file.title}
-                                    </dd>
-                                  </dl>
-                                </td>
-                                <td
-                                  colSpan={4}
-                                  className="   px-3 py-4 text-base  text-gray-600 dark:text-gray-200 table-cell"
+                                  <div className="flex justify-center items-center w-full h-full bg-gray "></div>
+                                </div>
+                                <div
+                                  style={{
+                                    backgroundSize: "contain",
+                                    backgroundOrigin: "border-box",
+                                    backgroundRepeat: "no-repeat",
+                                    backgroundPosition: "center",
+                                  }}
+                                  className={`w-24 z-40 shadow-2xl  h-24 bg-zinc-900 dark:bg-zinc-500  bg-opacity-20 absolute   md:w-36 md:h-36 self-center rounded-lg flex justify-center items-center  transition-all duration-500 ${
+                                    index % 2 == 0
+                                      ? "group-hover:-rotate-12  "
+                                      : "group-hover:rotate-12 "
+                                  }`}
                                 >
-                                  <div className="min-w-[8rem] shadow-xl z-0 lg:min-w-[16rem] bg-gray-800 rounded-full dark:bg-zinc-900">
-                                    <div
-                                      data-aos="fade-right"
-                                      data-aos-duration="1000"
-                                      className={` z-0  bg-primary-orange w-[%] h-2.5 rounded-full  ${file.porcentagem}`}
-                                      style={{
-                                        width: `${file.porcentagem}%`,
-                                      }}
-                                    ></div>
-                                  </div>
-                                </td>
-                                <td className="hidden px-3 py-4 text-lg font-normal text-gray-600 dark:text-gray-200 lg:table-cell">
+                                  <div className="flex justify-center items-center w-full h-full bg-gray "></div>
+                                </div>
+                              </div>
+                              <dl className="font-semibold   md:hidden">
+                                <dt className="sr-only">Title</dt>
+                                <dd className="mt-1 truncate   ">
                                   {file.title}
-                                </td>
-                              </tr>
-                            ))}
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
+                                </dd>
+                              </dl>
+                            </td>
+                            <td
+                              colSpan={4}
+                              className="   px-3 py-4 text-base  text-gray-600table-cell"
+                            >
+                              <div className="flex justify-center items-center text-primary-orange">{
+                              file.porcentagem 
+                              }</div>
+                              <div className="min-w-[8rem] shadow-xl z-0 lg:min-w-[16rem] bg-gray-700 rounded-full dark:bg-zinc-900">
+                                <div
+                                  data-aos="fade-right"
+                                  data-aos-duration="1000"
+                                  className={` z-0  bg-primary-orange  h-2.5 rounded-full  ${file.porcentagem}`}
+                                  
+                                ></div>
+                              </div>
+                            </td>
+                            <td className="hidden px-8 py-4 text-lg font-semibold leading-relaxed  lg:table-cell">
+                              {file.title}
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </>
@@ -535,17 +517,16 @@ export const About = () => {
             >
               <div
                 data-aos="zoom-in"
-                data-aos-duration="1000"
                 className="shadow-2xl shadow-zinc-400 dark:shadow-zinc-800 flex justify-center flex-col max-w-xs text-gray-800 border border-gray-500 border-opacity-30 dark:border-zinc-400  dark:text-gray-300 dark:bg-zinc-800 bg-zinc-300 rounded-lg  items-center space-y-2 mx-4  mb-5"
               >
-                <div className="flex flex-col px-2 justify-around bg-primary-orange rounded-t-lg py-5 w-full  items-center text-base md:text-lg  text-gray-200">
+                <div className="flex flex-col px-2 justify-around bg-primary-orange rounded-t-lg py-5 w-full  items-center text-xs md:text-base  text-gray-200">
                   <span>
                     <service.icon />
                   </span>
                   <h2 className=" font-semibold"> {service.title}</h2>
                 </div>
-                <div className="p-6 text-justify ">
-                  <p className="text-sm md:text-base">{service.description}</p>
+                <div className="p-6 text-center ">
+                  <p className="text-xs  md:text-sm">{service.description}</p>
                 </div>
               </div>
             </div>
