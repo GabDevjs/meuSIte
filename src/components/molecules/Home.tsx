@@ -32,7 +32,6 @@ export const Home = () => {
                 <div className=" w-full text-center">
                   <div 
                   data-aos="zoom-in"
-                  data-aos-duration="1200"
                   className="text-2xl lg:text-5xl text-gray-50 text-center  font-semibold leading-snug  ">
                     <p>Olá, meu nome é</p>
                     <h1 className=" text-4xl lg:text-6xl">
@@ -60,7 +59,6 @@ export const Home = () => {
               </div>
               <div
                   data-aos="zoom-in"
-                  data-aos-duration="1300"
                 className="flex justify-center flex-col  items-cente text-lg max-w-lg px-10 sm:px-14  lg:px-16 "
               >
                 <div className="flex relative z-20  rounded-full ring-2 border-4 border-transparent ring-primary-orange text-gray-50 justify-center items-center ">
