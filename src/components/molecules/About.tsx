@@ -153,7 +153,7 @@ export const About = () => {
       className="bg-zinc-200 dark:bg-zinc-900 py-10 px-2 sm:px-4 lg:px-6 "
     >
       <section className="flex  justify-center h-full w-full py-5  ">
-        <div className=" shadow-2xl shadow-zinc-400 dark:shadow-zinc-600 rounded-xl flex justify-center flex-col md:flex-row">
+        <div className="w-full sm:w-auto shadow-2xl shadow-zinc-400 dark:shadow-zinc-600 rounded-xl flex justify-center flex-col md:flex-row">
           <div className="lg:text-center flex justify-center md:justify-start dark:bg-zinc-600 border-l border-r md:border-r-0 md:border-b border-t border-gray-500 border-opacity-30 dark:border-zinc-500  bg-zinc-400 rounded-tl-xl md:flex-col md:space-y-4  rounded-bl-none rounded-tr-xl md:rounded-tr-none md:rounded-bl-xl py-1 md:pl-5 px-2 md:pt-10 ">
             {itemsABoutBar.map((item, index) => {
               return (
@@ -248,7 +248,7 @@ export const About = () => {
             )}
             {itemAbout == "1" && (
               <>
-                <div className="mx-auto max-w-xs md:max-w-lg lg:max-w-xl pb-8   sm:px-4 lg:px-6">
+                <div className="md:mx-auto w-full  md:max-w-lg lg:max-w-xl pb-8   sm:px-4 lg:px-6">
                   <div className="text-center w-full">
                     <h2 className="text-lg font-semibold text-primary-orange">
                       Sobre
@@ -281,10 +281,10 @@ export const About = () => {
 
                     <div
                       data-aos="zoom-in"
-                      className="flex  sm:w-auto hover:scale-105 transition-all duration-300 justify-center flex-col h-full "
+                      className="flex  sm:w-auto hover:scale-105 transition-all duration-300 justify-center flex-col w-full "
                     >
-                      <div className="shadow-2xl rounded-lg hover:scale-105 transition-all duration-300 border border-zinc-400 ">
-                        <div className=" md:px-4  bg-zinc-400 text-gray-100 dark:bg-zinc-600 rounded-t-lg py-2  justify-center items-center ">
+                      <div className="shadow-2xl md:flex-col  sm:rounded-xl hover:scale-105 transition-all duration-300 border border-zinc-400 ">
+                        <div className=" md:px-4  bg-zinc-400 text-gray-100 dark:bg-zinc-600 rounded-tl-xl md:flex-col md:space-y-4  rounded-bl-none rounded-tr-xl  py-2  justify-center items-center ">
                           <div className="flex justify-center flex-col md:flex-row items-center  text-base  ">
                             <Image
                               className="rounded-md"
@@ -300,11 +300,11 @@ export const About = () => {
                             </h2>
                           </div>
                         </div>
-                        <p className="text-center flex items-center flex-col  bg-zinc-200 dark:bg-zinc-500 rounded-b-lg  leading-relaxed md:px-5 py-2 md:py-5 text-sm">
+                        <p className="text-center flex items-center flex-col  bg-zinc-200 dark:bg-zinc-500 sm:rounded-b-xl w-full leading-relaxed px-5 py-2 md:py-5 text-sm">
                           Lorem ipsum dolor sit amet consectetur adipisicing
                           elit. Ullam temporibus dolorem, omnis iusto mollitia
                           impedit obcaecati vel reprehenderit corporis.
-                          <div className="flex w-full py-4 md:px-10 justify-around items-center">
+                          <div className="flex flex-col md:flex-row w-full py-4 md:px-10 justify-around items-center">
                             <span className="flex justify-center items-center">
                               <h3 className="font-semibold">De:</h3>
                               <BsCalendar className="inline mx-2" />
@@ -313,7 +313,7 @@ export const About = () => {
 
                             <span className="flex justify-center items-center">
                               <h3 className="font-semibold">Ate:</h3>
-                              <BsCalendar className="inline mx-2" />
+                              <BsCalendar className="inline md:mx-2" />
                               <h3 className="font-semibold text-primary-orange">
                                 Atualmente!
                               </h3>
@@ -347,27 +347,27 @@ export const About = () => {
 
                     <div
                       data-aos="zoom-in"
-                      className="flex  bg hover:scale-105 transition-all duration-300 justify-center flex-col h-full "
+                      className="flex  bg hover:scale-105 transition-all duration-300 justify-center flex-col w-full "
                     >
-                      <div className="shadow-2xl rounded-lg hover:scale-105 transition-all duration-300 border border-zinc-400">
-                        <div className="flex  bg-zinc-400 text-gray-100 dark:bg-zinc-600 rounded-t-lg py-2  justify-center items-center ">
+                     <div className="shadow-2xl md:flex-col  sm:rounded-xl hover:scale-105 transition-all duration-300 border border-zinc-400 ">
+                      <div className=" md:px-4  bg-zinc-400 text-gray-100 dark:bg-zinc-600 rounded-tl-xl md:flex-col md:space-y-4  rounded-bl-none rounded-tr-xl  py-2  justify-center items-center ">
                           <div className="flex flex-col md:flex-row justify-center items-center text-base  ">
                             <Image
                               className="rounded-md"
                               src={logoWorkana}
                               alt={"logo workana"}
-                              width={40}
-                              height={40}
+                              width={30}
+                              height={30}
                               priority
                             />
                             <h2 className="md:ml-2">Workana </h2>
                           </div>
                         </div>
-                        <p className="text-center flex items-center flex-col   bg-zinc-200 dark:bg-zinc-500 rounded-b-lg  px-5 py-5 text-sm leading-relaxed">
+                        <p className="text-center flex items-center flex-col  bg-zinc-200 dark:bg-zinc-500 sm:rounded-b-xl w-full leading-relaxed px-5 py-2 md:py-5 text-sm">
                           Lorem ipsum dolor sit amet consectetur adipisicing
                           elit. Ullam temporibus dolorem, omnis iusto mollitia
                           impedit obcaecati vel reprehenderit corporis.
-                          <div className="flex w-full py-4 md:px-10 justify-around items-center">
+                          <div className="flex flex-col md:flex-row w-full py-4 md:px-10 justify-around items-center">
                             <span className="flex justify-center items-center">
                               <h3 className="font-semibold">De:</h3>
                               <BsCalendar className="inline mx-2" />
@@ -412,13 +412,13 @@ export const About = () => {
                   </div>
                 </div>
                 <div data-aos="zoom-in" className=" ">
-                  <div className="  max-h-[40rem] border border-gray-300 customTrack overflow-x-hidden shadow ring-1 ring-black ring-opacity-5 rounded-xl  ">
+                  <div className="w-full md:max-h-[40rem] border border-gray-300 customTrack overflow-x-hidden shadow ring-1 ring-black ring-opacity-5 rounded-xl  ">
                     <table className="w-full  divide-y divide-gray-300 ">
                       <thead className="bg-gray-50 dark:bg-zinc-600">
-                        <tr className="text-left  min-w-fulltext-xs font-medium text-gray-500 uppercase tracking-wider">
+                        <tr className="text-left  min-w-full text-xs font-medium text-gray-500 uppercase tracking-wider">
                           <th
                             scope="col"
-                            className="px-6 hidden py-3 text-left text-xs font-medium  uppercase tracking-wider lg:table-cell"
+                            className="md:px-6 hidden py-3 text-left text-xs font-medium  uppercase tracking-wider lg:table-cell"
                           ></th>
                           <th
                             scope="col"
@@ -442,7 +442,7 @@ export const About = () => {
                               data-aos="zoom-in"
                               className="w-full flex  flex-col items-stretch justify-between py-5 pl-5 pr-4 text-xl font-medium    "
                             >
-                              <div className=" flex group justify-center items-center py-4 px-10">
+                              <div className=" flex group justify-center items-center py-4 px-4 sm:px-10">
                                 <div
                                   style={{
                                     backgroundImage: `url(${file.source})`,
@@ -451,7 +451,7 @@ export const About = () => {
                                     backgroundRepeat: "no-repeat",
                                     backgroundPosition: "center",
                                   }}
-                                  className="w-20 z-50  h-20  md:w-28 md:h-28 self-center rounded-lg flex justify-center items-center group-hover:scale-125 transition-all duration-300  "
+                                  className="w-16 z-50  h-16  md:w-28 md:h-28 self-center rounded-lg flex justify-center items-center group-hover:scale-125 transition-all duration-300  "
                                 >
                                   <div className="flex justify-center items-center w-full h-full bg-gray "></div>
                                 </div>
@@ -480,12 +480,12 @@ export const About = () => {
                             </td>
                             <td
                               colSpan={4}
-                              className="   px-3 py-4 text-base  text-gray-600table-cell"
+                              className="  px-3 py-4 text-base  text-gray-600table-cell"
                             >
                               <div className="flex justify-center items-center text-primary-orange">{
                               file.porcentagem 
                               }</div>
-                              <div className="min-w-[8rem] shadow-xl z-0 lg:min-w-[16rem] bg-gray-700 rounded-full dark:bg-zinc-900">
+                              <div className="sm:min-w-[8rem] shadow-xl z-0 lg:min-w-[16rem] bg-gray-700 rounded-full dark:bg-zinc-900">
                                 <div
                                   data-aos="fade-right"
                                   data-aos-duration="1000"
@@ -508,7 +508,7 @@ export const About = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section> 
         <div className="flex justify-center items-center  py-10  flex-wrap ">
           {services.map((service, index) => (
             <div
@@ -517,7 +517,7 @@ export const About = () => {
             >
               <div
                 data-aos="zoom-in"
-                className="shadow-2xl shadow-zinc-400 dark:shadow-zinc-800 flex justify-center flex-col max-w-xs text-gray-800 border border-gray-500 border-opacity-30 dark:border-zinc-400  dark:text-gray-300 dark:bg-zinc-800 bg-zinc-300 rounded-lg  items-center space-y-2 mx-4  mb-5"
+                className="shadow-xl sm:shadow-2xl shadow-zinc-400 dark:shadow-zinc-700 flex justify-center flex-col max-w-xs text-gray-800 border border-gray-500 border-opacity-30 dark:border-zinc-400  dark:text-gray-300 dark:bg-zinc-800 bg-zinc-300 rounded-lg  items-center space-y-2 mx-4  mb-10 sm:mb-6"
               >
                 <div className="flex flex-col px-2 justify-around bg-primary-orange rounded-t-lg py-5 w-full  items-center text-xs md:text-base  text-gray-200">
                   <span>
