@@ -50,11 +50,11 @@ export const Navbar = () => {
     <>
       <Disclosure
         as="nav"
-        className={` mx-2  mt-2  fixed top-0 right-0 left-0  z-50 transition-transform duration-500 md:duration-700 ${navPosition}`}
+        className={` mx-5  mt-2  fixed top-0 right-0 left-0  z-50 transition-transform duration-500 md:duration-700 ${navPosition}`}
       >
         {({ open }) => (
           <>
-            <div className="mx-auto vidro rounded-3xl md:rounded-full max-w-6xl px-4 sm:px-6 lg:px-28">
+            <div className="mx-auto vidro rounded-3xl md:rounded-full max-w-6xl px-6 sm:px-6 lg:px-28">
               <div className="flex h-12 xl:h-14 items-center justify-between py-3">
                 {/* items Navbar */}
 
