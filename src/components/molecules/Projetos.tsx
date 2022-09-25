@@ -46,7 +46,6 @@ export const ProjetoSection = () => {
           <div className="text-white flex flex-col justify-center items-center max-w-7xl pb-16  mx-auto sm:px-6 lg:px-8">
             <div
               data-aos="zoom-in"
-              data-aos-duration="600"
               className="mx-auto max-w-7xl py-8 pb-10 px-4  sm:px-6 lg:px-8"
             >
               <div className="text-center">
@@ -70,7 +69,7 @@ export const ProjetoSection = () => {
                     >
                       <div
                         className={`flex h-full flex-col justify-between  items-center max-w-xs p-1 rounded-lg shadow-lg vidro bg-opacity-30 hover:scale-105 transition-all duration-300  ${
-                          index === 1 ? "lg:scale-105 lg:hover:scale-110" : ""
+                          index === 1 ? "min-h-[20rem]" : ""
                         }`}
                       >
                         <div className="flex flex-col justify-center items-center ">
@@ -79,7 +78,7 @@ export const ProjetoSection = () => {
                         <h2 className="mb-6 mt-2 font-semibold text-gray-200">
                           {item.title}
                         </h2>
-                        <p className="text-gray-300 text-center">
+                        <p className="text-gray-300 text-sm text-center">
                           {item.description}
                         </p>
                         <div className="flex justify-around py-4 items-center w-full">

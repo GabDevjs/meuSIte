@@ -28,7 +28,21 @@ body::-webkit-scrollbar-thumb {
 
 body {
     overflow-x: hidden;
+    font-family: 'Poppins', monospace;
 }
+
+
+.customTrack::-webkit-scrollbar {
+    @apply w-1 my-2;
+  }
+  
+  .customTrack::-webkit-scrollbar-track {
+    @apply bg-transparent ;
+  }
+  
+  .customTrack::-webkit-scrollbar-thumb {
+    @apply bg-gray-400 dark:bg-zinc-300 rounded-xl w-1;
+  }
 
 /* Animate */
 @keyframes aurora {
