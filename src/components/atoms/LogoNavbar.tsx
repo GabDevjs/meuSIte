@@ -12,27 +12,25 @@ export const LogoNavabar = (props: buttonProps) => {
 
   return (
     <>
-      <div className='hidden dark:flex items-center justify-between w-full '>
+      <div className='hidden dark:flex items-center justify-between w-full text-lg p-1.5 border border-zinc-200 border-opacity-10 bg-zinc-100 bg-opacity-10 rounded-full '>
         <Image 
           src={LogoWhite}
           alt='Logo'
-          width={50}
-          height={50}
+          width={30}
+          height={30}
           priority
         />      
-        <h1 className='hidden md:inline-block ml-2 font-bold text-lg'>Flavio Gabriel</h1>
-
       </div>
-      <div className='flex dark:hidden items-center justify-between w-full '>
+      <div className='flex dark:hidden items-center justify-between w-full text-lg p-1.5 border border-zinc-200 border-opacity-10 bg-zinc-100 bg-opacity-10 rounded-full hover:scale-110 transition-all duration-200 '>
         <Image 
           src={Logo}
           alt='Logo'
-          width={50}
-          height={50}
+          width={30}
+          height={30}
           priority
+          className='opacity-90'
         />   
 
-          <h1 className='hidden md:inline-block ml-2 font-bold text-lg'>Flavio Gabriel</h1>     
       </div>
     </>
   )

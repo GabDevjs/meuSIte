@@ -9,6 +9,7 @@ import {
   SiNodedotjs,
   SiTypescript,
 } from "react-icons/si";
+import { Background } from "../atoms/Background";
 
 export const Home = () => {
   const [arrow, setArrow] = useState("opacity-100");
@@ -23,16 +24,17 @@ export const Home = () => {
   }, []);
 
   return (
-    <header className="bg-backGround bg-opacity-25 backdrop-blur-xl h-screen z-10">
+    <header className="bg-transparent h-screen z-10">
       <div className=" w-full h-full flex justify-center items-center ">
-        <div className="max-w-7xl mx-auto sm:px-4 lg:px-6">
+        <div className="max-w-7xl mx-auto sm:px-4 lg:px-6 " >
           <div className="relative px-4 sm:px-8  mb-10  md:px-10">
             <div className="grid grid-cols-1 col  gap-x-4  sm:grid-cols-2 sm:gap-x-4 lg:gap-x-6 xl:gap-x-8  space-y-16 ">
               <div className="flex w-full justify-center items-center">
                 <div className=" w-full text-center">
-                  <div 
-                  data-aos="zoom-in"
-                  className="text-2xl lg:text-4xl text-gray-50 text-center  font-semibold leading-snug  ">
+                  <div
+                    data-aos="zoom-in"
+                    className="text-2xl lg:text-4xl text-gray-800 text-center  dark:text-gray-300 font-semibold leading-snug  "
+                  >
                     <p>Olá, meu nome é</p>
                     <h1 className=" text-4xl lg:text-5xl">
                       <span className="text-primary-orange">
@@ -58,32 +60,25 @@ export const Home = () => {
                 </div>
               </div>
               <div
-                  data-aos="zoom-in"
-                className="flex justify-center flex-col  items-cente text-lg max-w-lg px-10 sm:px-14  lg:px-16 "
+                data-aos="zoom-in"
+                className="flex justify-center flex-col  items-cente text-lg max-w-lg px-10 sm:px-14  lg:px-28 "
               >
                 <div className="flex relative z-20  rounded-full ring-2 border-4 border-transparent ring-primary-orange text-gray-50 justify-center items-center ">
                   <Image
                     src={ImageABout}
-                  
                     alt="Flavio Gabriel foto do inicio da pagina"
                     className="w-full rounded-full object-cover "
                     priority
                   />
-                  <div 
-                
-                  className="absolute left-0 top-0 flex justify-center items-center rounded-full   bg-primary-green bg-opacity-80 border-2 border-secondy-green animete-ball backdrop-blur-xl">
+                  <div className="absolute left-0 top-0 flex justify-center items-center rounded-full   bg-primary-green bg-opacity-80 border-2 border-secondy-green animete-ball backdrop-blur-xl">
                     <SiNodedotjs className="inline" />
                   </div>
 
-
-                  <div
-                
-                  className="absolute right-0 bottom-20 flex justify-center items-center rounded-full  bg-primary-blue bg-opacity-80 shadow-2xl border-2 border-secondy-blue animete-ball2 backdrop-blur-xl">
+                  <div className="absolute right-0 bottom-20 flex justify-center items-center rounded-full  bg-primary-blue bg-opacity-80 shadow-2xl border-2 border-secondy-blue animete-ball2 backdrop-blur-xl">
                     <SiTypescript className="inline" />
                   </div>
 
-                  <div
-                  className="absolute left-0 bottom-0 flex justify-center items-center rounded-full  bg-gray-500 bg-opacity-80 shadow-2xl border-2 border-gray-600 animete-ball3 backdrop-blur-xl">
+                  <div className="absolute left-0 bottom-0 flex justify-center items-center rounded-full  bg-gray-500 bg-opacity-80 shadow-2xl border-2 border-gray-600 animete-ball3 backdrop-blur-xl">
                     <SiNextdotjs className="inline" />
                   </div>
                 </div>

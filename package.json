@@ -11,6 +11,9 @@
   "dependencies": {
     "@headlessui/react": "^1.6.6",
     "@heroicons/react": "^2.0.10",
+    "@react-three/drei": "^9.32.3",
+    "@splinetool/react-spline": "^2.2.3",
+    "@splinetool/runtime": "^0.9.109",
     "aos": "^2.3.4",
     "next": "12.2.4",
     "next-themes": "^0.2.1",
@@ -20,6 +23,7 @@
     "react-icons": "^4.4.0",
     "react-scroll": "^1.8.7",
     "react-scroll-parallax": "^3.3.1",
+    "react-spinners": "^0.13.4",
     "react-swipeable": "^7.0.0",
     "react-tilt": "^0.1.4",
     "react-typed": "^1.2.0",

@@ -1,4 +1,4 @@
-import { Disclosure, Transition } from "@headlessui/react";
+import { Disclosure, Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { ItemsNavbar, LogoNavabar, ThemeToggle } from "../atoms";
 import {
@@ -32,12 +32,12 @@ const ItemsNavbarOptions = [
 
 export const Navbar = () => {
   const [navPosition, setNavPosition] = useState(
-    "-translate-y-80 md:-translate-y-20"
+    "-translate-y-80 md:-translate-y-0"
   );
   const listenScrollEvent = () => {
     window.scrollY > 20
       ? setNavPosition("translate-y-0")
-      : setNavPosition("-translate-y-[28rem] md:-translate-y-20");
+      : setNavPosition("translate-y-0");
   };
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
@@ -48,13 +48,13 @@ export const Navbar = () => {
 
   return (
     <>
-      <Disclosure
+      <Popover
         as="nav"
-        className={` mx-5  mt-2  fixed top-0 right-0 left-0  z-50 transition-transform duration-500 md:duration-700 ${navPosition}`}
+        className={` mx-6 sm:mx-10 md:mx-28  mt-2  fixed top-0 right-0 left-0  z-50 transition-transform duration-500 md:duration-700 ${navPosition}`}
       >
         {({ open }) => (
           <>
-            <div className="mx-auto vidro rounded-3xl md:rounded-full max-w-6xl px-6 sm:px-6 lg:px-28">
+            <div className="mx-auto vidro bg-zinc-700 bg-opacity-20 dark:bg-zinc-400 dark:bg-opacity-20  rounded-3xl  dark:border-opacity-25 md:rounded-full max-w-4xl px-6 sm:px-10 lg:px-28">
               <div className="flex h-12 xl:h-14 items-center justify-between py-3">
                 {/* items Navbar */}
 
@@ -69,35 +69,37 @@ export const Navbar = () => {
 
                 {/* Mobile menu button */}
                 <div className=" flex md:hidden">
-                  <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 ">
+                  <Popover.Button className="flex items-center justify-between w-full text-lg p-1.5 border border-zinc-200 border-opacity-10 bg-zinc-100 bg-opacity-10 rounded-full hover:scale-110 transition-all duration-200">
                     <span className="sr-only">Open main menu</span>
                     {open ? (
-                      <XMarkIcon className="block h-8 w-8" aria-hidden="true" />
+                      <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
                     ) : (
-                      <Bars3Icon className="block h-8 w-8" aria-hidden="true" />
+                      <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
                     )}
-                  </Disclosure.Button>
+                  </Popover.Button>
                 </div>
               </div>
-              <Transition
-                enter="transition duration-100 ease-out"
-                enterFrom="transform scale-95 opacity-0"
-                enterTo="transform scale-100 opacity-100"
-                leave="transition duration-75 ease-out"
-                leaveFrom="transform scale-100 opacity-100"
-                leaveTo="transform scale-95 opacity-0"
-              >
-                <Disclosure.Panel className="md:hidden border-t border-black border-opacity-5">
-                  <div className="space-y-1 px-5 pt-2 pb-3">
+              
+            </div>
+            <Transition
+        enter="transition duration-100 ease-out"
+        enterFrom="transform scale-95 opacity-0"
+        enterTo="transform scale-100 opacity-100"
+        leave="transition duration-100 ease-out"
+        leaveFrom="transform scale-100 opacity-100"
+        leaveTo="transform scale-95 opacity-0"
+        >
+                <Popover.Panel className="md:hidden absolute right-5 vidro bg-zinc-900 bg-opacity-20 dark:bg-zinc-400 dark:bg-opacity-20  rounded-xl  dark:border-opacity-25 md:rounded-full mt-2">
+                  <div className="space-y-1 px-2 py-1">
                     {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
-                    <div className="border-b  border-black border-opacity-5 space-y-8 ">
+                    <div className="border-b  border-black border-opacity-5 space-y-4 ">
                       {ItemsNavbarOptions.map((item: any, index: any) => {
                         return (
                           <span
                             key={index}
                             className="flex justify-center items-center h-full w-full py-2 px-3"
                           >
-                            <Disclosure.Button>
+                            <Popover.Button>
                             <Link 
                                 href={item.href}
                             >
@@ -113,40 +115,36 @@ export const Navbar = () => {
                                 {item.name}
                               </a>
                             </Link>
-                            </Disclosure.Button>
+                            </Popover.Button>
                           </span>
                         );
                       })}
                     </div>
-                    <div className=" py-2 flex justify-center items-center w-full">
-                      <ThemeToggle />
-                    </div>
-                    <div className="flex justify-center items-center pb-3">
+                    <div className="flex justify-between items-center py-2">
+                    <ThemeToggle />
                       <Link
                         href="https://wa.me/5511981154749?text=Olá,%20Flavio!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços."
-                        target="_blank"
-                        aria-label="Whatsapp"
                       
-                        
+                        aria-label="Whatsapp"
                       >
                       <a
                       
-                        className="  custom-btn  btn-11 px-5 rounded-lg py-2 lg:py-3 bg-[#25d366] shadow-xl  hover:bg-secondy-green hover:scale-110 ease-in-out transition-all duration-300"
+                        className="  custom-btn  btn-11 px-3 md:px-5 rounded-full py-2 lg:py-3 bg-[#25d366] shadow-xl  hover:bg-secondy-green hover:scale-110 ease-in-out transition-all duration-300"
+                        target="_blank"
                       >
                         <span>
-                          <BsWhatsapp className="inline lg:mr-2 text-lg" />
+                          <BsWhatsapp className="inline sm:mr-2 text-lg" />
                         </span>
-                        <span className="text-sm lg:text-base">Whatsapp</span>
+                        <span className="text-sm hidden md:inline lg:text-base">Whatsapp</span>
                       </a>
                       </Link>
                     </div>
                   </div>
-                </Disclosure.Panel>
+                </Popover.Panel>
               </Transition>
-            </div>
           </>
         )}
-      </Disclosure>
+      </Popover>
     </>
   );
 };

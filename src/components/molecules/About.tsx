@@ -144,11 +144,11 @@ export const About = () => {
   return (
     <div
       id="sobre"
-      className="bg-zinc-200 dark:bg-zinc-900 py-10 px-2 sm:px-4 lg:px-6 "
+      className="bg-zinc-200 dark:bg-[#141517] z-50  py-10 px-2 sm:px-4 lg:px-6 "
     >
       <section className="flex  justify-center h-full w-full py-5  ">
-        <div className="w-full md:w-auto shadow-2xl shadow-zinc-400 dark:shadow-zinc-600 rounded-xl flex justify-center flex-col md:flex-row">
-          <div className="lg:text-center flex justify-center md:justify-start dark:bg-zinc-600 border-l border-r md:border-r-0 md:border-b border-t border-gray-500 border-opacity-30 dark:border-zinc-500  bg-zinc-400 rounded-tl-xl md:flex-col md:space-y-4  rounded-bl-none rounded-tr-xl md:rounded-tr-none md:rounded-bl-xl py-1 md:pl-5 px-2 md:pt-10 ">
+        <div className="w-full md:w-auto shadow-2xl shadow-zinc-400 dark:shadow-zinc-900 rounded-xl flex justify-center flex-col md:flex-row">
+          <div className="lg:text-center flex justify-center md:justify-start dark:bg-zinc-600 bg-zinc-400 rounded-tl-xl md:flex-col md:space-y-4  rounded-bl-none rounded-tr-xl md:rounded-tr-none md:rounded-bl-xl py-1 md:pl-5 px-2 md:pt-10 ">
             {itemsABoutBar.map((item, index) => {
               return (
                 <div
@@ -182,7 +182,7 @@ export const About = () => {
             })}
           </div>
 
-          <div className="text-gray-800  shadow-white border-r border-b border-l md:border-l-0 md:border-t border-gray-500 border-opacity-30 dark:border-zinc-500  z-10 bg-zinc-300 bg-opacity-90 dark:bg-zinc-800 dark:text-gray-100 flex flex-col justify-between items-center py-10 md:px-32 md:rounded-tr-xl rounded-bl-xl md:rounded-bl-none rounded-br-xl  ">
+          <div className="text-gray-800   z-10 bg-zinc-300 bg-opacity-90 dark:bg-[#181a1d] dark:text-gray-100 flex flex-col justify-between items-center py-10 md:px-32 md:rounded-tr-xl rounded-bl-xl md:rounded-bl-none rounded-br-xl  ">
             {itemAbout == "0" && (
               <>
                 <div
@@ -256,26 +256,18 @@ export const About = () => {
                     <p
                       data-aos="zoom-in"
                       data-aos-duration="1000"
-                      className="text-center md:text-justify  leading-relaxed px-2"
+                      className="text-center md:text-justify  leading-relaxed mb-5 px-2"
                     >
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Ullam temporibus dolorem, omnis iusto mollitia impedit
                       obcaecati vel reprehenderit corporis. Optio.
                     </p>
 
-                    <div
-                      data-aos="zoom-in"
-                      className="flex justify-center h-full "
-                    >
-                      <div
-                        className="h-10 dark:bg-zinc-300 bg-opacity-90 bg-zinc-800"
-                        style={{ width: "1px" }}
-                      ></div>
-                    </div>
+                    
 
                     <div
                       data-aos="zoom-in"
-                      className="flex  sm:w-auto hover:scale-105 transition-all duration-300 justify-center flex-col w-full "
+                      className="flex sm:w-auto hover:scale-105 transition-all duration-300 justify-center flex-col w-full "
                     >
                       <div className="shadow-2xl md:flex-col rounded-t-xl   sm:rounded-xl hover:scale-105 transition-all duration-300 border border-zinc-400 ">
                         <div className=" md:px-4  bg-zinc-400 text-gray-100 dark:bg-zinc-600 rounded-tl-xl md:flex-col md:space-y-4  rounded-bl-none rounded-tr-xl  py-2  justify-center items-center ">
@@ -475,7 +467,7 @@ export const About = () => {
             >
               <div
                 data-aos="zoom-in"
-                className="shadow-xl sm:shadow-2xl shadow-zinc-400 dark:shadow-zinc-700 flex justify-center flex-col max-w-xs text-gray-800 border border-gray-500 border-opacity-30 dark:border-zinc-400  dark:text-gray-300 dark:bg-zinc-800 bg-zinc-300 rounded-lg  items-center space-y-2 mx-4  mb-10 sm:mb-6"
+                className="shadow-xl sm:shadow-lg shadow-zinc-400 dark:shadow-zinc-900 flex justify-center flex-col max-w-xs text-gray-800   dark:text-gray-300 dark:bg-[#181a1d] bg-zinc-300 rounded-lg  items-center space-y-2 mx-4  mb-10 sm:mb-6"
               >
                 <div className="flex flex-col px-2 justify-around bg-primary-orange rounded-t-lg py-5 w-full  items-center text-xs md:text-base  text-gray-200">
                   <span>
