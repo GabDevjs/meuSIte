@@ -71,7 +71,7 @@ export const ProjetoSection = () => {
                       className="p-3 flex-initial cursor-default w-full md:w-1/2 lg:w-1/3"
                     >
                       <div
-                        className={`flex h-full flex-col justify-between  items-center md:max-w-xs   p-1 rounded-lg shadow-lg vidro bg-opacity-30 bg-gray-400 hover:scale-105 transition-all duration-300  ${
+                        className={`flex h-full flex-col justify-between  items-center md:max-w-xs   p-1 rounded-lg shadow-lg vidro bg-opacity-50 bg-gray-600 hover:scale-105 transition-all duration-300  ${
                           index === 1 ? "min-h-[20rem]" : ""
                         }`}
                       >

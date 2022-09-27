@@ -54,7 +54,7 @@ export const Navbar = () => {
       >
         {({ open }) => (
           <>
-            <div className="mx-auto vidro bg-zinc-700 bg-opacity-20 dark:bg-zinc-400 dark:bg-opacity-20  rounded-3xl  dark:border-opacity-25 md:rounded-full max-w-4xl px-6 sm:px-10 lg:px-28">
+            <div className="mx-auto vidro bg-zinc-700 bg-opacity-20 dark:bg-zinc-400 dark:bg-opacity-20 border border-zinc-400 rounded-3xl  dark:border-opacity-25 md:rounded-full max-w-4xl px-6 sm:px-10 lg:px-28">
               <div className="flex h-12 xl:h-14 items-center justify-between py-3">
                 {/* items Navbar */}
 
@@ -89,7 +89,7 @@ export const Navbar = () => {
         leaveFrom="transform scale-100 opacity-100"
         leaveTo="transform scale-95 opacity-0"
         >
-                <Popover.Panel className="md:hidden absolute right-5 vidro bg-zinc-900 bg-opacity-20 dark:bg-zinc-400 dark:bg-opacity-20  rounded-xl  dark:border-opacity-25 md:rounded-full mt-2">
+                <Popover.Panel className="md:hidden absolute right-5 vidro bg-zinc-900 bg-opacity-20 dark:bg-zinc-400 dark:bg-opacity-20 px-5  rounded-xl  dark:border-opacity-25 md:rounded-full mt-2">
                   <div className="space-y-1 px-2 py-1">
                     {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
                     <div className="border-b  border-black border-opacity-5 space-y-4 ">

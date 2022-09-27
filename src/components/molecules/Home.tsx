@@ -27,7 +27,7 @@ export const Home = () => {
     <header className="bg-transparent h-screen z-10">
       <div className=" w-full h-full flex justify-center items-center ">
         <div className="max-w-7xl mx-auto sm:px-4 lg:px-6 " >
-          <div className="relative px-4 sm:px-8  mb-10  md:px-10">
+          <div className="relative px-4 sm:px-8  mt-10 md:mb-10  md:px-10">
             <div className="grid grid-cols-1 col  gap-x-4  sm:grid-cols-2 sm:gap-x-4 lg:gap-x-6 xl:gap-x-8  space-y-16 ">
               <div className="flex w-full justify-center items-center">
                 <div className=" w-full text-center">
