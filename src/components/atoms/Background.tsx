@@ -12,7 +12,7 @@ export const Background = () => {
     setMounted(true);
     setThemeValue(theme ? theme : "");
     console.log(themeValue);
-  }, []);
+  }, [theme]);
   if (!mounted) return null;
 
   function isDark() {
@@ -21,22 +21,37 @@ export const Background = () => {
 
   return (
     <>
-      {theme === "dark" && (
+      {themeValue === "dark" && (
+       <>
         <div
-          className="absolute w-screen h-screen hidden dark:block"
-        >
+        data-aos="zoom-in"
+        data-aos-duration="3000"
+         className="absolute hidden md:block w-screen h-screen ">
           <Spline scene="https://prod.spline.design/Hs26iQ9lzbtmyHbb/scene.splinecode" />
         </div>
+        <div
+         className="absolute block md:hidden w-screen h-screen ">
+          <Spline scene="https://prod.spline.design/Hs26iQ9lzbtmyHbb/scene.splinecode" />
+        </div>
+       </>
       )}
 
-      {theme === "light" && (
+      {themeValue === "light" && (
+        <>
         <div
-          className="absolute w-screen h-screen block dark:hidden"
-        >
-          <Spline
-          
-           scene="https://prod.spline.design/Vs8GpYE54xmRqALi/scene.splinecode" />
+        
+        data-aos="zoom-in"
+        data-aos-duration="800"
+        className="absolute hidden md:block w-screen h-screen">
+          <Spline scene="https://prod.spline.design/Vs8GpYE54xmRqALi/scene.splinecode"                      
+          />
         </div>
+        <div
+        className="absolute block md:hidden w-screen h-screen">
+          <Spline scene="https://prod.spline.design/Vs8GpYE54xmRqALi/scene.splinecode"                      
+          />
+        </div>
+        </>
       )}
     </>
   );

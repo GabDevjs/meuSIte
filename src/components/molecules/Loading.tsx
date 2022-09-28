@@ -9,7 +9,7 @@ export const LoadingSection = ({ loading }:LoadingProps) => {
   
   return (
     <div
-      className={`fixed z-50  bg-backGround overflow-hidden w-screen h-screen ${
+      className={`fixed z-50 bg-gray-300 dark:bg-backGround overflow-hidden w-screen h-screen ${
         loading == true ? "block" : "hidden"
       }`}
     >
