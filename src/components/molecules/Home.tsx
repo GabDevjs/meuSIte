@@ -24,7 +24,7 @@ export const Home = () => {
   }, []);
 
   return (
-    <header className="bg-transparent h-screen z-10">
+    <header className="bg-backGround bg-opacity-10 k h-screen z-10">
       <div className=" w-full h-full flex justify-center items-center ">
         <div className="max-w-7xl mx-auto sm:px-4 lg:px-6 " >
           <div className="relative px-4 sm:px-8  mt-10 md:mt-0 md:mb-16  md:px-10">
