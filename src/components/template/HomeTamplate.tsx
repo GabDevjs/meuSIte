@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { useEffect, useState } from "react";
 import { Section } from "../atoms";
 import { Background } from "../atoms/Background";
 import {
@@ -12,6 +13,14 @@ import { LoadingSection } from "../molecules/Loading";
 import { Navbar } from "../organisms";
 
 export const HomePageTemplate = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  }, []);
+
   return (
     <>
       <Head>
@@ -19,24 +28,21 @@ export const HomePageTemplate = () => {
         <link rel="shortcut icon" sizes="32/32" href="/favicon/favicon.ico" />
       </Head>
       <Navbar />
-
-      {/* <div>
-            <div className="ball1 "></div>
-            <div className="ball2"></div>
-            <div className="ball3"></div>
-          </div> */}
-      <div>
-       
-        <div
-        data-aos="fade-down"   
-        className="fixed -z-10  backdrop-blur-md w-screen h-screen">
-          <Background />
-        </div>
-        <Home />
-        <About />
-        <ProjetoSection />
-        <ContactSection />
+      <div className="fixed -z-10  backdrop-blur-md w-screen h-screen">
+        <Background />
       </div>
+
+      {loading == true ? (
+        <LoadingSection loading={loading} />
+      ) : (
+        <>
+      
+          <Home />
+          <About />
+          <ProjetoSection />
+          <ContactSection />
+        </>
+      )}
     </>
   );
 };

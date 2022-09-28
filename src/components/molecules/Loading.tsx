@@ -1,15 +1,12 @@
 import { useEffect, useState } from "react";
 import { ClipLoader } from "react-spinners";
 
-export const LoadingSection = () => {
-  const [loading, setLoading] = useState(true);
+interface LoadingProps {
+  loading: boolean;
+}
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 1000);
-  }, []);
-
+export const LoadingSection = ({ loading }:LoadingProps) => {
+  
   return (
     <div
       className={`fixed z-50  bg-backGround overflow-hidden w-screen h-screen ${

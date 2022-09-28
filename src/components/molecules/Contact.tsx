@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export const ContactSection = () => {
   return (
-    <div id="contato" className="bg-zinc-300 dark:bg-zinc-900 z-50">
+    <div id="contato" className="bg-zinc-300 dark:bg-[#202025] z-50">
            
 
       <Section>

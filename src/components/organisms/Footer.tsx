@@ -24,7 +24,7 @@ const navigation = {
 export const Footer = () => {
   return (
     <footer
-      className="bg-zinc-300 dark:bg-zinc-900"
+      className="bg-zinc-300 dark:bg-[#202025]"
       aria-labelledby="footer-heading"
     >
       <h2 id="footer-heading" className="sr-only">

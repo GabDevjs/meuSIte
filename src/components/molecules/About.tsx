@@ -144,10 +144,10 @@ export const About = () => {
   return (
     <div
       id="sobre"
-      className="bg-zinc-200 dark:bg-[#141517] z-50  py-10 px-2 sm:px-4 lg:px-6 "
+      className="bg-zinc-200 dark:bg-[#202025] z-50  py-10 px-2 sm:px-4 lg:px-6 "
     >
       <section className="flex  justify-center h-full w-full py-5  ">
-        <div className="w-full md:w-auto shadow-2xl shadow-zinc-400 dark:shadow-zinc-900 rounded-xl flex justify-center flex-col md:flex-row">
+        <div className="w-full md:w-auto shadow-2xl shadow-zinc-400 dark:shadow-[#303030] rounded-xl flex justify-center flex-col md:flex-row">
           <div className="lg:text-center flex justify-center md:justify-start dark:bg-zinc-600 bg-zinc-400 rounded-tl-xl md:flex-col md:space-y-4  rounded-bl-none rounded-tr-xl md:rounded-tr-none md:rounded-bl-xl py-1 md:pl-5 px-2 md:pt-10 ">
             {itemsABoutBar.map((item, index) => {
               return (
@@ -164,7 +164,7 @@ export const About = () => {
                     </h3>
                   </a>
                   <div
-                    className={`hidden md:inline pl-2 pr-4 rounded-l-lg  absolute w-36  group-hover:translate-x-5 transition-transform text-gray-800 bg-zinc-300 duration-500 dark:bg-zinc-800  h-10 ${
+                    className={`hidden md:inline pl-2 pr-4 rounded-l-lg  absolute w-36  group-hover:translate-x-5 transition-transform text-gray-800 bg-zinc-300 duration-500 dark:bg-[#181a1d]  h-10 ${
                       itemAbout == item.type
                         ? "translate-x-5"
                         : "translate-x-36"
@@ -467,7 +467,7 @@ export const About = () => {
             >
               <div
                 data-aos="zoom-in"
-                className="shadow-xl sm:shadow-lg shadow-zinc-400 dark:shadow-zinc-900 flex justify-center flex-col max-w-xs text-gray-800   dark:text-gray-300 dark:bg-[#181a1d] bg-zinc-300 rounded-lg  items-center space-y-2 mx-4  mb-10 sm:mb-6"
+                className="shadow-xl sm:shadow-lg shadow-zinc-400 dark:shadow-[#303030] flex justify-center flex-col max-w-xs text-gray-800   dark:text-gray-300 dark:bg-[#181a1d] bg-zinc-300 rounded-lg  items-center space-y-2 mx-4  mb-10 sm:mb-6"
               >
                 <div className="flex flex-col px-2 justify-around bg-primary-orange rounded-t-lg py-5 w-full  items-center text-xs md:text-base  text-gray-200">
                   <span>
