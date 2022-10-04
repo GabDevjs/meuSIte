@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Typed from "react-typed";
 import Image from "next/image";
 import ImageABout from "../../assets/perfil.png";
@@ -10,9 +10,11 @@ import {
   SiTypescript,
 } from "react-icons/si";
 import { Background } from "../atoms/Background";
+import AppContext from "../../services/context";
 
 export const Home = () => {
   const [arrow, setArrow] = useState("opacity-100");
+  const context = useContext(AppContext);
   const listenScrollEvent = () => {
     window.scrollY > 300 ? setArrow("opacity-0") : setArrow("opacity-100");
   };
@@ -22,6 +24,14 @@ export const Home = () => {
       window.removeEventListener("scroll", listenScrollEvent);
     };
   }, []);
+
+
+  const [mesagem, setMesagem] = useState("");
+
+  useEffect(() => {
+    setMesagem(context.MsDeboasVindas);
+  }, []);
+
 
   return (
     <header className="bg-backGround bg-opacity-10 k h-screen z-10">
@@ -35,7 +45,7 @@ export const Home = () => {
                     data-aos="zoom-in"
                     className="text-2xl lg:text-4xl text-gray-800 text-center  dark:text-gray-200 font-semibold leading-snug  "
                   >
-                    <p>Olá, meu nome é</p>
+                    <p>{mesagem}, eu sou</p>
                     <h1 className=" text-4xl lg:text-5xl">
                       <span className="text-primary-orange">
                         Flavio Gabriel
@@ -47,7 +57,6 @@ export const Home = () => {
                         strings={[
                           "Front-end Developer",
                           "Back-end Developer",
-                          "Web Developer",
                           "Full-stack Developer",
                           "Web Designer",
                         ]}

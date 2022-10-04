@@ -102,15 +102,16 @@ export const ProjetoSection = () => {
 
             <div className="flex justify-center items-center flex-col">
               <div className="w-full px-2 md:px-10 ">
-                <div className="flex w-full justify-center sm:justify-evenly flex-wrap ">
+                <div className="flex w-full justify-center sm:justify-around flex-wrap ">
                   {ArrayPortifolio1a3.map((item, index) => (
                     <div
                       key={index}
                       data-aos="zoom-in"
-                      className="p-3 flex-initial cursor-default w-full md:w-1/2 lg:w-1/3"
+                      className="p-3 flex-initial cursor-default w-full md:w-1/2 lg:w-1/3 "
                     >
                       <div
-                        className={`flex h-full flex-col justify-between  items-center md:max-w-xs   p-1 rounded-lg shadow-lg vidro bg-opacity-50 bg-zinc-500 hover:scale-105 transition-all duration-300  ${
+                        className={`flex h-full flex-col justify-between  items-center md:max-w-sm
+                        xl:max-w-xs   p-1 rounded-lg shadow-lg vidro bg-opacity-50 bg-zinc-500 hover:scale-105 transition-all duration-300  ${
                           index === 1 ? "min-h-[20rem]" : ""
                         }`}
                       >

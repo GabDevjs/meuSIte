@@ -96,7 +96,7 @@ const skills = {
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg",
     porcentagem: "w-[45%]",
   },
-  
+
   adonis: {
     title: "Adonis",
     source:
@@ -204,15 +204,29 @@ export const About = () => {
                     className="flex justify-center text-sm max-w-lg flex-col space-y-8"
                   >
                     <p className="text-center md:text-justify max-w-lg leading-relaxed">
-                      Sou um dedicado estudante de desenvolvimento, no início do
-                      que pretendo ser uma longa e bem-sucedida carreira, pela
-                      qual sou apaixonado, possuo 1 ano de experiência em
-                      Javascript, HTML/Css, React e NodeJs, programando
+                      Criei esse site com todos os detalhes para que você veja
+                      todos os features disponiveis nele, meu curriculo, meus
+                      projetos já executados e meus contatos. Sinta-se a vontade
+                      para explorar, e caso tenha alguma dúvida, já sabe! Basta
+                      entrar em contato comigo :)
+                      <br />
+                      <br />
+                      Há 2 anos, despretenciosamente me interessei por
+                      programação e desenvolvimento e iniciei meus estudos. Não
+                      imaginava que iria me apaixonar e me dedicar tanto a área,
+                      e que isso mudaria minha vida rapidamente! Hoje, sou um
+                      profissional desenvolvedor, no início de minha carreira.
+                      <br />
+                      <br />
+                      Possuo 1 ano de experiência em FrontEnd nas tecnologias
+                      Javascript, Typescript, Next, React, HTML/Css, SASS, e em
+                      Backend nas tecnologias Node, Vercel e Adonis. Programando
                       diferentes tipos de aplicações para clientes locais, e
-                      para diversas plataformas freelancer, criando desde
-                      simples blogs e Landing Pages ate mesmo e-commerce sempre
-                      focado em otimizar o Ux, e tornar os aplicativos mais
-                      fluidos e otimizados, com o máximo de qualidade.
+                      para diversas plataformas freelancer, criando desde blogs
+                      e Landing Pages ate e sistemas empresariais, sempre focado
+                      em otimizar o Ux, e tornar os aplicativos mais fluidos e
+                      otimizados, com o máximo de qualidade, dentro das
+                      necessidades do cliente.
                       <br />
                       <br />
                       Na sua empresa, procuro a oportunidade de criar melhores
@@ -258,12 +272,10 @@ export const About = () => {
                       data-aos-duration="1000"
                       className="text-center md:text-justify  leading-relaxed mb-5 px-2"
                     >
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Ullam temporibus dolorem, omnis iusto mollitia impedit
-                      obcaecati vel reprehenderit corporis. Optio.
+                      Lá na Homepage, te contei um pouco da minha história.
+                      <br />
+                      Aqui é onde ela continua! Vamos nessa?
                     </p>
-
-                    
 
                     <div
                       data-aos="zoom-in"
@@ -287,9 +299,9 @@ export const About = () => {
                           </div>
                         </div>
                         <p className="text-center flex items-center flex-col  bg-zinc-200 dark:bg-zinc-500 sm:rounded-b-xl w-full leading-relaxed px-5 py-2 md:py-5 text-sm">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Ullam temporibus dolorem, omnis iusto mollitia
-                          impedit obcaecati vel reprehenderit corporis.
+                          Após 1 ano de estudos diários, iniciei na empresa
+                          MaisVoip em São Paulo - SP, onde desenvolvo um sistema
+                          num projeto privado para um cliente de telefonia.
                           <div className="flex flex-col md:flex-row w-full py-4 md:px-10 justify-around items-center">
                             <span className="flex justify-center items-center">
                               <h3 className="font-semibold">De:</h3>
@@ -393,7 +405,7 @@ export const About = () => {
                       Sobre
                     </h2>
                     <p className=" text-2xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
-                      Tecnologias 
+                      Tecnologias
                     </p>
                   </div>
                 </div>

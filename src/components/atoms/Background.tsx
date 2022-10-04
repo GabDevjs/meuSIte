@@ -1,18 +1,34 @@
 import Spline from "@splinetool/react-spline";
 import { Console } from "console";
 import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import AppContext from "../../services/context";
 
 export const Background = () => {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
-  const [themeValue, setThemeValue] = useState("");
+  const context = useContext(AppContext);
+  const [themeValue, setThemeValue] = useState(handleSetBgTheme(context.hora));
 
   useEffect(() => {
     setMounted(true);
     setThemeValue(theme ? theme : "");
-    console.log(themeValue);
   }, [theme]);
+
+  function handleSetBgTheme(horaValue: Number) {
+    if (horaValue >= 6 && horaValue < 12) {
+      return "light";
+    } else if (horaValue >= 12 && horaValue < 18) {
+      return "light";
+    } else if (horaValue >= 18 && horaValue <= 23) {
+      return "dark";      
+    } else if (horaValue >= 0 && horaValue < 6) {
+      return "dark";
+    } else {
+      return "";
+    }
+  }
+
   if (!mounted) return null;
 
   function isDark() {
