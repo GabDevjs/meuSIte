@@ -43,7 +43,7 @@ export const Background = () => {
         data-aos="zoom-in"
         data-aos-duration="3000"
          className="absolute hidden md:block w-screen h-screen ">
-          <Spline scene="https://prod.spline.design/Hs26iQ9lzbtmyHbb/scene.splinecode" />
+          <Spline scene="https://prod.spline.design/Hs26iQ9lzbtmyHbb/scene.splinecode"  />
         </div>
         <div
          className="absolute block md:hidden w-screen h-screen ">
