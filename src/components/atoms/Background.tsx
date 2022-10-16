@@ -5,13 +5,11 @@ import { useContext, useEffect, useState } from "react";
 import AppContext from "../../services/context";
 
 export const Background = () => {
-  const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
   const context = useContext(AppContext);
   const [themeValue, setThemeValue] = useState(handleSetBgTheme(context.hora));
 
   useEffect(() => {
-    setMounted(true);
     setThemeValue(theme ? theme : "");
   }, [theme]);
 
@@ -29,7 +27,6 @@ export const Background = () => {
     }
   }
 
-  if (!mounted) return null;
 
   function isDark() {
     return theme === "dark";
