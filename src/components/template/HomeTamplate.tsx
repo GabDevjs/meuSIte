@@ -13,7 +13,15 @@ import {
 import { LoadingSection } from "../molecules/Loading";
 import { Navbar } from "../organisms";
 
-export const HomePageTemplate = () => {
+
+interface HomeTamplate {
+  backLight: any
+  backDark: any
+}
+
+
+export const HomePageTemplate = (props: HomeTamplate) => {
+  const { backLight, backDark } = props;
   const [loading, setLoading] = useState(true);
 
   const { theme, setTheme } = useTheme();
@@ -38,7 +46,7 @@ export const HomePageTemplate = () => {
         <>  
         <div className=" bg-gray-300 dark:bg-backGround w-full h-full -z-20"></div>
           <div className="fixed -z-10  backdrop-blur-md w-screen h-screen">
-            <Background />
+            <Background backDark={backDark} backLight={backLight} />
           </div>
           <Home />
           <About />
@@ -49,3 +57,5 @@ export const HomePageTemplate = () => {
     </>
   );
 };
+
+
