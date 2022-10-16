@@ -16,7 +16,7 @@ const ArrayPortifolio1a3 = [
   {
     title: "Site institucional - Pizzaria",
     description:
-      "this is a landing page project made to be the page of a fictitious pizzeria. this page is made with html, css and javascript made to be responsive and modern and intuitive for the user.",
+      "Esse é um site institucional construído com o foco de treinar minhas habilidades. esse site foi construído com Html5, css3 e Javascript vanila, simples porem moderno e bonito.",
     img: Banner5,
     projectSkill1: "HTML",
     projectSkill2: "CSS",
@@ -29,7 +29,7 @@ const ArrayPortifolio1a3 = [
   {
     title: "Site institucional - PetShop",
     description:
-      "this is an html, scss and javascript landing page. made to promote a petshop and pet products store with delivivery, a website made to be modern and responsive to give the best experience for the user.",
+      "Esse é uma landing page construída com Html5, Sass e javascript vanila feito na intenção de exercitar minhas habilidades.",
     img: Banner4,
     projectSkill1: "HTML",
     projectSkill2: "SASS",
@@ -42,7 +42,7 @@ const ArrayPortifolio1a3 = [
   {
     title: "Site institucional - Travel",
     description:
-      "this project is a landing page to promote a travel site, made with scss/sass html and javascript made with a modern and responsive design that tries to be the best experience for the user.",
+      "esse é um site institucional construído com o fim de estudar e exercitar minhas habilidades, comstruido  com Html, sass e javascript vanila.",
     img: Banner7,
     projectSkill1: "HTML",
     projectSkill2: "SASS",
@@ -133,7 +133,7 @@ export const ProjetoSection = () => {
                             {handleIconProjeto(item.projectSkill3)}
                           </div>
                         </div>
-                        <p className="text-gray-300 text-sm text-center">
+                        <p className="text-gray-300 text-sm text-justify px-4">
                           {item.description}
                         </p>
                         <div className="flex justify-around py-4 items-center w-full">

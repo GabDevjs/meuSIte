@@ -7,8 +7,6 @@ import Link from "next/link";
 export const ContactSection = () => {
   return (
     <div id="contato" className="bg-zinc-300 dark:bg-[#202025] z-50">
-           
-
       <Section>
         <div className=" border-b border-gray-900 dark:border-zinc-700 border-opacity-20 text-gray-800 dark:text-gray-100 pt-10 flex flex-col justify-center items-center max-w-7xl  mx-auto sm:px-6 lg:px-8 ">
           <div
@@ -49,10 +47,8 @@ export const ContactSection = () => {
               <div className="flex justify-center text-2xl font-semibold">
                 <h1> Whatsapp</h1>
               </div>
-              <p className="text-center text-xs px-5 sm:px-0 sm:text-base leading-relaxed ">
-                Estou interessado em oportunidades freelance – especialmente
-                projetos ambiciosos ou grandes. No entanto, se você tiver outra
-                solicitação ou pergunta, não hesite em me chamar.
+              <p className="text-justify text-xs px-5 sm:px-0 sm:text-base leading-relaxed ">
+               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia illum dignissimos, distinctio aliquam repellat quisquam est pariatur. Quae, repellat sequi?
               </p>
               <div className="flex justify-center items-center py-10">
                 <Link

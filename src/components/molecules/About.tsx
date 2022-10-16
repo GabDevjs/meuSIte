@@ -41,18 +41,6 @@ const itemsABoutBar = [
 ];
 
 const skills = {
-  javascript: {
-    title: "Javascript",
-    source:
-      "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg",
-    porcentagem: "w-[90%]",
-  },
-  typescript: {
-    title: "Typescript",
-    source:
-      "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg",
-    porcentagem: "w-[90%]",
-  },
   html: {
     title: "Html",
     source:
@@ -65,18 +53,17 @@ const skills = {
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg",
     porcentagem: "w-[98%]",
   },
-  git: {
-    title: "Git",
+  javascript: {
+    title: "Javascript",
     source:
-      "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-plain-wordmark.svg",
-
-    porcentagem: "w-[78%]",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg",
+    porcentagem: "w-[90%]",
   },
-  npm: {
-    title: "Npm",
+  typescript: {
+    title: "Typescript",
     source:
-      "https://raw.githubusercontent.com/devicons/devicon/master/icons/npm/npm-original-wordmark.svg",
-    porcentagem: "w-[96%]",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg",
+    porcentagem: "w-[90%]",
   },
   next: {
     title: "Next",
@@ -90,17 +77,11 @@ const skills = {
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
     porcentagem: "w-[95%]",
   },
-  vue: {
-    title: "vue",
+  git: {
+    title: "Git",
     source:
-      "https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg",
-    porcentagem: "w-[45%]",
-  },
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-plain-wordmark.svg",
 
-  adonis: {
-    title: "Adonis",
-    source:
-      "https://raw.githubusercontent.com/devicons/devicon/master/icons/adonisjs/adonisjs-original.svg",
     porcentagem: "w-[78%]",
   },
   node: {
@@ -109,11 +90,11 @@ const skills = {
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
     porcentagem: "w-[88%]",
   },
-  mysql: {
-    title: "Mysql",
+  adonis: {
+    title: "Adonis",
     source:
-      "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-plain-wordmark.svg",
-    porcentagem: "w-[86%]",
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/adonisjs/adonisjs-original.svg",
+    porcentagem: "w-[78%]",
   },
 };
 
@@ -121,13 +102,13 @@ const services = [
   {
     title: "Desenvolvimento Web Front-End",
     description:
-      "Desenvolvimento de sites e sistemas web, utilizando as melhores tecnologias do mercado para garantir a melhor experiência para o usuário.",
+      "Desenvolvimento de sites e sistemas web, utilizando as melhores tecnologias do mercado para garantir a melhor experiência para o usuário e performance.",
     icon: FaUserAlt,
   },
   {
     title: "Desenvolvimento Web back-End",
     description:
-      "Desenvolvimento de sites e sistemas web, utilizando as melhores tecnologias do mercado para garantir a melhor experiência para o usuário.",
+      "Desenvolvimento sesitema de ",
     icon: BsBack,
   },
   {
@@ -245,7 +226,7 @@ export const About = () => {
                         >
                           <BsFileEarmarkPdf className="inline mr-1 text-white  " />
                           <span className="text-white inline text-sm font-bold">
-                            Baixar CV
+                            Baixar curriculo
                           </span>
                         </a>
                       </Link>
@@ -270,7 +251,7 @@ export const About = () => {
                     <p
                       data-aos="zoom-in"
                       data-aos-duration="1000"
-                      className="text-center md:text-justify  leading-relaxed mb-5 px-2"
+                      className="text-center leading-relaxed mb-5 px-2"
                     >
                       Lá na Homepage, te contei um pouco da minha história.
                       <br />
@@ -358,24 +339,26 @@ export const About = () => {
                               height={30}
                               priority
                             />
-                            <h2 className="md:ml-2">Workana </h2>
+                            <h2 className="md:ml-2">
+                              Workana - projeto Geotiff{" "}
+                            </h2>
                           </div>
                         </div>
                         <p className="text-center flex items-center flex-col  bg-zinc-200 dark:bg-zinc-500 sm:rounded-b-xl w-full leading-relaxed px-5 py-2 md:py-5 text-sm">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Ullam temporibus dolorem, omnis iusto mollitia
-                          impedit obcaecati vel reprehenderit corporis.
+                          construindo uma aplicação uma página web para acessar
+                          informações de uma imagem georreferenciada (Geotiff)
+                          por meio de coordenadas e clicando na tela
                           <div className="flex flex-col md:flex-row w-full py-4 md:px-10 justify-around items-center">
                             <span className="flex justify-center items-center">
                               <h3 className="font-semibold">De:</h3>
                               <BsCalendar className="inline mx-2" />
-                              00/00/0000
+                              20/04/2022
                             </span>
 
                             <span className="flex justify-center items-center">
                               <h3 className="font-semibold">Ate:</h3>
                               <BsCalendar className="inline mx-2" />
-                              00/00/0000
+                              20/05/2022
                             </span>
                           </div>
                           <div>
@@ -385,7 +368,7 @@ export const About = () => {
                                 className="bg-[#4d2d9f] rounded-lg px-16 py-3 flex justify-between items-center custom-btn btn-12 hover:scale-105 transition-all duration-200"
                               >
                                 <span className="text-white text-sm font-bold">
-                                  workana
+                                  Detalhes
                                 </span>
                               </a>
                             </Link>
@@ -410,6 +393,10 @@ export const About = () => {
                   </div>
                 </div>
                 <div data-aos="zoom-in" className="sm:px-10 md:px-0 ">
+                  <p className=" text-lg text-center justify-center mb-4">
+                    As principais tecnologias que tenho dominio atualmente.
+                  </p>
+
                   <div className="w-full   border border-gray-300 customTrack overflow-x-hidden shadow ring-1 ring-black ring-opacity-5 rounded-xl  ">
                     <div className="grid grid-cols-2 gap-5 w-full   lg:grid-cols-3  bg-gray-200  dark:bg-zinc-700 dark:bg-opacity-30">
                       {Object.values(skills).map((file, index) => (
@@ -470,7 +457,7 @@ export const About = () => {
           </div>
         </div>
       </section>
-      <section>
+      {/* <section>
         <div className="flex justify-center items-center  py-10  flex-wrap ">
           {services.map((service, index) => (
             <div
@@ -487,14 +474,16 @@ export const About = () => {
                   </span>
                   <h2 className=" font-semibold"> {service.title}</h2>
                 </div>
-                <div className="p-6 text-center ">
-                  <p className="text-xs  md:text-sm">{service.description}</p>
+                <div className="py-6 px-10 ">
+                  <p className="text-xs text-justify  md:text-sm">
+                    {service.description}
+                  </p>
                 </div>
               </div>
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
