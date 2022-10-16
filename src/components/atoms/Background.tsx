@@ -11,9 +11,6 @@ interface BackGroundProps {
 
 export const Background = (props: BackGroundProps) => {
   const { backLight, backDark } = props;
-  console.log(backLight);
-  console.log(backDark);
-
   const { theme, setTheme } = useTheme();
   const context = useContext(AppContext);
   const [themeValue, setThemeValue] = useState(handleSetBgTheme(context.hora));
