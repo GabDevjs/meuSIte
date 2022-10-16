@@ -1,7 +1,5 @@
 export * from './LogoNavbar'
 export * from './ItemsNavbar'
-export * from './ButtonBell'
-export * from  './ButtonProfile'
 export * from './Section'
 export * from './Button'
 export * from './ButtonTheme'
