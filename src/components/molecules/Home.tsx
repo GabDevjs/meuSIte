@@ -23,10 +23,11 @@ export const Home = () => {
   };
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
+    setMesagem(context.MsDeboasVindas ? context.MsDeboasVindas : 'Bem vindo' );
     return () => {
       window.removeEventListener("scroll", listenScrollEvent);
     };
-    setMesagem(context.MsDeboasVindas);
+    
   }, []);
 
 
