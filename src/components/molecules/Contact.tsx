@@ -29,8 +29,10 @@ export const ContactSection = () => {
               data-aos-duration="1100"
               className="flex justify-center items-center  text-lg max-w-xl "
             >
-              <div className="flex justify-center drop-shadow-2xl shadow-zinc-900 dark:shadow-zinc-100 items-center py-16 px-14 sm:px-28 xl:px-32
-               ">
+              <div
+                className="flex justify-center drop-shadow-2xl shadow-zinc-900 dark:shadow-zinc-100 items-center py-16 px-14 sm:px-28 xl:px-32
+               "
+              >
                 <Image
                   src={ImageWhatsAppPixel}
                   alt="Whatsapp icon"
@@ -47,25 +49,22 @@ export const ContactSection = () => {
               <div className="flex justify-center text-2xl font-semibold">
                 <h1> Whatsapp</h1>
               </div>
-              <p className="text-justify text-xs px-5 sm:px-0 sm:text-base leading-relaxed ">
-               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia illum dignissimos, distinctio aliquam repellat quisquam est pariatur. Quae, repellat sequi?
+              <p className="text-center text-xs px-5 sm:px-0 sm:text-base leading-relaxed ">
+                disponivel para ajudar você a realizar seus sonhos e metas de
+                vida. atendimento todos os dias da semana das 8h a 20h. Ta precisando de um site? vem de zap!!
               </p>
               <div className="flex justify-center items-center py-10">
-                <Link
-               
-                href='https://wa.me/5511981154749?text=Olá,%20Flavio!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços.'
-                >
-                <a
-                 aria-label="Whatsapp"
-                className="  custom-btn  btn-11 px-5 rounded-lg py-2 lg:py-3 bg-[#25d366] hover:shadow-xl ring-2  hover:shadow-primary-green border-2  border-zinc-200  ring-primary-green dark:border-zinc-900  hover:bg-secondy-green hover:scale-110 ease-in-out transition-all duration-300"
-                target="_blank"
-                
-                >
-                  <span>
-                    <BsWhatsapp className="inline lg:mr-2 text-lg" />
-                  </span>
-                  <span className="text-sm lg:text-base">Whatsapp</span>
-                </a>
+                <Link href="https://wa.me/5511981154749?text=Olá,%20Flavio!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços.">
+                  <a
+                    aria-label="Whatsapp"
+                    className="  custom-btn  btn-11 px-5 rounded-lg py-2 lg:py-3 bg-[#25d366] hover:shadow-xl ring-2  hover:shadow-primary-green border-2  border-zinc-200  ring-primary-green dark:border-zinc-900  hover:bg-secondy-green hover:scale-110 ease-in-out transition-all duration-300"
+                    target="_blank"
+                  >
+                    <span>
+                      <BsWhatsapp className="inline lg:mr-2 text-lg" />
+                    </span>
+                    <span className="text-sm lg:text-base">Whatsapp</span>
+                  </a>
                 </Link>
               </div>
             </div>
