@@ -104,7 +104,7 @@ export const Navbar = () => {
                                 href={item.href}
                             >
                             <a
-                                className="text-base xl:text-base  font-medium hover:text-primary-orange hover:scale-110 transition-all flex justify-between items-center cursor-pointer"
+                                className="text-base xl:text-base  text-stone-800 dark:text-stone-200 font-medium hover:text-primary-orange hover:scale-110 transition-all flex justify-between items-center cursor-pointer"
                                 onClick={() => {
                                   open = !open;
                                 }}
@@ -120,24 +120,9 @@ export const Navbar = () => {
                         );
                       })}
                     </div>
-                    <div className="flex justify-between items-center py-2">
+                    <div className="flex justify-end items-center py-2">
                     <ThemeToggle />
-                      <Link
-                        href="https://wa.me/5511981154749?text=Olá,%20Flavio!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços."
-                      
-                        aria-label="Whatsapp"
-                      >
-                      <a
-                      
-                        className="  custom-btn  btn-11 px-3 md:px-5 rounded-full py-2 lg:py-3 bg-[#25d366] shadow-xl  hover:bg-secondy-green hover:scale-110 ease-in-out transition-all duration-300"
-                        target="_blank"
-                      >
-                        <span>
-                          <BsWhatsapp className="inline sm:mr-2 text-lg" />
-                        </span>
-                        <span className="text-sm hidden md:inline lg:text-base">Whatsapp</span>
-                      </a>
-                      </Link>
+                     
                     </div>
                   </div>
                 </Popover.Panel>

@@ -4,11 +4,7 @@ import { BiMoon, BiSun } from "react-icons/bi";
 import { Button } from "./Button";
 
 export const ThemeToggle = () => {
-  const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
-
-  useEffect(() => setMounted(true), []);
-  if (!mounted) return null;
 
   function isDark() {
     return theme === "dark";

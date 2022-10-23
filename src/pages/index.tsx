@@ -11,9 +11,8 @@ function Home({ backDark, backLight }: PropsType) {
 }
 
 export async function getServerSideProps() {
-  const res = "https://prod.spline.design/Vs8GpYE54xmRqALi/scene.splinecode";
 
-  const backLight = res;
+  const backLight = "https://prod.spline.design/Vs8GpYE54xmRqALi/scene.splinecode";
   const backDark =
     "https://prod.spline.design/Hs26iQ9lzbtmyHbb/scene.splinecode";
 

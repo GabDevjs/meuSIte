@@ -1,12 +1,12 @@
 import Spline from "@splinetool/react-spline";
 import { Console } from "console";
 import { useTheme } from "next-themes";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import AppContext from "../../services/context";
 
 interface BackGroundProps {
-  backLight: any
-  backDark: any
+  backLight: any;
+  backDark: any;
 }
 
 export const Background = (props: BackGroundProps) => {
@@ -14,6 +14,8 @@ export const Background = (props: BackGroundProps) => {
   const { theme, setTheme } = useTheme();
   const context = useContext(AppContext);
   const [themeValue, setThemeValue] = useState(handleSetBgTheme(context.hora));
+
+  
 
   useEffect(() => {
     setThemeValue(theme ? theme : "");
@@ -33,40 +35,25 @@ export const Background = (props: BackGroundProps) => {
     }
   }
 
-  function isDark() {
-    return theme === "dark";
+  const cube = useRef();
+
+  function onLoad(spline: { findObjectByName: (arg0: string) => any; }) {
+    const obj = spline.findObjectByName('Cube');
+    cube.current = obj;
   }
 
   return (
     <>
       {themeValue === "dark" && (
-        <>
-          <div
-            data-aos="zoom-in"
-            data-aos-duration="3000"
-            className="absolute hidden md:block w-screen h-screen "
-          >
-            <Spline scene={backDark} />
-          </div>
-          <div className="absolute block md:hidden w-screen h-screen ">
-            <Spline scene={backDark} />
-          </div>
-        </>
+        <div className="absolute block w-screen h-screen ">
+          <Spline  onLoad={onLoad} scene={backDark} />
+        </div>
       )}
 
       {themeValue === "light" && (
-        <>
-          <div
-            data-aos="zoom-in"
-            data-aos-duration="800"
-            className="absolute hidden md:block w-screen h-screen"
-          >
-            <Spline scene={backLight} />
-          </div>
-          <div className="absolute block md:hidden w-screen h-screen">
-            <Spline scene={backLight} />
-          </div>
-        </>
+        <div className="absolute block w-screen h-screen">
+          <Spline  onLoad={onLoad} scene={backLight} />
+        </div>
       )}
     </>
   );

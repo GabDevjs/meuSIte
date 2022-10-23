@@ -7,6 +7,7 @@ import {
   SiJavascript,
   SiNextdotjs,
   SiNodedotjs,
+  SiReact,
   SiTypescript,
 } from "react-icons/si";
 import { Background } from "../atoms/Background";
@@ -15,6 +16,8 @@ import AppContext from "../../services/context";
 export const Home = () => {
   const [arrow, setArrow] = useState("opacity-100");
   const context = useContext(AppContext);
+
+  const [mesagem, setMesagem] = useState("");
   const listenScrollEvent = () => {
     window.scrollY > 300 ? setArrow("opacity-0") : setArrow("opacity-100");
   };
@@ -23,14 +26,9 @@ export const Home = () => {
     return () => {
       window.removeEventListener("scroll", listenScrollEvent);
     };
-  }, []);
-
-
-  const [mesagem, setMesagem] = useState("");
-
-  useEffect(() => {
     setMesagem(context.MsDeboasVindas);
   }, []);
+
 
 
   return (
@@ -43,7 +41,7 @@ export const Home = () => {
                 <div className=" w-full text-center">
                   <div
                     data-aos="zoom-in"
-                    className="text-2xl lg:text-4xl text-gray-800 text-center  dark:text-gray-200 font-semibold leading-snug  "
+                    className="text-2xl lg:text-4xl text-gray-100 text-center  dark:text-gray-200 font-semibold leading-snug  "
                   >
                     <p>{mesagem}, eu sou</p>
                     <h1 className=" text-4xl lg:text-5xl">
@@ -56,9 +54,10 @@ export const Home = () => {
                       <Typed
                         strings={[
                           "Front-end Developer",
+                          "React Developer",
+                          "Web Designer",
                           "Back-end Developer",
                           "Full-stack Developer",
-                          "Web Designer",
                         ]}
                         typeSpeed={80}
                         backSpeed={90}
@@ -79,8 +78,8 @@ export const Home = () => {
                     className="w-full rounded-full object-cover "
                     priority
                   />
-                  <div className="absolute left-0 top-0 flex justify-center items-center rounded-full   bg-primary-green bg-opacity-80 border-2 border-secondy-green animete-ball backdrop-blur-xl">
-                    <SiNodedotjs className="inline" />
+                  <div className="absolute left-0 top-0 flex justify-center items-center rounded-full   bg-[#65d3f3] bg-opacity-80 border-2 border-cyan-500 animete-ball backdrop-blur-xl">
+                    <SiReact className="inline" />
                   </div>
 
                   <div className="absolute right-0 bottom-20 flex justify-center items-center rounded-full  bg-primary-blue bg-opacity-80 shadow-2xl border-2 border-secondy-blue animete-ball2 backdrop-blur-xl">

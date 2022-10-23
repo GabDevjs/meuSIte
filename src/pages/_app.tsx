@@ -3,16 +3,25 @@ import { ParallaxProvider } from "react-scroll-parallax";
 import type { AppProps } from "next/app";
 import { Layout } from "../services/layout";
 import AppContext from "../services/context";
-import { ThemeProvider } from "next-themes";
+import { ThemeProvider, useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
   //time
+  const { setTheme, systemTheme } = useTheme();
   const [time, setTime] = useState("");
   const [hora, setHora] = useState(0);
   const [MsDeboasVindas, setMsDeboasVindas] = useState("");
+
+  const [stystemTheme, setStystemTheme] = useState(
+    systemTheme ? systemTheme : ""
+  );
+
+  useEffect(() => {
+    setTheme(stystemTheme);
+  }, []);
 
   // Zero Vazio
   function zero(x: any) {
@@ -62,7 +71,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <ThemeProvider attribute="class">
-      <AppContext.Provider value={{MsDeboasVindas,time,hora}}>
+      <AppContext.Provider value={{ MsDeboasVindas, time, hora }}>
         <ParallaxProvider>
           <Layout>
             <Component {...pageProps} />

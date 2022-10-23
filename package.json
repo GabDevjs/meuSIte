@@ -11,13 +11,16 @@
   "dependencies": {
     "@headlessui/react": "^1.6.6",
     "@heroicons/react": "^2.0.10",
-    "@react-three/drei": "^9.32.7",
-    "@react-three/fiber": "^8.8.8",
+    "@react-three/drei": "^9.37.0",
+    "@react-three/fiber": "^8.8.10",
+    "@splinetool/loader": "^0.9.128",
+    "@splinetool/r3f-spline": "^1.0.2",
     "@splinetool/react-spline": "^2.2.3",
-    "@splinetool/runtime": "^0.9.109",
+    "@splinetool/runtime": "^0.9.128",
     "aos": "^2.3.4",
     "next": "^12.3.1",
     "next-themes": "^0.2.1",
+    "next-transpile-modules": "^9.1.0",
     "next-videos": "1.5.0",
     "react": "^18.2.0",
     "react-dom": "18.2.0",
@@ -26,11 +29,12 @@
     "react-scroll-parallax": "^3.3.1",
     "react-spinners": "^0.13.4",
     "react-swipeable": "^7.0.0",
+    "react-three": "^0.9.7",
     "react-tilt": "^0.1.4",
     "react-typed": "^1.2.0",
     "react-useanimations": "^2.0.8",
     "styled-components": "^5.3.5",
-    "three": "^0.144.0"
+    "three": "^0.145.0"
   },
   "devDependencies": {
     "@types/aos": "^3.0.4",
