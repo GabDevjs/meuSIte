@@ -23,7 +23,7 @@ const ArrayPortifolio1a3 = [
     projectSkill3: "JavaScript",
     link: "https://www.behance.net/gallery/134377753/Landing-page-Pizzaria",
     git: "https://github.com/GabDevjs/LandingPage-Pizzaria",
-    linkLocal: "/exemplos/pizzaria/index.html",
+    linkLocal: "/projects/pizzaria/index.html",
   },
 
   {
@@ -37,7 +37,7 @@ const ArrayPortifolio1a3 = [
 
     link: "https://www.behance.net/gallery/134314129/Landing-page-PetShop-WebSite",
     git: "https://github.com/GabDevjs/Landing-page---PetShop-WebSite",
-    linkLocal: "/exemplos/pet/index.html",
+    linkLocal: "/projects/pet/index.html",
   },
   {
     title: "Site institucional - Travel",
@@ -49,7 +49,7 @@ const ArrayPortifolio1a3 = [
     projectSkill3: "JavaScript",
     link: "https://www.behance.net/gallery/134362077/Landing-Page-TravelWebsite",
     git: "https://github.com/GabDevjs/LandingPage-TravelWebsite",
-    linkLocal: "/exemplos/travel/index.html",
+    linkLocal: "/projects/travel/index.html",
   },
 ];
 
