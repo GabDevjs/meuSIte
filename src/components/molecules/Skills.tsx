@@ -1,5 +1,3 @@
-import { BsLockFill, BsSpeedometer } from "react-icons/bs";
-import {GiSupersonicArrow } from 'react-icons/gi'
 import {FaNodeJs, FaReact } from 'react-icons/fa'
 import {SiNextdotjs, SiTypescript, SiTailwindcss, SiSass } from 'react-icons/si'
 

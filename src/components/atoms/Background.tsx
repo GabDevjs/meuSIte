@@ -1,5 +1,4 @@
 import Spline from "@splinetool/react-spline";
-import { Console } from "console";
 import { useTheme } from "next-themes";
 import { useContext, useEffect, useRef, useState } from "react";
 import AppContext from "../../services/context";

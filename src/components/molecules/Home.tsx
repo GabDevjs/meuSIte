@@ -2,15 +2,11 @@ import { useContext, useEffect, useState } from "react";
 import Typed from "react-typed";
 import Image from "next/image";
 import ImageABout from "../../assets/perfil.png";
-import { IoLogoJavascript } from "react-icons/io";
 import {
-  SiJavascript,
   SiNextdotjs,
-  SiNodedotjs,
   SiReact,
   SiTypescript,
 } from "react-icons/si";
-import { Background } from "../atoms/Background";
 import AppContext from "../../services/context";
 
 export const Home = () => {
@@ -29,8 +25,6 @@ export const Home = () => {
     };
     
   }, []);
-
-
 
   return (
     <header className="bg-backGround bg-opacity-10 k h-screen z-10">

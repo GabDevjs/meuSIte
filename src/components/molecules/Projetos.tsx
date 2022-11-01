@@ -1,10 +1,7 @@
 import { Section } from "../atoms";
 
-import Banner1 from "../../assets/imgPortifolio/banner1.jpg";
-import Banner2 from "../../assets/imgPortifolio/banner2.jpg";
 import Banner4 from "../../assets/imgPortifolio/banner4.jpg";
 import Banner5 from "../../assets/imgPortifolio/banner5.jpg";
-import Banner6 from "../../assets/imgPortifolio/banner6.jpg";
 import Banner7 from "../../assets/imgPortifolio/banner7.jpg";
 import { BsBehance, BsEyeFill, BsGithub } from "react-icons/bs";
 import Image from "next/image";

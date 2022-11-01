@@ -1,21 +1,16 @@
 import Image from "next/image";
-import ImageABout from "../../assets/PerfilRedesJobbs.jpeg";
-import { Button, Section } from "../atoms";
+
 import {
-  BsArrowsFullscreen,
   BsBack,
   BsCalendar,
   BsFileEarmarkPdf,
   BsFillBriefcaseFill,
-  BsGraphUp,
   BsInfoCircleFill,
   BsJournalBookmarkFill,
 } from "react-icons/bs";
-import { useRouter } from "next/router";
 import { useState } from "react";
 import { FaUserAlt } from "react-icons/fa";
 import { MdOutlineDeveloperMode } from "react-icons/md";
-
 import logoMaisVoip from "../../assets/mainvoip.jpg";
 import logoWorkana from "../../assets/workana.jpg";
 import Link from "next/link";
@@ -97,27 +92,6 @@ const skills = {
     porcentagem: "w-[78%]",
   },
 };
-
-const services = [
-  {
-    title: "Desenvolvimento Web Front-End",
-    description:
-      "Desenvolvimento de sites e sistemas web, utilizando as melhores tecnologias do mercado para garantir a melhor experiência para o usuário e performance.",
-    icon: FaUserAlt,
-  },
-  {
-    title: "Desenvolvimento Web back-End",
-    description:
-      "Desenvolvimento sesitema de ",
-    icon: BsBack,
-  },
-  {
-    title: "Desenvolvimento Mobile",
-    description:
-      "Desenvolvimento de aplicativos mobile, utilizando as melhores tecnologias do mercado para garantir a melhor experiência para o usuário.",
-    icon: MdOutlineDeveloperMode,
-  },
-];
 
 export const About = () => {
   const [itemAbout, setItemAbout] = useState("0");
@@ -457,33 +431,6 @@ export const About = () => {
           </div>
         </div>
       </section>
-      {/* <section>
-        <div className="flex justify-center items-center  py-10  flex-wrap ">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className="flex flex-col justify-center items-center   hover:scale-105 transition ease-in-out duration-300"
-            >
-              <div
-                data-aos="zoom-in"
-                className="shadow-xl sm:shadow-lg shadow-zinc-400 dark:shadow-[#303030] flex justify-center flex-col max-w-xs text-gray-800   dark:text-gray-300 dark:bg-[#181a1d] bg-zinc-300 rounded-lg  items-center space-y-2 mx-4  mb-10 sm:mb-6"
-              >
-                <div className="flex flex-col px-2 justify-around bg-primary-orange rounded-t-lg py-5 w-full  items-center text-xs md:text-base  text-gray-200">
-                  <span>
-                    <service.icon />
-                  </span>
-                  <h2 className=" font-semibold"> {service.title}</h2>
-                </div>
-                <div className="py-6 px-10 ">
-                  <p className="text-xs text-justify  md:text-sm">
-                    {service.description}
-                  </p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section> */}
     </div>
   );
 };

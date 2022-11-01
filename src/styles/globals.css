@@ -28,6 +28,7 @@ body::-webkit-scrollbar-thumb {
 body {
   overflow-x: hidden;
   font-family: "Poppins", monospace;
+  @apply  bg-gray-300 dark:bg-backGround
 }
 
 .customTrack::-webkit-scrollbar {
