@@ -14,8 +14,6 @@ export const Background = (props: BackGroundProps) => {
   const context = useContext(AppContext);
   const [themeValue, setThemeValue] = useState(handleSetBgTheme(context.hora));
 
-  
-
   useEffect(() => {
     setThemeValue(theme ? theme : "");
   }, [theme]);
@@ -30,7 +28,7 @@ export const Background = (props: BackGroundProps) => {
     } else if (horaValue >= 0 && horaValue < 6) {
       return "dark";
     } else {
-      return "";
+      return "dark";
     }
   }
 
@@ -43,13 +41,13 @@ export const Background = (props: BackGroundProps) => {
 
   return (
     <>
-      {themeValue === "dark" && (
+      {themeValue == "dark" && (
         <div className="absolute block w-screen h-screen ">
           <Spline  onLoad={onLoad} scene={backDark} />
         </div>
       )}
 
-      {themeValue === "light" && (
+      {themeValue == "light" && (
         <div className="absolute block w-screen h-screen">
           <Spline  onLoad={onLoad} scene={backLight} />
         </div>
