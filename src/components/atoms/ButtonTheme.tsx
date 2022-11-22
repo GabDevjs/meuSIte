@@ -1,8 +1,22 @@
 import { useTheme } from "next-themes";
+import { useEffect } from "react";
 import { BiMoon, BiSun } from "react-icons/bi";
 
 export const ThemeToggle = () => {
-  const { theme, setTheme } = useTheme();
+  const { theme, setTheme, systemTheme } = useTheme();
+
+  function handleSystemTheme() {
+    console.log(systemTheme);
+    
+    if (systemTheme) {
+      setTheme(systemTheme) ;
+    } else {
+      setTheme("dark");
+  }}
+
+  useEffect(() => {
+    handleSystemTheme()
+  }, [systemTheme])
 
   function isDark() {
     return theme === "dark";
