@@ -60,6 +60,12 @@ function MyApp({ Component, pageProps }: AppProps) {
         once: true,
         offset: 50,
       });
+    } else {
+      AOS.init({
+        easing: "ease-out-cubic",
+        once: true,
+        offset: 0,
+      });
     }
   }, []);
 
