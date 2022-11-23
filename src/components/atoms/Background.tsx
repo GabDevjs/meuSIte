@@ -34,24 +34,30 @@ export const Background = (props: BackGroundProps) => {
 
   const cube = useRef();
 
-  function onLoad(spline: { findObjectByName: (arg0: string) => any; }) {
-    const obj = spline.findObjectByName('Cube');
+  function onLoad(spline: { findObjectByName: (arg0: string) => any }) {
+    const obj = spline.findObjectByName("Cube");
     cube.current = obj;
   }
 
   return (
     <>
       {themeValue == "dark" && (
-        <div className="absolute block w-screen h-screen ">
-          <Spline  onLoad={onLoad} scene={backDark} />
+        <div className="absolute hidden sm:block w-screen h-screen ">
+          <Spline onLoad={onLoad} scene={backDark} />
         </div>
       )}
 
       {themeValue == "light" && (
-        <div className="absolute block w-screen h-screen">
-          <Spline  onLoad={onLoad} scene={backLight} />
+        <div className="absolute hidden sm:block w-screen h-screen">
+          <Spline onLoad={onLoad} scene={backLight} />
         </div>
       )}
+
+      <div className="sm:hidden ball-container">
+        <div className="ball1"></div>
+        <div className="ball2"></div>
+        <div className="ball3"></div>
+      </div>
     </>
   );
 };
