@@ -62,7 +62,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       });
     } else {
       AOS.init({
-        easing: "ease-out-cubic",
+        easing: "linear",
         once: false,
         offset: 0,
       });
