@@ -11,6 +11,7 @@ interface BackGroundProps {
 export const Background = (props: BackGroundProps) => {
   const { backLight, backDark } = props;
   const { theme, setTheme } = useTheme();
+
   const context = useContext(AppContext);
   const [themeValue, setThemeValue] = useState(handleSetBgTheme(context.hora));
 
@@ -42,22 +43,16 @@ export const Background = (props: BackGroundProps) => {
   return (
     <>
       {themeValue == "dark" && (
-        <div className="absolute hidden sm:block w-screen h-screen ">
+        <div className="absolute block w-screen h-screen ">
           <Spline onLoad={onLoad} scene={backDark} />
         </div>
       )}
 
       {themeValue == "light" && (
-        <div className="absolute hidden sm:block w-screen h-screen">
+        <div className="absolute block w-screen h-screen">
           <Spline onLoad={onLoad} scene={backLight} />
         </div>
       )}
-
-      <div className="sm:hidden ball-container">
-        <div className="ball1"></div>
-        <div className="ball2"></div>
-        <div className="ball3"></div>
-      </div>
     </>
   );
 };
