@@ -54,11 +54,13 @@ function MyApp({ Component, pageProps }: AppProps) {
     }
 
     handleGetTime();
-    AOS.init({
-      easing: "ease-out-cubic",
-      once: true,
-      offset: 50,
-    });
+    if (window.innerWidth >= 768) {
+      AOS.init({
+        easing: "ease-out-cubic",
+        once: true,
+        offset: 50,
+      });
+    }
   }, []);
 
   return (
