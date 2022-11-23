@@ -3,12 +3,7 @@ import Head from "next/head";
 import { useEffect, useState } from "react";
 
 import { Background } from "../atoms/Background";
-import {
-  About,
-  ContactSection,
-  Home,
-  ProjetoSection,
-} from "../molecules";
+import { About, ContactSection, Home, ProjetoSection } from "../molecules";
 import { Navbar } from "../organisms";
 
 interface HomeTamplate {
@@ -18,6 +13,12 @@ interface HomeTamplate {
 
 export const HomePageTemplate = (props: HomeTamplate) => {
   const { backLight, backDark } = props;
+  const [width, setWidth] = useState(0);
+
+  useEffect(() => {
+    setWidth(window.innerWidth);
+  }, []);
+
   return (
     <>
       <Head>
@@ -27,7 +28,15 @@ export const HomePageTemplate = (props: HomeTamplate) => {
       <Navbar />
 
       <div className="fixed -z-10  backdrop-blur-md w-screen h-screen">
-        <Background backDark={backDark} backLight={backLight} />
+        {width >= 768 ? (
+          <Background backLight={backLight} backDark={backDark} />
+        ) : (
+          <div className=" ball-container">
+            <div className="ball1"></div>
+            <div className="ball2"></div>
+            <div className="ball3"></div>
+          </div>
+        )}
       </div>
       <Home />
       <About />
