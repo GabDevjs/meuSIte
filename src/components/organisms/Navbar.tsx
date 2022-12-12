@@ -6,10 +6,7 @@ import {
   BsFillTelephoneFill,
   BsInfoCircleFill,
 } from "react-icons/bs";
-import { useEffect, useState } from "react";
 import Link from "next/link";
-
-
 
 const ItemsNavbarOptions = [
   {
@@ -30,37 +27,17 @@ const ItemsNavbarOptions = [
 ];
 
 export const Navbar = () => {
-  const [navPosition, setNavPosition] = useState(
-    "-translate-y-80 md:-translate-y-0"
-  );
-  const listenScrollEvent = () => {
-    window.scrollY > 20
-      ? setNavPosition("translate-y-0")
-      : setNavPosition("translate-y-0");
-  };
-  useEffect(() => {
-    window.addEventListener("scroll", listenScrollEvent);
-    return () => {
-      window.removeEventListener("scroll", listenScrollEvent);
-    };
-  }, []);
-
   return (
     <>
       <Popover
         as="nav"
-        className={` mx-6 sm:mx-10 md:mx-28  mt-2  fixed top-0 right-0 left-0  z-50 transition-transform duration-500 md:duration-700 ${navPosition}`}
+        className={` mx-6 sm:mx-10 md:mx-28  mt-2  fixed top-0 right-0 left-0 z-50`}
       >
         {({ open }) => (
           <>
             <div className="mx-auto vidro bg-zinc-700 bg-opacity-20 dark:bg-zinc-400 dark:bg-opacity-20 border border-zinc-400 rounded-3xl  dark:border-opacity-25 md:rounded-full max-w-4xl px-6 sm:px-10 lg:px-28">
               <div className="flex h-12 xl:h-14 items-center justify-between py-3">
-   
-
-           
                   <LogoNavabar />
-         
-
                 <div className="hidden  md:flex justify-between  items-center">
                   <ItemsNavbar items={ItemsNavbarOptions} />
                   <ThemeToggle />
