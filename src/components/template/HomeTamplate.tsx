@@ -26,17 +26,10 @@ export const HomePageTemplate = (props: HomeTamplate) => {
         <link rel="shortcut icon" sizes="32/32" href="/favicon/favicon.ico" />
       </Head>
       <Navbar />
-
       <div className="fixed -z-10  backdrop-blur-md w-screen h-screen">
         {width >= 768 ? (
           <Background backLight={backLight} backDark={backDark} />
-        ) : (
-          <div className=" ball-container">
-            <div className="ball1"></div>
-            <div className="ball2"></div>
-            <div className="ball3"></div>
-          </div>
-        )}
+        ) : (<></>)}
       </div>
       <Home />
       <About />
