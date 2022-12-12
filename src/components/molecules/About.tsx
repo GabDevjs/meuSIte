@@ -15,7 +15,7 @@ import logoMaisVoip from "../../assets/mainvoip.jpg";
 import logoWorkana from "../../assets/workana.jpg";
 import Link from "next/link";
 
-const cv = "/CurrículoFlavioGabrielDEV.pdf";
+const cv = "/Currículo_Flavio_Gabriel.pdf";
 
 const itemsABoutBar = [
   {
