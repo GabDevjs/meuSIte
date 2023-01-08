@@ -1,4 +1,4 @@
-import { Footer, Navbar } from "../../components/organisms";
+import { Footer } from "../../components/organisms";
 interface LayoutProps {
   children: React.ReactNode;
 }
