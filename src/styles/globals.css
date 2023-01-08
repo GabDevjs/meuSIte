@@ -28,7 +28,7 @@ body::-webkit-scrollbar-thumb {
 body {
   overflow-x: hidden;
   font-family: "Poppins", monospace;
-  @apply  bg-gray-300 dark:bg-backGround
+  @apply bg-black
 }
 
 .customTrack::-webkit-scrollbar {
@@ -289,12 +289,15 @@ body {
   25% {
     transform: translate(0, 25%);
   }
+
   50% {
     transform: translate(60%, 50%);
   }
+
   75% {
     transform: translate(0, 75%);
   }
+
   100% {
     transform: translate(0, 0);
   }
@@ -337,6 +340,7 @@ body {
 }
 
 @keyframes anime3 {
+
   0%,
   100% {
     clip-path: circle(20% at 10% 90%);
@@ -348,6 +352,7 @@ body {
 }
 
 @keyframes anime2 {
+
   0%,
   100% {
     clip-path: circle(20% at 90% 60%);
@@ -359,6 +364,7 @@ body {
 }
 
 @keyframes anime {
+
   0%,
   100% {
     clip-path: circle(22% at 20% 30%);
@@ -372,3 +378,41 @@ body {
 /* 
 Test Space Invader 
 */
+
+.text-degrade {
+  background: #FF512F;
+  background: -webkit-linear-gradient(to right, #F09819, #FF512F);
+  background: linear-gradient(to right, #F09819, #FF512F);
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 200%;
+  animation: aurora 10s infinite;
+  -webkit-text-fill-color: transparent;
+}
+
+.desenho-efeito-about1 {
+  background-color: #FAD961;
+  background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);
+  background-size: 100%;
+  border-radius: 39% 61% 70% 30% / 40% 34% 66% 60%;
+
+  -webkit-animation: aurora 40s infinite;
+  -moz-animation: aurora 40s infinite;
+  -o-animation: aurora 40s infinite;
+  animation: aurora 40s infinite;
+}
+
+
+@keyframes aurora {
+  0% {
+    background-position: left;
+  }
+
+  50% {
+    background-position: right;
+  }
+
+  100% {
+    background-position: left;
+  }
+}

@@ -1,20 +1,20 @@
 import Link from "next/link";
 import { BsBehance, BsGithub, BsLinkedin } from "react-icons/bs";
 
-const navigation = {
+export const navigation = {
   social: [
     {
-      name: "icon github",
+      name: "Github",
       href: "https://github.com/GabDevjs",
       icon: BsGithub,
     },
     {
-      name: "icon linkedin",
+      name: "Linkedin",
       href: "https://www.linkedin.com/in/flavio-gabriel77/",
       icon: BsLinkedin,
     },
     {
-      name: "icon behance",
+      name: "Behance",
       href: "https://www.behance.net/flaviogabriel?tracking_source=search_projects_recommended%7CLanding%20page%20-%20pizzaria",
       icon: BsBehance,
     },
@@ -24,7 +24,7 @@ const navigation = {
 export const Footer = () => {
   return (
     <footer
-      className="bg-zinc-300 dark:bg-[#202025]"
+      className="bg-black "
       aria-labelledby="footer-heading"
     >
       <h2 id="footer-heading" className="sr-only">

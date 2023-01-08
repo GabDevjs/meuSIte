@@ -1,7 +1,5 @@
 import Image from "next/image";
-
 import {
-  BsBack,
   BsCalendar,
   BsFileEarmarkPdf,
   BsFillBriefcaseFill,
@@ -9,8 +7,6 @@ import {
   BsJournalBookmarkFill,
 } from "react-icons/bs";
 import { useState } from "react";
-import { FaUserAlt } from "react-icons/fa";
-import { MdOutlineDeveloperMode } from "react-icons/md";
 import logoMaisVoip from "../../assets/mainvoip.jpg";
 import logoWorkana from "../../assets/workana.jpg";
 import Link from "next/link";
@@ -99,17 +95,17 @@ export const About = () => {
   return (
     <div
       id="sobre"
-      className="bg-zinc-200 dark:bg-[#202025] z-50  py-10 px-2 sm:px-4 lg:px-6 "
+      className=" z-50  py-10 px-2 sm:px-4 lg:px-6 "
     >
       <section className="flex  justify-center h-full w-full py-5  ">
-        <div className="w-full md:w-auto shadow-2xl shadow-zinc-400 dark:shadow-[#303030] rounded-xl flex justify-center flex-col md:flex-row">
+        <div className="w-full md:w-auto shadow-2xl shadow-zinc-400 shadow-[#303030] rounded-xl flex justify-center flex-col md:flex-row border border-zinc-900">
           <div className="lg:text-center flex justify-center md:justify-start dark:bg-zinc-600 bg-zinc-400 rounded-tl-xl md:flex-col md:space-y-4  rounded-bl-none rounded-tr-xl md:rounded-tr-none md:rounded-bl-xl py-1 md:pl-5 px-2 md:pt-10 ">
             {itemsABoutBar.map((item, index) => {
               return (
                 <div
                   key={index}
                   data-aos="zoom-in"
-                  className="h-10 group flex justify-center cursor-pointer text-zinc-800 dark:text-gray-100 text-sm font-bold pl-2 pr-4"
+                  className="h-10 group flex justify-center cursor-pointer text-zinc-800 dark:text-gray-100 text-sm font-bold pl-2 pr-4 text-2xl"
                   onClick={() => setItemAbout(item.type)}
                 >
                   <a className="flex z-20 justify-start items-center">

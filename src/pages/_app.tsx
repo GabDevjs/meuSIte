@@ -1,5 +1,4 @@
 import "../styles/globals.css";
-import { ParallaxProvider } from "react-scroll-parallax";
 import type { AppProps } from "next/app";
 import { Layout } from "../services/layout";
 import AppContext from "../services/context";
@@ -72,11 +71,9 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider attribute="class">
       <AppContext.Provider value={{ MsDeboasVindas, time, hora }}>
-        <ParallaxProvider>
           <Layout>
             <Component {...pageProps} />
           </Layout>
-        </ParallaxProvider>
       </AppContext.Provider>
     </ThemeProvider>
   );

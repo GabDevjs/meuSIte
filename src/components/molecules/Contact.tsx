@@ -6,18 +6,15 @@ import Link from "next/link";
 
 export const ContactSection = () => {
   return (
-    <div id="contato" className="bg-zinc-300 dark:bg-[#202025] z-50">
+    <div id="contato" className=" z-50">
       <Section>
-        <div className=" border-b border-gray-900 dark:border-zinc-700 border-opacity-20 text-gray-800 dark:text-gray-100 pt-10 flex flex-col justify-center items-center max-w-7xl  mx-auto sm:px-6 lg:px-8 ">
+        <div className=" text-zinc-50  text-gray-800 dark:text-gray-100 pt-10 flex flex-col justify-center items-center max-w-7xl  mx-auto sm:px-6 lg:px-8 ">
           <div
             data-aos="zoom-in"
             data-aos-duration="600"
             className="mx-auto max-w-7xl px-4  sm:px-6 lg:px-8"
           >
             <div className="text-center">
-              <h2 className="text-lg font-semibold text-primary-orange">
-                Contato e redes
-              </h2>
               <p className="mt-1 text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
                 Entre em contato
               </p>
@@ -49,7 +46,7 @@ export const ContactSection = () => {
               <div className="flex justify-center text-2xl font-semibold">
                 <h1> Whatsapp</h1>
               </div>
-              <p className="text-center text-xs px-5 sm:px-0 sm:text-base leading-relaxed ">
+              <p className="text-center text-xs px-5 sm:px-0 sm:text-base leading-relaxed max-w-sm">
                 disponivel para ajudar você a realizar seus sonhos e metas de
                 vida. atendimento todos os dias da semana das 8h a 20h. Ta precisando de um site? vem de zap!!
               </p>

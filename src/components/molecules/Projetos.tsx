@@ -79,7 +79,7 @@ export const ProjetoSection = () => {
     <>
       <div
         id="Projetos"
-        className="bg-backGround bg-opacity-20 backdrop-blur-sm"
+        className=""
       >
         <Section>
           <div className="text-white flex flex-col justify-center items-center max-w-7xl pb-16  mx-auto sm:px-6 lg:px-8">
@@ -88,9 +88,6 @@ export const ProjetoSection = () => {
               className="mx-auto max-w-7xl py-8 pb-10 px-4  sm:px-6 lg:px-8"
             >
               <div className="text-center">
-                <h2 className="text-lg font-semibold text-primary-orange">
-                  Projetos
-                </h2>
                 <p className="mt-1 text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
                   Meus Projetos
                 </p>
@@ -98,22 +95,20 @@ export const ProjetoSection = () => {
             </div>
 
             <div className="flex justify-center items-center flex-col">
-              <div className="w-full px-2 md:px-10 ">
+              <div className="w-full  md:px-10 ">
                 <div className="flex w-full justify-center sm:justify-around flex-wrap ">
                   {ArrayPortifolio1a3.map((item, index) => (
                     <div
                       key={index}
                       data-aos="zoom-in"
-                      className="p-3 flex-initial cursor-default w-full md:w-1/2 lg:w-1/3 "
+                      className="p-3 flex-initial cursor-default w-full md:w-1/2 lg:w-1/3 shadown-xl shadown-zinc-600"
                     >
                       <div
                         className={`flex h-full flex-col justify-between  items-center md:max-w-sm
-                        xl:max-w-xs   p-1 rounded-lg shadow-lg vidro bg-opacity-50 bg-zinc-500 hover:scale-105 transition-all duration-300  ${
-                          index === 1 ? "min-h-[20rem]" : ""
-                        }`}
+                        xl:max-w-xs  p-1 rounded-3xl shadow-lg vidro  bg-neutral-700 hover:scale-105 transition-all duration-300  `}
                       >
                         <div className="flex flex-col justify-center items-center ">
-                          <Image src={item.img} alt="" className="rounded-lg" />
+                          <Image src={item.img} alt="" className="rounded-t-3xl rounded-b-xl" />
                         </div>
 
                         <h2 className=" mt-2 font-semibold text-gray-200">
@@ -130,7 +125,7 @@ export const ProjetoSection = () => {
                             {handleIconProjeto(item.projectSkill3)}
                           </div>
                         </div>
-                        <p className="text-gray-300 text-sm text-justify px-4">
+                        <p className="text-gray-300 text-sm text-center px-4">
                           {item.description}
                         </p>
                         <div className="flex justify-around py-4 items-center w-full">
