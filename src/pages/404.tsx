@@ -18,7 +18,7 @@ const Page404: NextPage = ()  => {
               <h1 className="mt-2 text-4xl font-bold text-white tracking-tight sm:text-5xl sm:tracking-tight">
                 Pagina não encontrada
               </h1>
-              <p className="mt-2 text-lg font-medium text-black text-opacity-50">
+              <p className="mt-2 text-lg font-medium text-zinc-100 ">
                 A pagina que você está procurando não existe ou foi removida.
               </p>
             </div>

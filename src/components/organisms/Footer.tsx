@@ -24,7 +24,7 @@ export const navigation = {
 export const Footer = () => {
   return (
     <footer
-      className="bg-black "
+      className=" backdrop-blur-xl"
       aria-labelledby="footer-heading"
     >
       <h2 id="footer-heading" className="sr-only">
@@ -57,7 +57,7 @@ export const Footer = () => {
         <div className="  pt-8 flex justify-center items-center">
           <p
             data-aos="fade-up "
-            className="text-xs sm:text-sm text-center text-gray-800 dark:text-gray-100 xl:text-center"
+            className="text-xs sm:text-sm text-center text-gray-50 xl:text-center"
           >
             &copy; 2022 GabDevJs , Inc. All rights reserved.
           </p>

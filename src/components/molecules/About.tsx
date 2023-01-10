@@ -7,8 +7,8 @@ import {
   BsJournalBookmarkFill,
 } from "react-icons/bs";
 import { useState } from "react";
-import logoMaisVoip from "../../assets/mainvoip.jpg";
-import logoWorkana from "../../assets/workana.jpg";
+import logoMaisVoip from "../../assets/mainvoip.webp";
+import logoWorkana from "../../assets/workana.webp";
 import Link from "next/link";
 
 const cv = "/Currículo_Flavio_Gabriel.pdf";
@@ -98,7 +98,7 @@ export const About = () => {
       className=" z-50  py-10 px-2 sm:px-4 lg:px-6 "
     >
       <section className="flex  justify-center h-full w-full py-5  ">
-        <div className="w-full md:w-auto shadow-2xl shadow-zinc-400 shadow-[#303030] rounded-xl flex justify-center flex-col md:flex-row border border-zinc-900">
+        <div className="w-full md:w-auto shadow-2xl shadow-zinc-700 rounded-xl flex justify-center flex-col md:flex-row border border-zinc-900">
           <div className="lg:text-center flex justify-center md:justify-start dark:bg-zinc-600 bg-zinc-400 rounded-tl-xl md:flex-col md:space-y-4  rounded-bl-none rounded-tr-xl md:rounded-tr-none md:rounded-bl-xl py-1 md:pl-5 px-2 md:pt-10 ">
             {itemsABoutBar.map((item, index) => {
               return (

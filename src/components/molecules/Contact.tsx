@@ -1,18 +1,16 @@
-import Image from "next/image";
-import { BsWhatsapp } from "react-icons/bs";
+import { BsWhatsapp, BsTelephoneOutboundFill } from "react-icons/bs";
 import { Section } from "../atoms";
-import ImageWhatsAppPixel from "../../assets/whatsapp-iconBit.png";
 import Link from "next/link";
 
 export const ContactSection = () => {
   return (
-    <div id="contato" className=" z-50">
+    <div id="contato" className="z-50">
       <Section>
-        <div className=" text-zinc-50  text-gray-800 dark:text-gray-100 pt-10 flex flex-col justify-center items-center max-w-7xl  mx-auto sm:px-6 lg:px-8 ">
+        <div className=" text-zinc-50  text-gray-800 dark:text-gray-100 py-20 flex flex-col justify-center items-center max-w-7xl  md:mx-auto sm:px-6 lg:px-8 ">
           <div
             data-aos="zoom-in"
             data-aos-duration="600"
-            className="mx-auto max-w-7xl px-4  sm:px-6 lg:px-8"
+            className="md:mx-auto max-w-7xl px-4  sm:px-6 lg:px-8"
           >
             <div className="text-center">
               <p className="mt-1 text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
@@ -27,15 +25,11 @@ export const ContactSection = () => {
               className="flex justify-center items-center  text-lg max-w-xl "
             >
               <div
-                className="flex justify-center drop-shadow-2xl shadow-zinc-900 dark:shadow-zinc-100 items-center py-16 px-14 sm:px-28 xl:px-32
-               "
+                className="flex justify-center drop-shadow-2xl shadow-zinc-900 dark:shadow-zinc-100 items-center py-16 sm:px-28 xl:px-32"
               >
-                <Image
-                  src={ImageWhatsAppPixel}
-                  alt="Whatsapp icon"
-                  className="w-full h-full animate-fluid  "
-                  priority
-                />
+                <div className="bg-degrade w-60 h-60 rounded-full flex justify-center items-center">
+                  <BsTelephoneOutboundFill className="w-28 h-28 text-neutral-900"/>
+                </div> 
               </div>
             </div>
             <div

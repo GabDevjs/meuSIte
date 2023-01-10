@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import Typed from "react-typed";
 import Image from "next/image";
-import ImageABout from "../../assets/perfil.png";
+import ImageABout from "../../assets/perfil.webp";
 import { SiNextdotjs, SiReact, SiTypescript } from "react-icons/si";
 import AppContext from "../../services/context";
 import { navigation } from "../organisms";
@@ -68,13 +68,15 @@ export const Home = () => {
             <div className=" left-0 absolute desenho-efeito-about1 w-[100%] md:w-[110%] h-[120%]"></div>
             <div className=" absolute rotate-90 md:rotate-0 desenho-efeito-about1 opacity-10 w-[130%] h-[140%] -top-10"></div>
 
-            <div className="flex relative z-20 justify-center items-end ">
-              <Image
+            <div className="flex rounded-[20rem]  relative z-20 justify-center items-end ">
+             
+             <Image
+             className="rounded-[10rem] "
                 src={ImageABout}
                 alt="Flavio Gabriel foto do inicio da pagina"
-                className="w-full rounded-[20rem] object-cover "
                 priority
               />
+
               <div className="absolute left-0 top-0 flex justify-center items-center rounded-full text-2xl   bg-[#65d3f3] bg-opacity-80 border-2 border-cyan-500 animete-ball backdrop-blur-xl">
                 <SiReact className="inline" />
               </div>

@@ -390,10 +390,19 @@ Test Space Invader
   -webkit-text-fill-color: transparent;
 }
 
+.bg-degrade {
+  background: #FF512F;
+  background: -webkit-linear-gradient(to right, #F09819, #FF512F);
+  background: linear-gradient(to right, #F09819, #FF512F);
+  background-size: 200%;
+  animation: aurora 10s infinite;
+}
+
 .desenho-efeito-about1 {
-  background-color: #FAD961;
-  background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);
-  background-size: 100%;
+  background: #FF512F;
+  background: -webkit-linear-gradient(to right, #F09819, #FF512F);
+  background: linear-gradient(to right, #F09819, #FF512F);
+  background-size: 200%;
   border-radius: 39% 61% 70% 30% / 40% 34% 66% 60%;
 
   -webkit-animation: aurora 40s infinite;

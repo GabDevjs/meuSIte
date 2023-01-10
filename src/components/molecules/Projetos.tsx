@@ -1,8 +1,8 @@
 import { Section } from "../atoms";
 
-import Banner4 from "../../assets/imgPortifolio/banner4.jpg";
-import Banner5 from "../../assets/imgPortifolio/banner5.jpg";
-import Banner7 from "../../assets/imgPortifolio/banner7.jpg";
+import Banner4 from "../../assets/imgPortifolio/banner4.webp";
+import Banner5 from "../../assets/imgPortifolio/banner5.webp";
+import Banner7 from "../../assets/imgPortifolio/banner7.webp";
 import { BsBehance, BsEyeFill, BsGithub } from "react-icons/bs";
 import Image from "next/image";
 import Link from "next/link";
@@ -108,7 +108,7 @@ export const ProjetoSection = () => {
                         xl:max-w-xs  p-1 rounded-3xl shadow-lg vidro  bg-neutral-700 hover:scale-105 transition-all duration-300  `}
                       >
                         <div className="flex flex-col justify-center items-center ">
-                          <Image src={item.img} alt="" className="rounded-t-3xl rounded-b-xl" />
+                          <Image src={item.img} alt={`Imagen ${item.title}`} className="rounded-t-3xl rounded-b-xl" />
                         </div>
 
                         <h2 className=" mt-2 font-semibold text-gray-200">
